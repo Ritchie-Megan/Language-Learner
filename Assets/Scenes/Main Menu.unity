@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219870892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428145307}
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
+        m_MethodName: GoToUnit4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &219870892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 297992682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428145307}
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
+        m_MethodName: GoToUnit2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &297992682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +603,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376703746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428145307}
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
+        m_MethodName: GoToUnit3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376703746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +773,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 428145302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf435eb1a4b332f45ba90effb771b24a, type: 3}
+  m_Script: {fileID: 11500000, guid: 55e188bca99b319418b33cea8a41e2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &718302127
@@ -822,7 +858,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 718302130}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428145307}
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
+        m_MethodName: GoToUnit5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &718302130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1632,7 +1680,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 428145307}
-        m_TargetAssemblyTypeName: Button1, Assembly-CSharp
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
         m_MethodName: GoToUnit1
         m_Mode: 1
         m_Arguments:
@@ -1900,7 +1948,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1798124521}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428145307}
+        m_TargetAssemblyTypeName: UnitButtons, Assembly-CSharp
+        m_MethodName: GoToUnit6
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1798124521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,7 +2056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Program Title
+  m_text: Unit Minigames
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
