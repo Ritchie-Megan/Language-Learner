@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UnitButtons : MonoBehaviour
+public class Navigate : MonoBehaviour
 {
     public void GoToUnit1() {
         SceneManager.LoadScene("Scenes/Unit 1");
@@ -21,5 +21,8 @@ public class UnitButtons : MonoBehaviour
     }
     public void GoToUnit6() {
         SceneManager.LoadScene("Scenes/Unit 6");
+    }
+    public void GoToMenu() {
+        SceneManager.LoadScene("Scenes/Main Menu");
     }
 }
