@@ -39,11 +39,13 @@ public class FamilyTree : MonoBehaviour
             scrambleNames.Add(tempList[randomNumber]);
             tempList.RemoveAt(randomNumber);
         }
+        /*
         //now send
         ImageLoader imageLoader = FindObjectOfType<ImageLoader();
         if (imageLoader != null) {
             imageLoader.LoadScrambledNames(scrambleNames);
         }
+        */
 
     }
 
