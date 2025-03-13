@@ -42,7 +42,8 @@ public class NodeSpawner : MonoBehaviour
         }
         //create the instance
         GameObject newHolderObj = Instantiate(nodePrefab, treeBase);
-        newHolderObj.GetComponentInChildren<TMP_Text>().text = person.personName;
+        newHolderObj.name = person.personName;
+        //newHolderObj.GetComponentInChildren<TMP_Text>().text = person.personName;
         //make the panel item slot
         RectTransform rectTransform = newHolderObj.GetComponent<RectTransform>();
         rectTransform.anchoredPosition = new Vector2(x,y);

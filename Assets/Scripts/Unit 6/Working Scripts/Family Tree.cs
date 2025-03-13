@@ -20,7 +20,7 @@ public class FamilyTree : MonoBehaviour
             Debug.Log(person.personName);
         }
         
-        //send data over to the NodeSpawner script
+        //send data over to the GridNodeSpawner script
         NodeSpawner nodeSpawner = FindObjectOfType<NodeSpawner>();
         if (nodeSpawner != null) {
             nodeSpawner.generateNodes(visitedNodes);
@@ -39,13 +39,23 @@ public class FamilyTree : MonoBehaviour
             scrambleNames.Add(tempList[randomNumber]);
             tempList.RemoveAt(randomNumber);
         }
-        /*
+        
         //now send
-        ImageLoader imageLoader = FindObjectOfType<ImageLoader();
+        ScrollBarLoader imageLoader = FindObjectOfType<ScrollBarLoader>();
         if (imageLoader != null) {
-            imageLoader.LoadScrambledNames(scrambleNames);
+            foreach (string name in scrambleNames) {
+                imageLoader.AddItem(name);
+            }
         }
-        */
+
+        //sending over clues list
+        ClueLoader clueLoader = FindObjectOfType<ClueLoader>();
+        if (clueLoader != null) {
+            foreach (string clue in cluesList) {
+                clueLoader.AddItem(clue);
+            }
+        }
+        
 
     }
 
@@ -76,7 +86,7 @@ namespace FamilyTreeBackend {
         
         public List<Node> children = new List<Node>();
         public List<Node> siblings = new List<Node>();
-        private static List<string> _names = new List<string> {"Megan", "Brian", "Steven", "Erin", "Ariana", "Cole", "Hewitt", "Athan", "Julie", "Tad", "Annika", "TJ", "Shelbi", "Kaitlin"};
+        private static List<string> _names = new List<string> {"Katrina", "Jamie", "Alex", "Adriana", "Leo", "Jesus", "Martin", "Jose", "Juan", "Daniela", "Maximo", "Isabel", "Julio", "Maria", "Gabriela", "Arielle", "Carlos"};
 
         public Node() {
             personName = getName();
