@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -17,6 +19,13 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        
+        if (EventSystem.current.currentSelectedGameObject != null &&
+            EventSystem.current.currentSelectedGameObject.GetComponent<InputField>() != null)
+        {
+            return; // Skip movement if InputField is active
+        }
+        
         velocity.x = Input.GetAxisRaw("Horizontal");
         velocity.y = Input.GetAxisRaw("Vertical");
 
