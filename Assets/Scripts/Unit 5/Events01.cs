@@ -7,23 +7,31 @@ using System.Linq;
 
 public class Events01 : MonoBehaviour
 {
-    //UI stuff
+    //text box + attached things
     public TextMeshProUGUI textBox;
     public TextMeshProUGUI speakerName;
     public GameObject nextButton;
+    
+    //stage screen ui
     public GameObject mainStage;
-    public GameObject questionBuilder;
     public GameObject[] contestants;
     public GameObject[] heartButtons;
+    public GameObject lighting;
+    public Image[] faces; //face images (1-3 are for contestants, 4 is for player)
+    public Sprite[] face; //different images for faces (mouth closed, mouth open, frown)
+
+    //question builder screen
+    public GameObject questionBuilder;
     public TextMeshProUGUI questionTextBox;
     public TextMeshProUGUI[] optionButtons;
+
+    //final stats screen
     public GameObject finalStats;
     public TextMeshProUGUI mistakesText;
     public TextMeshProUGUI elimText;
 
-    //Face stuff
-    public Image[] faces;
-    public Sprite[] face;
+    //pause menu
+    public GameObject pauseMenu;
 
     //other variables
     private bool proceed = false; //true after clicking next button in general
@@ -36,22 +44,18 @@ public class Events01 : MonoBehaviour
 
     //question set
     List<Question> questionSet = new List<Question>() {
-        new Question("[_____] is the capital of France.", "Paris is the capital of France.",
-        "Paris", "London", "Rome", "Berlin",
-        "Agreed!", "Yes!", "No."),
-        new Question("[_____] is known as the Red Planet.", "Mars is known as the Red Planet.",
-        "Mars", "Venus", "Jupiter", "Saturn",
-        "Agreed!", "Yes!", "No."),
-        new Question("[_____] wrote 'To Kill a Mockingbird'.", "Harper Lee wrote 'To Kill a Mockingbird'.",
-        "Harper Lee", "J.K. Rowling", "Ernest Hemingway", "Mark Twain",
-        "Agreed!", "Yes!", "No.")
-    };
-    
-    //question builder sentences
-    List<string> instructions = new List<string>() {
-        "Ayuda a nuestro jugador a hacer una pregunta.",
-        "Inténtalo otra vez.",
-        "Correcto. ¡Buen trabajo!"
+        new Question("Tengo una familia muy grande. ¿Qué tan [_____] eres con la gente nueva?",
+            "Tengo una familia muy grande. ¿Qué tan amable eres con la gente nueva?",
+            "amable", "listo", "nuevo", "único",
+            "Mi familia también es grande, estoy acostumbrada.",
+            "Siempre me encanta conocer gente nueva. ¡Cuanto más, mejor!",
+            "No me gusta conocer gente nueva."),
+        new Question("Quiero una pareja en quien pueda confiar. ¿Es importante para ti ser [_____] en tus relaciones?",
+            "Quiero una pareja en quien pueda confiar. ¿Es importante para ti ser abierto en tus relaciones?",
+            "abierto", "valiente", "chistoso", "mejor ",
+            "Sí, siempre trato de ser sincero y abierto.",
+            "Sí, me gusta hablar sobre lo que pienso y siento. Es importante para una buena relación.",
+            "No me gusta hablar mucho de mis sentimientos. Prefiero guardar las cosas para mí.")
     };
     //character introductions
     List<string> intros = new List<string>() {
@@ -76,7 +80,13 @@ public class Events01 : MonoBehaviour
         "¡Hola! Me llamo Natalia y me encanta el espacio. Paso las noches mirando las estrellas.",
         "¡Buenas! Soy Hugo y me gusta la aventura. Siempre busco algo emocionante para hacer."
     };
-    //intro scene
+    //question builder instructional sentences
+    List<string> instructions = new List<string>() {
+        "Ayuda a nuestro jugador a hacer una pregunta.",
+        "Inténtalo otra vez.",
+        "Correcto. ¡Buen trabajo!"
+    };
+    //intro scene script
     List<string> introStart = new List<string>() {
         "Bienvenido a Cartas de Amor, donde ayudamos a las personas a encontrar el amor.",
         "Vamos a conocer a nuestras concursantes.",
@@ -86,7 +96,7 @@ public class Events01 : MonoBehaviour
         "Ahora es el momento de que nuestro jugador escriba su pregunta.",
         "¡En Cartas de Amor, cada palabra es importante!"
     };
-    //first elimination
+    //first elimination script
     List<string> elim1Start = new List<string>() {
         "Bienvenido de nuevo, jugador.",
         "Es hora de escuchar a nuestros concursantes. ¡Vamos, haz tu pregunta!"
@@ -100,7 +110,7 @@ public class Events01 : MonoBehaviour
         "Felicitaciones a los otras jugadores.",
         "¡Es hora de otra pregunta!"
     };
-    //second elimination
+    //second elimination script
     List<string> elim2Start = new List<string>() {
         "¡Tiempo terminado!",
         "Nuestro jugador hará su pregunta a los concursantes.",
@@ -119,7 +129,7 @@ public class Events01 : MonoBehaviour
 
     void Start()
     {
-        //generate questions
+        //generate questions from set
         int one = UnityEngine.Random.Range(0, questionSet.Count);
         int two = UnityEngine.Random.Range(0, questionSet.Count);
         while(one==two) {
@@ -127,16 +137,19 @@ public class Events01 : MonoBehaviour
         }
         questionNums = new List<int> {one, two};
 
+        //begin intro scene
         StartCoroutine(IntroScene());
     }
 
     void Update()
     {
+        //space continues dialogue
         if(Input.GetKeyDown(KeyCode.Space)) {
             buttonPress();
         }
+        //escape brings up pause menu
         if(Input.GetKeyDown(KeyCode.Escape)) {
-            //bring up in game menu
+            pause();
         }
     }
 
@@ -148,19 +161,22 @@ public class Events01 : MonoBehaviour
         finalStats.SetActive(false);
         //disable question builder
         questionBuilder.SetActive(false);
+        //disable pause menu
+        resume();
         //disable heart buttons
         foreach(GameObject i in heartButtons) {
             i.SetActive(false);
         }
+        //disable dramatic lighting
+        lighting.SetActive(false);
 
-        //intro sentences
+        //host intro sentences
         foreach(string i in introStart) {
             yield return DisplaySentence(i);
         }
 
-        //contestants introduce themselves
+        //3 random contestant introductions
         List<int> introNums = threeInt(intros.Count);
-
         for (int i = 0; i < 3; i++)
         {
             int rand = introNums[i];
@@ -169,12 +185,12 @@ public class Events01 : MonoBehaviour
             faces[i].sprite = face[0];
         }
 
-        //transition into next scene
+        //host transitions to next scene
         foreach(string i in introEnd) {
             yield return DisplaySentence(i);
         }
 
-        //question builder first round
+        //start question builder first round
         StartCoroutine(QuestionBuilder(0));
     }
 
@@ -194,8 +210,10 @@ public class Events01 : MonoBehaviour
         //retrieve question info for this round
         Question q1 = questionSet[questionNums[0]];
 
-        //player asks question
+        //player asks question (mouth opens)
+        faces[3].sprite = face[1];
         yield return DisplaySentence(q1.getFull(), "Jugador");
+        faces[3].sprite = face[0];
         
         //contestants respond
         bool firstGood = true; //true if no good responses have been given
@@ -219,6 +237,8 @@ public class Events01 : MonoBehaviour
             yield return DisplaySentence(i);
         }
 
+        //enable dramatic lighting
+        lighting.SetActive(true);
         //enable heart buttons
         foreach(GameObject i in heartButtons) {
             i.SetActive(true);
@@ -238,16 +258,18 @@ public class Events01 : MonoBehaviour
         if(badResponse == choice) {
             correctElims++;
         }
+
+        //disable dramatic lighting
+        lighting.SetActive(false);
+        //eliminated contestant frowny face
+        faces[choice].sprite = face[2];
         //disable heart buttons
         foreach(GameObject i in heartButtons) {
             i.SetActive(false);
         }
-
-        //eliminated contestant frowny face
-        faces[choice].sprite = face[2];
-
         //enable regular button
         nextButton.SetActive(true);
+
         //announce which contestant was eliminated
         yield return DisplaySentence("¡Concursante "+(choice+1)+" queda eliminado!");
         //transition to next scene
@@ -277,8 +299,10 @@ public class Events01 : MonoBehaviour
         //retrieve question info for this round
         Question q1 = questionSet[questionNums[1]];
 
-        //player asks question
+        //player asks question (mouth opens)
+        faces[3].sprite = face[1];
         yield return DisplaySentence(q1.getFull(), "Jugador");
+        faces[3].sprite = face[0];
         
         //contestants respond
         for(int i = 0; i < 3; i++) {
@@ -299,6 +323,8 @@ public class Events01 : MonoBehaviour
             yield return DisplaySentence(i);
         }
 
+        //enable dramatic lighting
+        lighting.SetActive(true);
         //enable heart buttons
         for(int i = 0; i < 3; i++) {
             if(i != firstElim) {
@@ -307,6 +333,7 @@ public class Events01 : MonoBehaviour
         }
         //disable regular button
         nextButton.SetActive(false);
+
         //prompt player to eliminate contestant
         speakerName.text = "Presentador";
         textBox.text = "Presiona uno de los corazones para eliminar a un concursante.";
@@ -319,15 +346,17 @@ public class Events01 : MonoBehaviour
             correctElims++;
         }
 
+        //disable dramatic lighting
+        lighting.SetActive(false);
         //eliminated contestant frowny face
         faces[choice].sprite = face[2];
         //disable heart buttons
         foreach(GameObject i in heartButtons) {
             i.SetActive(false);
         }
-
         //enable regular button
         nextButton.SetActive(true);
+
         //announce which contestant was eliminated
         yield return DisplaySentence("¡Concursante "+(choice+1)+" queda eliminado!");
         //transition to next scene
@@ -451,12 +480,19 @@ public class Events01 : MonoBehaviour
         return new List<int> {one, two, three};
     }
 
-    //for next button
+    //advance text (space key or next button)
      public void buttonPress() {
         proceed = true;
     }
-
-    //for question builder buttons
+    //bring up pause menu (escape key or pause button)
+    public void pause() {
+        pauseMenu.SetActive(true);
+    }
+    //exit pause menu (resume button)
+    public void resume() {
+        pauseMenu.SetActive(false);
+    }
+    //track which button clicked (question builder options or heart buttons)
     public void option1() {
         choice = 0;
         altProceed = true;

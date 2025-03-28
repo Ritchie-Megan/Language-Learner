@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: 325}
+  m_AnchoredPosition: {x: -796, y: 325}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &110318540
@@ -733,8 +733,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Instructions
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac0fbadcf9b0c654caad9af0fe3f89d1, type: 2}
-  m_sharedMaterial: {fileID: 2624891390569032804, guid: ac0fbadcf9b0c654caad9af0fe3f89d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2410,8 +2410,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac0fbadcf9b0c654caad9af0fe3f89d1, type: 2}
-  m_sharedMaterial: {fileID: 2624891390569032804, guid: ac0fbadcf9b0c654caad9af0fe3f89d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2559,8 +2559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 400}
-  m_SizeDelta: {x: 1500, y: 50}
+  m_AnchoredPosition: {x: -27.751, y: 325}
+  m_SizeDelta: {x: 1244.4988, y: 201.4082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1956549972
 MonoBehaviour:
@@ -2582,10 +2582,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Carta de Amor
+  m_text: Cartas de Amor
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e7a0f98c79236b94bb63a6cc997f05e0, type: 2}
-  m_sharedMaterial: {fileID: 4906051832612716434, guid: e7a0f98c79236b94bb63a6cc997f05e0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2617,7 +2617,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
