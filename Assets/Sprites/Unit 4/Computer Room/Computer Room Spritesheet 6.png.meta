@@ -812,7 +812,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Computer Room Spritesheet 6_0: 7388227959252192011
+      Computer Room Spritesheet 6_1: -2516621951830438721
+      Computer Room Spritesheet 6_10: -7198291227057207765
+      Computer Room Spritesheet 6_11: 3755153417753700992
+      Computer Room Spritesheet 6_12: 2356055079712964902
+      Computer Room Spritesheet 6_13: 2648337393072851766
+      Computer Room Spritesheet 6_14: 7457792406207871372
+      Computer Room Spritesheet 6_15: -7756671636454804626
+      Computer Room Spritesheet 6_16: -3218106240622818755
+      Computer Room Spritesheet 6_17: 6354569739386089109
+      Computer Room Spritesheet 6_18: -8042850414987604700
+      Computer Room Spritesheet 6_19: 1019044941971490697
+      Computer Room Spritesheet 6_2: -1275038674394793900
+      Computer Room Spritesheet 6_20: 1709257866136235109
+      Computer Room Spritesheet 6_21: 3531501719755767358
+      Computer Room Spritesheet 6_22: 5967517372027112328
+      Computer Room Spritesheet 6_23: -4135224717406986626
+      Computer Room Spritesheet 6_24: 8073803573206976564
+      Computer Room Spritesheet 6_3: 5221552750292224107
+      Computer Room Spritesheet 6_4: -457206462948232727
+      Computer Room Spritesheet 6_5: -3985964715490554315
+      Computer Room Spritesheet 6_6: 7150880719139005338
+      Computer Room Spritesheet 6_7: 6628075049113670454
+      Computer Room Spritesheet 6_8: 3445023824885652914
+      Computer Room Spritesheet 6_9: 9093407198495405038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

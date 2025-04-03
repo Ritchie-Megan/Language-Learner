@@ -412,7 +412,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      strokespritesheet20124_0: 1601804850975995968
+      strokespritesheet20124_1: -8180317254058275543
+      strokespritesheet20124_2: 8320018476722350998
+      strokespritesheet20124_3: -8893022994039745939
+      strokespritesheet20124_4: -6761067985666366303
+      strokespritesheet20124_5: 1523515440090422007
+      strokespritesheet20124_6: 5539368742743791326
+      strokespritesheet20124_7: 8015641299817864742
+      strokespritesheet20124_8: -6446966928043261607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

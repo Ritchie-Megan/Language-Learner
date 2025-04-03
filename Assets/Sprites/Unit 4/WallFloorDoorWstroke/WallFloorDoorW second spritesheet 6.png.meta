@@ -562,7 +562,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WallFloorDoorW second spritesheet 6_0: -5877207790063202314
+      WallFloorDoorW second spritesheet 6_1: -775438717966372238
+      WallFloorDoorW second spritesheet 6_10: -3510442780720770487
+      WallFloorDoorW second spritesheet 6_11: 5543015679761522709
+      WallFloorDoorW second spritesheet 6_12: -8635342045460590450
+      WallFloorDoorW second spritesheet 6_13: 3176424331440634593
+      WallFloorDoorW second spritesheet 6_14: -5678162480024386044
+      WallFloorDoorW second spritesheet 6_2: -3553407110143735280
+      WallFloorDoorW second spritesheet 6_3: 5100830971879254115
+      WallFloorDoorW second spritesheet 6_4: 4456942391556337821
+      WallFloorDoorW second spritesheet 6_5: -2180275112101609580
+      WallFloorDoorW second spritesheet 6_6: 2433606681771478919
+      WallFloorDoorW second spritesheet 6_7: -4197602174337642499
+      WallFloorDoorW second spritesheet 6_8: 3650720435509876419
+      WallFloorDoorW second spritesheet 6_9: -602791606385570037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

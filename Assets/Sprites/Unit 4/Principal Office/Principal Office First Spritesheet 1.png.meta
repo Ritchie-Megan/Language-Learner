@@ -287,7 +287,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Principal Office First Spritesheet 1_0: 4269738111294761496
+      Principal Office First Spritesheet 1_1: 4995427354616539551
+      Principal Office First Spritesheet 1_2: -6607719725386419010
+      Principal Office First Spritesheet 1_3: 1060296624453253083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
