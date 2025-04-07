@@ -45,11 +45,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                     //check to see if child is in correct place
                     if (gameObject.name == droppedObject.name) {
                         Debug.Log("Matched pair!");
-                        droppedObject.GetComponent<Image>().color = Color.green;
+                        Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");
+                        droppedObject.GetComponent<Image>().sprite = greenLeaf;
                     }
                     else {
                         Debug.Log("Not matched pair!");
-                        droppedObject.GetComponent<Image>().color = Color.white;
+                        Sprite orangeLeaf = Resources.Load<Sprite>("Unit6/orangeLeaf");
+                        droppedObject.GetComponent<Image>().sprite = orangeLeaf;
                     }
                 }
             }

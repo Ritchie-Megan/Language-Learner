@@ -9,7 +9,7 @@ public class FamilyTree : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int maxPeople = 10;
+        int maxPeople = 5;
         FamilyTreeBackend.Node root = buildTree(maxPeople);
         Debug.Log("-------Family Tree----------");
         HashSet<FamilyTreeBackend.Node> visitedNodes = new HashSet<FamilyTreeBackend.Node>();
@@ -86,6 +86,7 @@ namespace FamilyTreeBackend {
         
         public List<Node> children = new List<Node>();
         public List<Node> siblings = new List<Node>();
+        public List<Node> childrenOtherParent = new List<Node>();
         private static List<string> _names = new List<string> {"Katrina", "Jamie", "Alex", "Adriana", "Leo", "Jesus", "Martin", "Jose", "Juan", "Daniela", "Maximo", "Isabel", "Julio", "Maria", "Gabriela", "Arielle", "Carlos"};
 
         public Node() {
@@ -185,6 +186,8 @@ namespace FamilyTreeBackend {
                     if (randomNumberChildren > 0) {
                         Node oldSpouse = new Node();
                         oldSpouse.maritalStatus = "d";
+                        currentNode.childrenOtherParent.Add(oldSpouse);
+                        oldSpouse.childrenOtherParent.Add(currentNode);
                     
                         for (int i = 0; i < randomNumberChildren; i++) {
                             if (numPeopleLeft > 0) {
@@ -223,10 +226,13 @@ namespace FamilyTreeBackend {
                     //old spouse
                     //did they share kids
                     int randomNumberChildren = rand.Next(0,3);
+                    //skips all this if they didn't have any children
                     if (randomNumberChildren > 0) {
                         Node oldSpouse = new Node();
                         oldSpouse.maritalStatus = "d";
-                    
+                        currentNode.childrenOtherParent.Add(oldSpouse);
+                        oldSpouse.childrenOtherParent.Add(currentNode);                    
+
                         for (int i = 0; i < randomNumberChildren; i++) {
                             if (numPeopleLeft > 0) {
                                 Node newChild = new Node();
