@@ -6,54 +6,46 @@ using TMPro;
 
 public class Question
 {
-   string partialQuestion;
-   string fullQuestion;
-   string correct;
-   string incorrect1;
-   string incorrect2;
-   string incorrect3;
-   string goodResponse1;
-   string goodResponse2;
-   string badResponse;
+   string[] questions_; //index 0: question with blank, index 1: question without blank
+   string[] solutions_; //index 0: correct solution; indices 1-3: incorrect solutions
+   string[] responses_; //indices 0-1: compatible responses; index 2: incompatible response
+   string translation_;
 
 
-   public Question(string partial, string full, string c, string i1, string i2, string i3, string good1, string good2, string bad) {
-      partialQuestion = partial;
-      fullQuestion = full;
-      correct = c;
-      incorrect1 = i1;
-      incorrect2 = i2;
-      incorrect3 = i3;
-      goodResponse1 = good1;
-      goodResponse2 = good2;
-      badResponse = bad;
-
+   public Question(string[] questions, string[] solutions, string[] responses, string translation) {
+      questions_ = questions;
+      solutions_ = solutions;
+      responses_ = responses;
+      translation_ = translation;
    }
    public string getPartial() {
-      return partialQuestion;
+      return questions_[0];
    }
    public string getFull() {
-      return fullQuestion;
+      return questions_[1];
    }
    public string getAnswer() {
-      return correct;
+      return solutions_[0];
    }
    public string getI1() {
-      return incorrect1;
+      return solutions_[1];
    }
    public string getI2() {
-      return incorrect2;
+      return solutions_[2];
    }
    public string getI3() {
-      return incorrect3;
+      return solutions_[3];
    }
    public string getGood1() {
-      return goodResponse1;
+      return responses_[0];
    }
    public string getGood2() {
-      return goodResponse2;
+      return responses_[1];
    }
    public string getBad() {
-      return badResponse;
+      return responses_[2];
+   }
+   public string getTranslation() {
+      return translation_;
    }
 };

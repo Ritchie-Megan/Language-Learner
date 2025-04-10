@@ -24,11 +24,14 @@ public class Events01 : MonoBehaviour
     public GameObject questionBuilder;
     public TextMeshProUGUI questionTextBox;
     public TextMeshProUGUI[] optionButtons;
+    public TextMeshProUGUI hint;
+    public GameObject hintHider;
 
     //final stats screen
     public GameObject finalStats;
     public TextMeshProUGUI mistakesText;
     public TextMeshProUGUI elimText;
+    public TextMeshProUGUI hintText;
 
     //pause menu
     public GameObject pauseMenu;
@@ -41,22 +44,10 @@ public class Events01 : MonoBehaviour
     private int correctElims = 0; //tracks correct eliminations on stage
     private int mistakes = 0; //tracks mistakes in question builder
     List<int> questionNums; //stores randomly generated question numbers
+    private int hintsUsed = 0;
 
     //question set
-    List<Question> questionSet = new List<Question>() {
-        new Question("Tengo una familia muy grande. ¿Qué tan [_____] eres con la gente nueva?",
-            "Tengo una familia muy grande. ¿Qué tan amable eres con la gente nueva?",
-            "amable", "listo", "nuevo", "único",
-            "Mi familia también es grande, estoy acostumbrada.",
-            "Siempre me encanta conocer gente nueva. ¡Cuanto más, mejor!",
-            "No me gusta conocer gente nueva."),
-        new Question("Quiero una pareja en quien pueda confiar. ¿Es importante para ti ser [_____] en tus relaciones?",
-            "Quiero una pareja en quien pueda confiar. ¿Es importante para ti ser abierto en tus relaciones?",
-            "abierto", "valiente", "chistoso", "mejor ",
-            "Sí, siempre trato de ser sincero y abierto.",
-            "Sí, me gusta hablar sobre lo que pienso y siento. Es importante para una buena relación.",
-            "No me gusta hablar mucho de mis sentimientos. Prefiero guardar las cosas para mí.")
-    };
+    List<Question> questionSet = QuestionBank.Questions;
     //character introductions
     List<string> intros = new List<string>() {
         "¡Hola! Me llamo Ana y me encanta leer. Siempre tengo un libro conmigo.",
@@ -89,7 +80,7 @@ public class Events01 : MonoBehaviour
     //intro scene script
     List<string> introStart = new List<string>() {
         "Bienvenido a Cartas de Amor, donde ayudamos a las personas a encontrar el amor.",
-        "Vamos a conocer a nuestras concursantes.",
+        "Vamos a conocer a nuestros concursantes.",
     };
     List<string> introEnd = new List<string>() {
         "¡Qué grupo tan interesante!",
@@ -293,7 +284,7 @@ public class Events01 : MonoBehaviour
             yield return DisplaySentence(i);
         }
 
-        //randomize which player has a bad response
+        //randomize whether the bad response will appear first or second
         int badResponse = UnityEngine.Random.Range(0, 1);
 
         //retrieve question info for this round
@@ -304,15 +295,24 @@ public class Events01 : MonoBehaviour
         yield return DisplaySentence(q1.getFull(), "Jugador");
         faces[3].sprite = face[0];
         
+        int responseNum = 0;
+        int badContestant = -1;
         //contestants respond
         for(int i = 0; i < 3; i++) {
+            //if the contestant has not been eliminated already
             if(i != firstElim) {
+                //mouth open
                 faces[i].sprite = face[1];
-                if(i == badResponse) {
+                //if the current response number (will be 0 for the first reponse given, and 1 for second)
+                if(responseNum == badResponse) {
                     yield return DisplaySentence(q1.getBad(), "Concursante " + (i + 1));
+                    responseNum++;
+                    //track which contestant gave the bad response
+                    badContestant = i;
                 }
                 else {
                     yield return DisplaySentence(q1.getGood1(), "Concursante " + (i + 1));
+                    responseNum++;
                 }
                 faces[i].sprite = face[0];
             }
@@ -341,8 +341,8 @@ public class Events01 : MonoBehaviour
         yield return new WaitUntil(() => altProceed);
         altProceed = false;
 
-        //if the contestant eliminated gave the correct response, increment stats
-        if(badResponse == choice) {
+        //if the contestant eliminated gave the worst response, increment stats
+        if(badContestant == choice) {
             correctElims++;
         }
 
@@ -368,12 +368,15 @@ public class Events01 : MonoBehaviour
         finalStats.SetActive(true);
         mistakesText.text = "Mistakes in question builder: " + mistakes;
         elimText.text = "Correct eliminations: " + correctElims + "/2";
+        hintText.text = "Hints used: " + hintsUsed + "/2";
     }
 
     //question builder (input round 0 or 1)
     IEnumerator QuestionBuilder(int round) {
         //enable question builder
         questionBuilder.SetActive(true);
+        //enable hint hider
+        hintHider.SetActive(true);
         //disable next button
         nextButton.SetActive(false);
 
@@ -386,6 +389,8 @@ public class Events01 : MonoBehaviour
         Question q1 = questionSet[questionNums[round]];
         //display question text
         questionTextBox.text = q1.getPartial();
+        //set hint to translation
+        hint.text = q1.getTranslation();
 
         //randomly choose a correct number
         int correctNum = UnityEngine.Random.Range(0, 3);
@@ -425,7 +430,8 @@ public class Events01 : MonoBehaviour
             if(choice == correctNum) {
                 //fill in question blank
                 questionTextBox.text = q1.getFull();
-
+                //show word definition
+                hintHider.SetActive(false);
                 //display congratulations
                 textBox.text = instructions[2];
 
@@ -483,6 +489,10 @@ public class Events01 : MonoBehaviour
     //advance text (space key or next button)
      public void buttonPress() {
         proceed = true;
+    }
+    public void accessHint() {
+        hintHider.SetActive(false);
+        hintsUsed++;
     }
     //bring up pause menu (escape key or pause button)
     public void pause() {
