@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 04a9d92cefa554241ab78f8c5a18e6c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3691511987390681858
+    second: triangles_0
+  - first:
+      213: -6044066993975068668
+    second: triangles_1
+  - first:
+      213: 6904708947149427391
+    second: triangles_2
+  - first:
+      213: 7408595576108420332
+    second: triangles_3
+  - first:
+      213: 4214115898065203855
+    second: triangles_4
+  - first:
+      213: -2273413132975374932
+    second: triangles_5
+  - first:
+      213: 6052719188142559161
+    second: triangles_6
+  - first:
+      213: -3045594985865084979
+    second: triangles_7
+  - first:
+      213: 1914219160502458264
+    second: triangles_8
+  - first:
+      213: -2837003244938241836
+    second: triangles_9
+  - first:
+      213: -472070503051462164
+    second: triangles_10
+  - first:
+      213: 4147984622022711223
+    second: triangles_11
+  - first:
+      213: 6803930162900419727
+    second: triangles_12
+  - first:
+      213: 7863390739847733359
+    second: triangles_13
+  - first:
+      213: -7876147840310096863
+    second: triangles_14
+  - first:
+      213: -3372904963345525295
+    second: triangles_15
+  - first:
+      213: 2725321975022304807
+    second: triangles_16
+  - first:
+      213: -7614391461266437270
+    second: triangles_17
+  - first:
+      213: -4246070968597867255
+    second: triangles_18
+  - first:
+      213: 2675277833096507007
+    second: triangles_19
+  - first:
+      213: -3072602648540448984
+    second: triangles_20
+  - first:
+      213: 3581626839426909554
+    second: triangles_21
+  - first:
+      213: -6649926906775026493
+    second: triangles_22
+  - first:
+      213: -253172883285821396
+    second: triangles_23
+  - first:
+      213: 7693607252627901416
+    second: triangles_24
+  - first:
+      213: 1922067810683801985
+    second: triangles_25
+  - first:
+      213: -252703867266778992
+    second: triangles_26
+  - first:
+      213: 2876101706202582996
+    second: triangles_27
+  - first:
+      213: -3039608595855367544
+    second: triangles_28
+  - first:
+      213: -8896080579691578719
+    second: triangles_29
+  - first:
+      213: 8770943665376463600
+    second: triangles_30
+  - first:
+      213: 7218452105754009249
+    second: triangles_31
+  - first:
+      213: -5802340425866332264
+    second: triangles_32
+  - first:
+      213: 6963016387606349614
+    second: triangles_33
+  - first:
+      213: 2899427794599389022
+    second: triangles_34
+  - first:
+      213: -5372170813218580317
+    second: triangles_35
+  - first:
+      213: 4955452057045447534
+    second: triangles_36
+  - first:
+      213: 5298867364367824396
+    second: triangles_37
+  - first:
+      213: 7287057389193096410
+    second: triangles_38
+  - first:
+      213: -1105758637736586571
+    second: triangles_39
+  - first:
+      213: 1325874990094591104
+    second: triangles_40
+  - first:
+      213: 5480381293681182315
+    second: triangles_41
+  - first:
+      213: 3998437122814776410
+    second: triangles_42
+  - first:
+      213: 7074244158039297761
+    second: triangles_43
+  - first:
+      213: -2859018225939978960
+    second: triangles_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: triangles_0
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 3788
+        width: 100
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20394841892ea3330800000000000000
+      internalID: 3691511987390681858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_1
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 3749
+        width: 101
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408f37187192f1ca0800000000000000
+      internalID: -6044066993975068668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3674
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb29d48643472df50800000000000000
+      internalID: 6904708947149427391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 3578
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec097e8c6e90d660800000000000000
+      internalID: 7408595576108420332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_4
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 3668
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82b08af41c8b7a30800000000000000
+      internalID: 4214115898065203855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_5
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 3551
+        width: 102
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad7b45fcc63370e0800000000000000
+      internalID: -2273413132975374932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3433
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf8d6e68049ff350800000000000000
+      internalID: 6052719188142559161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_7
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 3415
+        width: 103
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcffcc12f7fdbb5d0800000000000000
+      internalID: -3045594985865084979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_8
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 3366
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897defb3f2ca09a10800000000000000
+      internalID: 1914219160502458264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_9
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 3007
+        width: 103
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d853de6490f0a8d0800000000000000
+      internalID: -2837003244938241836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_10
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 2989
+        width: 100
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce97dace06ed279f0800000000000000
+      internalID: -472070503051462164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_11
+      rect:
+        serializedVersion: 2
+        x: 3121
+        y: 2964
+        width: 95
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b75279690a909930800000000000000
+      internalID: 4147984622022711223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_12
+      rect:
+        serializedVersion: 2
+        x: 3647
+        y: 2926
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84ce343f6a6c6e50800000000000000
+      internalID: 6803930162900419727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2819
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6068b24730602d60800000000000000
+      internalID: 7863390739847733359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_14
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2779
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c4bd3d44d42b290800000000000000
+      internalID: -7876147840310096863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_15
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 2624
+        width: 92
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d553a66ec80131d0800000000000000
+      internalID: -3372904963345525295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_16
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 2516
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e35cb95e942d520800000000000000
+      internalID: 2725321975022304807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_17
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2214
+        width: 103
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b427a0f4f345690800000000000000
+      internalID: -7614391461266437270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_18
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 2253
+        width: 103
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90510a163fce215c0800000000000000
+      internalID: -4246070968597867255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_19
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 2252
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ea135d30f702520800000000000000
+      internalID: 2675277833096507007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_20
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 2309
+        width: 102
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82772d5ab2ceb55d0800000000000000
+      internalID: -3072602648540448984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_21
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 2079
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275cb0a52ae74b130800000000000000
+      internalID: 3581626839426909554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_22
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1799
+        width: 103
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4cc5b06b6b6b3a0800000000000000
+      internalID: -6649926906775026493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_23
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 1756
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28bcf0aa9c8c7cf0800000000000000
+      internalID: -253172883285821396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_24
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 1700
+        width: 100
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb4146a80f25ca60800000000000000
+      internalID: 7693607252627901416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_25
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 1669
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18155028d7e8caa10800000000000000
+      internalID: 1922067810683801985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_26
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1589
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098323eeb273e7cf0800000000000000
+      internalID: -252703867266778992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_27
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1577
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df89187347f9e720800000000000000
+      internalID: 2876101706202582996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_28
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 1341
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88221db261421d5d0800000000000000
+      internalID: -3039608595855367544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_29
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 1257
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa7b32a8d5ca8480800000000000000
+      internalID: -8896080579691578719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_30
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1192
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa0abf0bc6a8b970800000000000000
+      internalID: 8770943665376463600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_31
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1068
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae53a7f1f71d2460800000000000000
+      internalID: 7218452105754009249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_32
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1041
+        width: 100
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8973952ff12f97fa0800000000000000
+      internalID: -5802340425866332264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_33
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 1091
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27008c438a91a060800000000000000
+      internalID: 6963016387606349614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_34
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 969
+        width: 104
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57adf4a736dc3820800000000000000
+      internalID: 2899427794599389022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_35
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 690
+        width: 100
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8926dbb173275b0800000000000000
+      internalID: -5372170813218580317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_36
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 746
+        width: 101
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e633ca9046d45c440800000000000000
+      internalID: 4955452057045447534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_37
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 391
+        width: 103
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06fd051bcb598940800000000000000
+      internalID: 5298867364367824396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_38
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 444
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc6db44614d02560800000000000000
+      internalID: 7287057389193096410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_39
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 336
+        width: 100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b21466a06e87a0f0800000000000000
+      internalID: -1105758637736586571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_40
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 305
+        width: 102
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084a9295744766210800000000000000
+      internalID: 1325874990094591104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_41
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 318
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66009310c93e0c40800000000000000
+      internalID: 5480381293681182315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_42
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 223
+        width: 96
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a541c1ae06d4d7730800000000000000
+      internalID: 3998437122814776410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_43
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 179
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee805ea493cc2260800000000000000
+      internalID: 7074244158039297761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangles_44
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 239
+        width: 101
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035ea7c321ab258d0800000000000000
+      internalID: -2859018225939978960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      triangles_0: 3691511987390681858
+      triangles_1: -6044066993975068668
+      triangles_10: -472070503051462164
+      triangles_11: 4147984622022711223
+      triangles_12: 6803930162900419727
+      triangles_13: 7863390739847733359
+      triangles_14: -7876147840310096863
+      triangles_15: -3372904963345525295
+      triangles_16: 2725321975022304807
+      triangles_17: -7614391461266437270
+      triangles_18: -4246070968597867255
+      triangles_19: 2675277833096507007
+      triangles_2: 6904708947149427391
+      triangles_20: -3072602648540448984
+      triangles_21: 3581626839426909554
+      triangles_22: -6649926906775026493
+      triangles_23: -253172883285821396
+      triangles_24: 7693607252627901416
+      triangles_25: 1922067810683801985
+      triangles_26: -252703867266778992
+      triangles_27: 2876101706202582996
+      triangles_28: -3039608595855367544
+      triangles_29: -8896080579691578719
+      triangles_3: 7408595576108420332
+      triangles_30: 8770943665376463600
+      triangles_31: 7218452105754009249
+      triangles_32: -5802340425866332264
+      triangles_33: 6963016387606349614
+      triangles_34: 2899427794599389022
+      triangles_35: -5372170813218580317
+      triangles_36: 4955452057045447534
+      triangles_37: 5298867364367824396
+      triangles_38: 7287057389193096410
+      triangles_39: -1105758637736586571
+      triangles_4: 4214115898065203855
+      triangles_40: 1325874990094591104
+      triangles_41: 5480381293681182315
+      triangles_42: 3998437122814776410
+      triangles_43: 7074244158039297761
+      triangles_44: -2859018225939978960
+      triangles_5: -2273413132975374932
+      triangles_6: 6052719188142559161
+      triangles_7: -3045594985865084979
+      triangles_8: 1914219160502458264
+      triangles_9: -2837003244938241836
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
