@@ -446,7 +446,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Querido amigo,\r\nNo puedo decidir con quien quiero salir. Necesito ayuda!\r\nPor
     la presente, quisiera nominar a tres de mis conocidas.\r\nQuedo a su disposici\xF3n
-    si decides ayudar.\r\nAtentamente,\r\nTo Amigo"
+    si decides ayudar.\r\nAtentamente,\r\nTu amigo"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

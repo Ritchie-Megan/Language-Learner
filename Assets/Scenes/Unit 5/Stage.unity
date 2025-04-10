@@ -1913,7 +1913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &468013369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   finalStats: {fileID: 468013368}
   mistakesText: {fileID: 868708201}
   elimText: {fileID: 1068738824}
-  hintText: {fileID: 1068738824}
+  hintText: {fileID: 1525738752}
   pauseMenu: {fileID: 2085778384}
 --- !u!114 &552261094
 MonoBehaviour:
@@ -3342,7 +3342,7 @@ GameObject:
   - component: {fileID: 868708202}
   - component: {fileID: 868708201}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Mistakes Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3912,7 +3912,7 @@ GameObject:
   - component: {fileID: 1068738825}
   - component: {fileID: 1068738824}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Eliminations Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5404,7 +5404,7 @@ GameObject:
   - component: {fileID: 1525738753}
   - component: {fileID: 1525738752}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Hints Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
