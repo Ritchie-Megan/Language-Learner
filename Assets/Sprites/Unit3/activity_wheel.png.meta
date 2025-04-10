@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a63ce2d9c0a91ef4a9bbbac9c00e2516
+guid: 07a1ea4ad07f0c2408887d8629573bca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 51906343251135905
-    second: stage_background_0
+      213: -85935650232665279
+    second: activity_wheel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stage_background_0
+      name: activity_wheel_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 794
+        x: 58
+        y: 26
+        width: 910
+        height: 914
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1adc21f4b8868b000800000000000000
-      internalID: 51906343251135905
+      spriteID: 14bf65e3bf1becef0800000000000000
+      internalID: -85935650232665279
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      stage_background_0: 51906343251135905
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
