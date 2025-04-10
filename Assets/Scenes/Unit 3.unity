@@ -9102,16 +9102,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203130513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1777654361}
+  m_Father: {fileID: 1243701543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -255, y: 190}
+  m_AnchoredPosition: {x: 118.99997, y: 21.732544}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203130515
@@ -9498,6 +9498,7 @@ GameObject:
   - component: {fileID: 1243701543}
   - component: {fileID: 1243701545}
   - component: {fileID: 1243701544}
+  - component: {fileID: 1243701546}
   m_Layer: 5
   m_Name: MainBackPanel
   m_TagString: Untagged
@@ -9520,6 +9521,7 @@ RectTransform:
   - {fileID: 1430178068}
   - {fileID: 124473777}
   - {fileID: 103852394}
+  - {fileID: 1203130514}
   - {fileID: 1300811513}
   - {fileID: 119549714}
   - {fileID: 49207101}
@@ -9569,6 +9571,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243701542}
   m_CullTransparentMesh: 1
+--- !u!114 &1243701546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243701542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c686fc3932ead64f8d14db8ee62b98c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1246144213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13474,10 +13488,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -13521,7 +13535,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1243701543}
-  - {fileID: 1203130514}
   - {fileID: 1767391254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
