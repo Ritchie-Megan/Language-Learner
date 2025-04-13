@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 1b0533f65b450eb449ddff7cee9d520d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2461389420208624042
+    second: Art Room Spritesheet 8_0
+  - first:
+      213: 6292432636250826523
+    second: Art Room Spritesheet 8_1
+  - first:
+      213: -6677884827415659437
+    second: Art Room Spritesheet 8_2
+  - first:
+      213: -4916167392990746070
+    second: Art Room Spritesheet 8_3
+  - first:
+      213: 2254049901883225168
+    second: Art Room Spritesheet 8_4
+  - first:
+      213: -5603049401413740237
+    second: Art Room Spritesheet 8_5
+  - first:
+      213: -899387333593892702
+    second: Art Room Spritesheet 8_6
+  - first:
+      213: -8758989330198126386
+    second: Art Room Spritesheet 8_7
+  - first:
+      213: 7097805486338272022
+    second: Art Room Spritesheet 8_8
+  - first:
+      213: -2278615056224151752
+    second: Art Room Spritesheet 8_9
+  - first:
+      213: 6284048202529455761
+    second: Art Room Spritesheet 8_10
+  - first:
+      213: 3440859627933074156
+    second: Art Room Spritesheet 8_11
+  - first:
+      213: 8764038210125958651
+    second: Art Room Spritesheet 8_12
+  - first:
+      213: -3218803590520361313
+    second: Art Room Spritesheet 8_13
+  - first:
+      213: -737516945283886315
+    second: Art Room Spritesheet 8_14
+  - first:
+      213: 3646182636815535502
+    second: Art Room Spritesheet 8_15
+  - first:
+      213: 6874518244332683827
+    second: Art Room Spritesheet 8_16
+  - first:
+      213: -5142099337664061525
+    second: Art Room Spritesheet 8_17
+  - first:
+      213: -7003630752827539417
+    second: Art Room Spritesheet 8_18
+  - first:
+      213: 2070387636347372602
+    second: Art Room Spritesheet 8_19
+  - first:
+      213: 3986825013697275873
+    second: Art Room Spritesheet 8_20
+  - first:
+      213: 4531171272331528036
+    second: Art Room Spritesheet 8_21
+  - first:
+      213: -4268657061512515082
+    second: Art Room Spritesheet 8_22
+  - first:
+      213: 4353715233968103167
+    second: Art Room Spritesheet 8_23
+  - first:
+      213: 37358505139513359
+    second: Art Room Spritesheet 8_24
+  - first:
+      213: -3023477358589380319
+    second: Art Room Spritesheet 8_25
+  - first:
+      213: -6691804464054022391
+    second: Art Room Spritesheet 8_26
+  - first:
+      213: -6038253484455524732
+    second: Art Room Spritesheet 8_27
+  - first:
+      213: -1627981471713411240
+    second: Art Room Spritesheet 8_28
+  - first:
+      213: 5563031203404512567
+    second: Art Room Spritesheet 8_29
+  - first:
+      213: 6787346597048625683
+    second: Art Room Spritesheet 8_30
+  - first:
+      213: 1657660657495188009
+    second: Art Room Spritesheet 8_31
+  - first:
+      213: 5524119033660204977
+    second: Art Room Spritesheet 8_32
+  - first:
+      213: 8661685840216334146
+    second: Art Room Spritesheet 8_33
+  - first:
+      213: -7184788887470685834
+    second: Art Room Spritesheet 8_34
+  - first:
+      213: -3929158007533585263
+    second: Art Room Spritesheet 8_35
+  - first:
+      213: 2334587886989619565
+    second: Art Room Spritesheet 8_36
+  - first:
+      213: 3705605469074863335
+    second: Art Room Spritesheet 8_37
+  - first:
+      213: -961583395420044908
+    second: Art Room Spritesheet 8_38
+  - first:
+      213: 6220759723080856036
+    second: Art Room Spritesheet 8_39
+  - first:
+      213: 788452897075371810
+    second: Art Room Spritesheet 8_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 902
+        width: 169
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1907df2ac982220800000000000000
+      internalID: 2461389420208624042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 931
+        width: 142
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b172ec8d426335750800000000000000
+      internalID: 6292432636250826523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_2
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 943
+        width: 112
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c3be261236353a0800000000000000
+      internalID: -6677884827415659437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_3
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 921
+        width: 142
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2aad649dc346cbb0800000000000000
+      internalID: -4916167392990746070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_4
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 921
+        width: 143
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054f0cb717ef74f10800000000000000
+      internalID: 2254049901883225168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_5
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 929
+        width: 12
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339d4c17148fd32b0800000000000000
+      internalID: -5603049401413740237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_6
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 928
+        width: 17
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a876a93cfbb483f0800000000000000
+      internalID: -899387333593892702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_7
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 929
+        width: 9
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0aa1e7c91d17680800000000000000
+      internalID: -8758989330198126386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_8
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 824
+        width: 150
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61be20aeb78708260800000000000000
+      internalID: 7097805486338272022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 699
+        width: 95
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83717e1ddabb060e0800000000000000
+      internalID: -2278615056224151752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_10
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 796
+        width: 110
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e333fbb8c653750800000000000000
+      internalID: 6284048202529455761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_11
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 806
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce20fe4e99360cf20800000000000000
+      internalID: 3440859627933074156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_12
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 786
+        width: 110
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd0288715e10a970800000000000000
+      internalID: 8764038210125958651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_13
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 786
+        width: 110
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e284930338453d0800000000000000
+      internalID: -3218803590520361313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_14
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 670
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513d58cee30d3c5f0800000000000000
+      internalID: -737516945283886315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 680
+        width: 65
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d46953ac7d99230800000000000000
+      internalID: 3646182636815535502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_16
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 756
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3324463abe1376f50800000000000000
+      internalID: 6874518244332683827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_17
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 754
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf13ca75e793a8b0800000000000000
+      internalID: -5142099337664061525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_18
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 757
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72086b7efea1ece90800000000000000
+      internalID: -7003630752827539417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 520
+        width: 64
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3488dbf59e7bbc10800000000000000
+      internalID: 2070387636347372602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 594
+        width: 184
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e761131a3c045730800000000000000
+      internalID: 3986825013697275873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_21
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 650
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46786c7d344f1ee30800000000000000
+      internalID: 4531171272331528036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_22
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 646
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f17594d40fa2c4c0800000000000000
+      internalID: -4268657061512515082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_23
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 648
+        width: 43
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe10e530f08b6c30800000000000000
+      internalID: 4353715233968103167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_24
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 649
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f082e2ccc59b48000800000000000000
+      internalID: 37358505139513359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 520
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129f7d68c537a06d0800000000000000
+      internalID: -3023477358589380319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_26
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 520
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fcfad6b4fe123a0800000000000000
+      internalID: -6691804464054022391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 490
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486834ba270d33ca0800000000000000
+      internalID: -6038253484455524732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_28
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 493
+        width: 77
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fba951a7f3869e0800000000000000
+      internalID: -1627981471713411240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_29
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 252
+        width: 321
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73df651c76bd33d40800000000000000
+      internalID: 5563031203404512567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 458
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a2a84e4cf713e50800000000000000
+      internalID: 6787346597048625683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_31
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 454
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9222428d591310710800000000000000
+      internalID: 1657660657495188009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_32
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 356
+        width: 71
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b76a4a3efc99ac40800000000000000
+      internalID: 5524119033660204977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_33
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 366
+        width: 94
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f102e416d743870800000000000000
+      internalID: 8661685840216334146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_34
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 301
+        width: 146
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671c220d2908a4c90800000000000000
+      internalID: -7184788887470685834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_35
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 301
+        width: 147
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c34961c93d879c0800000000000000
+      internalID: -3929158007533585263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 10
+        width: 320
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6132f4605f166020800000000000000
+      internalID: 2334587886989619565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_37
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 7
+        width: 132
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4b3fd7a84fc6330800000000000000
+      internalID: 3705605469074863335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 22
+        width: 84
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491031e1ff4c7a2f0800000000000000
+      internalID: -961583395420044908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_39
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 7
+        width: 132
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1ba475204945650800000000000000
+      internalID: 6220759723080856036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Art Room Spritesheet 8_40
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 22
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f1e448bb521fa00800000000000000
+      internalID: 788452897075371810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Art Room Spritesheet 8_0: 2461389420208624042
+      Art Room Spritesheet 8_1: 6292432636250826523
+      Art Room Spritesheet 8_10: 6284048202529455761
+      Art Room Spritesheet 8_11: 3440859627933074156
+      Art Room Spritesheet 8_12: 8764038210125958651
+      Art Room Spritesheet 8_13: -3218803590520361313
+      Art Room Spritesheet 8_14: -737516945283886315
+      Art Room Spritesheet 8_15: 3646182636815535502
+      Art Room Spritesheet 8_16: 6874518244332683827
+      Art Room Spritesheet 8_17: -5142099337664061525
+      Art Room Spritesheet 8_18: -7003630752827539417
+      Art Room Spritesheet 8_19: 2070387636347372602
+      Art Room Spritesheet 8_2: -6677884827415659437
+      Art Room Spritesheet 8_20: 3986825013697275873
+      Art Room Spritesheet 8_21: 4531171272331528036
+      Art Room Spritesheet 8_22: -4268657061512515082
+      Art Room Spritesheet 8_23: 4353715233968103167
+      Art Room Spritesheet 8_24: 37358505139513359
+      Art Room Spritesheet 8_25: -3023477358589380319
+      Art Room Spritesheet 8_26: -6691804464054022391
+      Art Room Spritesheet 8_27: -6038253484455524732
+      Art Room Spritesheet 8_28: -1627981471713411240
+      Art Room Spritesheet 8_29: 5563031203404512567
+      Art Room Spritesheet 8_3: -4916167392990746070
+      Art Room Spritesheet 8_30: 6787346597048625683
+      Art Room Spritesheet 8_31: 1657660657495188009
+      Art Room Spritesheet 8_32: 5524119033660204977
+      Art Room Spritesheet 8_33: 8661685840216334146
+      Art Room Spritesheet 8_34: -7184788887470685834
+      Art Room Spritesheet 8_35: -3929158007533585263
+      Art Room Spritesheet 8_36: 2334587886989619565
+      Art Room Spritesheet 8_37: 3705605469074863335
+      Art Room Spritesheet 8_38: -961583395420044908
+      Art Room Spritesheet 8_39: 6220759723080856036
+      Art Room Spritesheet 8_4: 2254049901883225168
+      Art Room Spritesheet 8_40: 788452897075371810
+      Art Room Spritesheet 8_5: -5603049401413740237
+      Art Room Spritesheet 8_6: -899387333593892702
+      Art Room Spritesheet 8_7: -8758989330198126386
+      Art Room Spritesheet 8_8: 7097805486338272022
+      Art Room Spritesheet 8_9: -2278615056224151752
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
