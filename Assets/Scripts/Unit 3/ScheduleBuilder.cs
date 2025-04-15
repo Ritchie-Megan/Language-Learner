@@ -6,21 +6,41 @@ using TMPro;
 
 public class ScheduleBuilder : MonoBehaviour
 {
+    
+    public GameObject holderPrefab;
+    public GameObject draggablePrefab;
+    public Transform schedulePanel;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         ScheduleBuilderBackend.Schedule schedule = new ScheduleBuilderBackend.Schedule();
+        /* PRINT SCHEDULE
         Debug.Log("Season: " + schedule._season);
+        foreach (List<string> list in schedule._schedule) {
+            string currentTimeActivity = "";
+            foreach (string activity in list) {
+                currentTimeActivity += activity + ", ";
+            }
+            Debug.Log(currentTimeActivity);
+        }
+        */
+        loadScheduleIntoScene(schedule._schedule);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void loadScheduleIntoScene(List<List<string>> schedule) {
+    foreach (List<string> list in schedule) {
+        foreach (string activity in list) {
+            GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
+        }
     }
+}
 
 
 }
+
 
 namespace ScheduleBuilderBackend {
     public class Schedule {
@@ -79,7 +99,7 @@ namespace ScheduleBuilderBackend {
             //makes the empty schedule
             //this is for the number of hours in a day(starts at 8am)
             //this creates a 2D list that is _schedule[timeOfDay][DayOfTheWeek]
-            for (int i = 0; i < 12; i ++) {
+            for (int i = 0; i < 13; i ++) {
                 List<string> newList = new List<string>();
                 //this is for the days of the week, monday-sunday
                 for (int j = 0; j < 7; j++) {
@@ -179,9 +199,10 @@ namespace ScheduleBuilderBackend {
                     workDay = rand.Next(0,7);
                 }
                 daysWorking.Add(workDay);
-                int workStartTime = rand.Next(0,13);
                 //makes to work part time, 1-4 hours per shift
                 int workLength = rand.Next(1,5);
+                int workStartTime = rand.Next(0,13-workLength);
+                
 
                 //once there is a clear space, it moves on, otherwise it resets the potential work schedule
                 while (!checkIfFree(workDay, workStartTime, workLength)) {
@@ -189,8 +210,8 @@ namespace ScheduleBuilderBackend {
                     while (daysWorking.Contains(workDay)) {
                         workDay = rand.Next(0,7);
                     }
-                    workStartTime = rand.Next(0,13);
                     workLength = rand.Next(1,5);
+                    workStartTime = rand.Next(0,13-workLength);
                 }
                 //once it finds a space to work. _schedule = [TimeOfDay][DayOfWeek]
                 for (int j = 0; j < workLength; j++) {
@@ -204,28 +225,29 @@ namespace ScheduleBuilderBackend {
             //solo activites
             for (int i = 0; i < 2; i++) {
                 randomDay = rand.Next(0,7);
-                randomTime = rand.Next(0,13);
                 //random length of 1-3 hours
                 randomLength = rand.Next(1,4);
+                randomTime = rand.Next(0,13-randomLength);
                 while(!checkIfFree(randomDay,randomTime, randomLength)) {
                     randomDay = rand.Next(0,7);
-                    randomTime = rand.Next(0,13);
                     //random length of 1-3 hours
                     randomLength = rand.Next(1,4);
+                    randomTime = rand.Next(0,13-randomLength);
                 }
                 int randomActivity = rand.Next(0, _listOfSoloActivities.Count);
                 _schedule[randomTime][randomDay] = _listOfSoloActivities[randomActivity];
             }
             //random study time
             randomDay = rand.Next(0,7);
-            randomTime = rand.Next(0,13);
             //random length of 1-3 hours
             randomLength = rand.Next(1,4);
+            randomTime = rand.Next(0,13 - randomLength);
             while(!checkIfFree(randomDay,randomTime, randomLength)) {
                 randomDay = rand.Next(0,7);
-                randomTime = rand.Next(0,13);
                 //random length of 1-3 hours
                 randomLength = rand.Next(1,4);
+                randomTime = rand.Next(0,13- randomLength);
+                
             }
             for (int j = 0; j < randomLength; j++) {
                 _schedule[randomTime + j][randomDay] = "estudiar";
@@ -358,6 +380,10 @@ namespace ScheduleBuilderBackend {
 
         //returns if there is a free space within the given time frame
         private bool checkIfFree(int day, int time, int lengthOfTime) {
+            //if the length of time exceeds the day, then obviously no
+            if ((time + lengthOfTime) > 12) {
+                return false;
+            }
             //_schedule[timeOfDay][DayOfTheWeek]
             for (int i = 0; i < lengthOfTime; i++) {
                 if (_schedule[time + i][day] != "") {
