@@ -12,15 +12,7 @@ public class ScheduleBuilder : MonoBehaviour
     public Transform schedulePanel;
     public TextMeshProUGUI seasonText;
     public FriendBuilder friendbuilder;
-
-    //friend plan stuff
     private List<FriendBuilder.Friend> friendlist;
-    private int friendIndex = 0;
-    public TextMeshProUGUI speechBox;
-    public Image friendBody;
-    public Image friendHair;
-    public Image friendOutfit;
-    public Image friendFace;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

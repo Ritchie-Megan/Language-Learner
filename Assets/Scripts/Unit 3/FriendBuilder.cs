@@ -7,7 +7,9 @@ using System.Linq;
 
 public class FriendBuilder : MonoBehaviour
 {
-    //friend plan stuff
+    public GameObject draggablePrefab;
+    public Transform activityPanel;
+
     private List<FriendBuilder.Friend> friendlist;
     private int friendIndex = 0;
     public TextMeshProUGUI speechBox;
@@ -21,9 +23,8 @@ public class FriendBuilder : MonoBehaviour
     public Sprite[] hairSprites;
     public Sprite[] kitSprites;
 
+    //makeFriends will be called by ScheduleBuilder
     //creates a list of friends with corresponding plan messages
-    //accept and reject plans are both in this list, in a random order
-    //initiates the display stuff
     public List<Friend> makeFriends(Dictionary<string, List<int>> _acceptList, Dictionary<string, List<int>> _denyList) {
         //temp versions of lists
         //so we don't remove objects from the actual lists
@@ -143,7 +144,12 @@ public class FriendBuilder : MonoBehaviour
 
     public void acceptActivity() {
         //spawn the activity
-
+        GameObject newDraggable = Instantiate(draggablePrefab, activityPanel);
+        string plan = friendlist[friendIndex].getPlan();
+        //assign text to show activity
+        newDraggable.GetComponentInChildren<TextMeshProUGUI>().text = plan;
+        //name the instance that activity
+        newDraggable.name = plan;
     }
 
     public void rejectActivity() {
@@ -259,6 +265,9 @@ public class FriendBuilder : MonoBehaviour
         }
         public Sprite getKit() {
             return _kit;
+        }
+        public string getPlan() {
+            return _plan;
         }
         public string getMessage() {
             return message;
