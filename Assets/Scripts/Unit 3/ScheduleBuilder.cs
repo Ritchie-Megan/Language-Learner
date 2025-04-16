@@ -2,21 +2,33 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using TMPro; 
+using TMPro;
+using System.Linq;
 
 public class ScheduleBuilder : MonoBehaviour
 {
-    
     public GameObject holderPrefab;
     public GameObject draggablePrefab;
     public Transform schedulePanel;
+    public TextMeshProUGUI seasonText;
+    public FriendBuilder friendbuilder;
+
+    //friend plan stuff
+    private List<FriendBuilder.Friend> friendlist;
+    private int friendIndex = 0;
+    public TextMeshProUGUI speechBox;
+    public Image friendBody;
+    public Image friendHair;
+    public Image friendOutfit;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
         ScheduleBuilderBackend.Schedule schedule = new ScheduleBuilderBackend.Schedule();
-        /* PRINT SCHEDULE
+        loadScheduleIntoScene(schedule._schedule, schedule._season);
+        
+        //PRINT SCHEDULE
+        /*
         Debug.Log("Season: " + schedule._season);
         foreach (List<string> list in schedule._schedule) {
             string currentTimeActivity = "";
@@ -26,21 +38,73 @@ public class ScheduleBuilder : MonoBehaviour
             Debug.Log(currentTimeActivity);
         }
         */
-        //loadScheduleIntoScene(schedule._schedule);
 
+        friendlist = friendbuilder.loadFriends(schedule._acceptInvitation, schedule._denyInvitation);
+        loadFriendsIntoScene(friendlist);
+
+        //PRINT FRIEND PLANS
+        /*
+        Debug.Log("Accept plans:");
+        foreach (var plan in schedule._acceptInvitation) {
+            string key = plan.Key;
+            Debug.Log("Plan: "+key);
+            Debug.Log("Day: "+schedule._acceptInvitation[key][0]);
+            Debug.Log("Time: "+schedule._acceptInvitation[key][1]);
+        }
+        Debug.Log("Reject plans:");
+        foreach (var plan in schedule._denyInvitation) {
+            string key = plan.Key;
+            Debug.Log("Plan: "+key);
+            Debug.Log("Day: "+schedule._denyInvitation[key][0]);
+            Debug.Log("Time: "+schedule._denyInvitation[key][1]);
+        }
+        */
     }
-    
-    /*
-    public void loadScheduleIntoScene(List<List<string>> schedule) {
+
+    public void loadScheduleIntoScene(List<List<string>> schedule, string season) {
+        seasonText.text = "Season: " + season;
         foreach (List<string> list in schedule) {
             foreach (string activity in list) {
                 GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
+                if(!string.IsNullOrEmpty(activity)) {
+                    newActivityHolder.GetComponentInChildren<TextMeshProUGUI>().text = activity;
+                }
             }
         }
     }
-    */
 
+    public void loadFriendsIntoScene(List<FriendBuilder.Friend> friendlist) {
+        friendIndex = 0;
+        setFriend(0);
+    }
 
+    public void setFriend(int index) {
+        friendBody.sprite = friendlist[index].getBody();
+        friendOutfit.sprite = friendlist[index].getKit();
+        friendHair.sprite = friendlist[index].getHair();
+
+        speechBox.text = friendlist[index].getMessage();
+    }
+
+    public void friendBack() {
+        if(friendIndex > 0) {
+            friendIndex--;
+        }
+        else {
+            friendIndex = friendlist.Count()-1;
+        }
+        setFriend(friendIndex);
+    }
+
+    public void friendForward() {
+        if(friendIndex < friendlist.Count()-1) {
+            friendIndex++;
+        }
+        else {
+            friendIndex = 0;
+        }
+        setFriend(friendIndex);
+    }
 }
 
 
@@ -113,7 +177,7 @@ namespace ScheduleBuilderBackend {
             //add classes and work
             System.Random rand = new System.Random();
             //---CLASSES---
-            //ranomizes the number of classes
+            //randomizes the number of classes
             int randNum = rand.Next(3,6);
             int randomDay;
             int randomTime;
