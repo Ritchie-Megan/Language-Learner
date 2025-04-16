@@ -7,11 +7,16 @@ using System.Linq;
 
 public class FriendBuilder : MonoBehaviour
 {
+    
+    private List<Friend> friendlist;
+    private int friendIndex = 0;
+    public int wrongCount = 0;
+
+    //things in the scene
     public GameObject draggablePrefab;
     public Transform activityPanel;
-
-    private List<FriendBuilder.Friend> friendlist;
-    private int friendIndex = 0;
+    public GameObject acceptButton;
+    public GameObject rejectButton;
     public TextMeshProUGUI speechBox;
     public Image friendBody;
     public Image friendHair;
@@ -45,7 +50,6 @@ public class FriendBuilder : MonoBehaviour
             //choose randomly between accept and deny
             int isConflict = rand.Next(0, 10);
             int randomPlan;
-            bool shouldAccept;
             Friend tempFriend;
 
             //if we've chosen a plan with no conflicts and that plan exists,
@@ -53,13 +57,13 @@ public class FriendBuilder : MonoBehaviour
             //in this case the plan should be accepted
             if ((isConflict < 5 && acceptList.Count > 0) || (denyList.Count() == 0)) {
                 //choose from accept list
-                shouldAccept = true;
                 randomPlan = rand.Next(0, acceptList.Count);
                 string planKey = acceptList.ElementAt(randomPlan).Key;
                 int date = acceptList[planKey][0];
                 int time = acceptList[planKey][1];
+                int conflict = acceptList[planKey][2];
                 //make a new friend with a random appearance who stores the plan
-                tempFriend = new Friend(planKey, date, time, shouldAccept, body, hair, kit);
+                tempFriend = new Friend(planKey, date, time, body, hair, kit, conflict);
 
                 //remove plan from list
                 acceptList.Remove(planKey);
@@ -67,13 +71,13 @@ public class FriendBuilder : MonoBehaviour
             //in this case the plan should be denied
             else {
                 //choose from deny list
-                shouldAccept = false;
                 randomPlan = rand.Next(0, denyList.Count);
                 string planKey = denyList.ElementAt(randomPlan).Key;
                 int date = denyList[planKey][0];
                 int time = denyList[planKey][1];
+                int conflict = denyList[planKey][2];
                 //make a new friend with a random appearance who stores the plan
-                tempFriend = new Friend(planKey, date, time, shouldAccept, body, hair, kit);
+                tempFriend = new Friend(planKey, date, time, body, hair, kit, conflict);
 
                 //remove plan from list
                 denyList.Remove(planKey);
@@ -85,7 +89,17 @@ public class FriendBuilder : MonoBehaviour
         
         friendlist = friendList;
         loadFriendsIntoScene();
-        return friendList;
+
+        //Print out new list
+        /*
+        Debug.Log("Friend list from FriendBuilder:");
+        foreach (Friend pal in friendlist) {
+            string plan = pal._plan;
+            Debug.Log(plan);
+        }
+        */
+
+        return friendlist;
     }
 
     public void loadFriendsIntoScene() {
@@ -95,11 +109,21 @@ public class FriendBuilder : MonoBehaviour
     
     public void setFriend(int index) {
         if(index >= 0) {
-            friendBody.sprite = friendlist[index].getBody();
-            friendOutfit.sprite = friendlist[index].getKit();
-            friendHair.sprite = friendlist[index].getHair();
+            friendBody.sprite = friendlist[index]._body;
+            friendOutfit.sprite = friendlist[index]._kit;
+            friendHair.sprite = friendlist[index]._hair;
 
-            speechBox.text = friendlist[index].getMessage();
+            speechBox.text = friendlist[index].message;
+            
+            //display or not display accept/reject buttons
+            if(friendlist[index].accepted) {
+                acceptButton.SetActive(false);
+                rejectButton.SetActive(false);
+            }
+            else {
+                acceptButton.SetActive(true);
+                rejectButton.SetActive(true);
+            }
         }
         else {
             speechBox.text = "";
@@ -143,48 +167,93 @@ public class FriendBuilder : MonoBehaviour
     }
 
     public void acceptActivity() {
-        //spawn the activity
-        GameObject newDraggable = Instantiate(draggablePrefab, activityPanel);
-        string plan = friendlist[friendIndex].getPlan();
-        //assign text to show activity
-        newDraggable.GetComponentInChildren<TextMeshProUGUI>().text = plan;
-        //name the instance that activity
-        newDraggable.name = plan;
+        if(friendlist.Count > 0) {
+            //conflict code 0 means no confict- should be accepted
+            if(friendlist[friendIndex]._conflictCode == 0) {
+                //spawn the activity
+                GameObject newDraggable = Instantiate(draggablePrefab, activityPanel);
+                string plan = friendlist[friendIndex]._plan;
+                //assign text to show activity
+                newDraggable.GetComponentInChildren<TextMeshProUGUI>().text = plan;
+                //name the instance that activity
+                newDraggable.name = plan;
+
+                //mark as accepted
+                friendlist[friendIndex].accepted = true;
+                //reload current friend prompt (accept/reject buttons disappear)
+                setFriend(friendIndex);
+            }
+            //wrong answer
+            else {
+                wrongCount++;
+            }
+        }
     }
 
     public void rejectActivity() {
+        if(friendlist.Count > 0) {
+            //correct answer- the plan has a conflict
+            if(friendlist[friendIndex]._conflictCode != 0) {
+                
+                removeFriend();
+            }
+            //wrong answer
+            else {
+                wrongCount++;
+            }
+        }
+    }
+
+    public void removeFriend() {
         if(friendlist.Count() > 0) {
             //remove the activity from list
             friendlist.Remove(friendlist[friendIndex]);
             //load the next activity in list
             friendForward();
         }
+        else {
+            friendIndex = -1;
+        }
     }
 
     public class Friend
     {
-        Sprite _body;
-        Sprite _hair;
-        Sprite _kit;
+        public Sprite _body;
+        public Sprite _hair;
+        public Sprite _kit;
 
-        string _plan;
-        int _date;
-        int _time;
-        bool _accept;
+        public string _plan;
+        public int _date;
+        public int _time;
+        public int _conflictCode;
 
-        string message;
+        public string message;
+        public bool accepted = false;
 
-        public Friend(string plan, int date, int time, bool accept, Sprite body, Sprite hair, Sprite kit) {
+        public Friend(string plan, int date, int time, Sprite body, Sprite hair, Sprite kit, int conflictCode) {
             _plan = plan;
             _date = date;
             _time = time;
-            _accept = accept;
+            _conflictCode = conflictCode;
 
             _body = body;
             _hair = hair;
             _kit = kit;
 
             //generate message based on data
+            List<string> greetingOptions = new List<string>{
+                "¡Hola! ¿Qué tal si vamos ",
+                "¿Qué te parece ",
+                "Hola amigo. ¿Quieres ",
+                "¿Tienes planes? Tengo ganas de "
+            };
+
+            //choose random greeting
+            System.Random rand = new System.Random();
+            int randNum = rand.Next(0, greetingOptions.Count);
+            bool question = randNum < 3;
+            string greeting = greetingOptions[randNum];
+
             string dayPhrase = "";
             switch (_date) {
             case 0:
@@ -253,33 +322,16 @@ public class FriendBuilder : MonoBehaviour
                     break;
             }
 
+            message = greeting + _plan + " el " + dayPhrase + timePhrase;
 
-            message = "¡Hola! ¿Quieres " + _plan + " el " + dayPhrase + timePhrase + "?";
-        }
-
-        public Sprite getBody() {
-            return _body;
-        }
-        public Sprite getHair() {
-            return _hair;
-        }
-        public Sprite getKit() {
-            return _kit;
-        }
-        public string getPlan() {
-            return _plan;
-        }
-        public string getMessage() {
-            return message;
-        }
-        public int getDate() {
-            return _date;
-        }
-        public int getTime() {
-            return _time;
-        }
-        public bool shouldAccept() {
-            return _accept;
+            if(question) {
+                message += "?";
+            }
+            else {
+                message += ".";
+            }
+            
         }
     };
+
 }

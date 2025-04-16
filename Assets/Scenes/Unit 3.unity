@@ -3574,8 +3574,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584a8de95edb4a4387409773ccee231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongCount: 0
   draggablePrefab: {fileID: 2587996053745911371, guid: 4fc9fafbe133c2644a7ecbb276cdd35d, type: 3}
   activityPanel: {fileID: 1826865228}
+  acceptButton: {fileID: 49207100}
+  rejectButton: {fileID: 943743167}
   speechBox: {fileID: 1203130515}
   friendBody: {fileID: 1294327618}
   friendHair: {fileID: 2014558211}

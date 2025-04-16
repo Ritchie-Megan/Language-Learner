@@ -289,6 +289,11 @@ namespace ScheduleBuilderBackend {
 
             //---FRIENDS ASKING---
             //randomizes friends asking
+            //using the third int in the list for a "conflict code" corresponding to what type of conflict
+            //0 = no conflict
+            //1 = have plans
+            //2 = too cold
+            //3 = too hot
             //  first randomizes conflicting scedules
             //can have up to 3 conflicting schedules(must say no to)
             randNum = rand.Next(0,3);
@@ -305,14 +310,14 @@ namespace ScheduleBuilderBackend {
                     if (_season == "invierno") {
                         int randomActivity = rand.Next(0, _listOfSummerSpringThings.Count);
                         List<int> tempList = new List<int> {
-                            randomDay, randomTime, 1
+                            randomDay, randomTime, 2
                         };
                         _denyInvitation[_listOfSummerSpringThings[randomActivity]] = tempList;
                     }
                     else {
                         int randomActivity = rand.Next(0, _listOfWinterThings.Count);
                         List<int> tempList = new List<int> {
-                            randomDay, randomTime, 1
+                            randomDay, randomTime, 3
                         };
                         _denyInvitation[_listOfWinterThings[randomActivity]] = tempList;
                     }
@@ -346,7 +351,7 @@ namespace ScheduleBuilderBackend {
                 int randomActivity = rand.Next(0, _listOfNeutralActivitiesWithFriends.Count);
                 _schedule[randomTime][randomDay] = _listOfNeutralActivitiesWithFriends[randomActivity];
                 List<int> tempList = new List<int> {
-                    randomDay, randomTime, 1
+                    randomDay, randomTime, 0
                 };
                 _acceptInvitation[_listOfNeutralActivitiesWithFriends[randomActivity]] = tempList;
 
@@ -362,7 +367,7 @@ namespace ScheduleBuilderBackend {
                 if (checkIfFree(randomDay, randomTime, 1)) {
                     _schedule[randomTime][randomDay] = "desayunar";
                     List<int> tempList = new List<int> {
-                        randomDay, randomTime, 1
+                        randomDay, randomTime, 0
                     };
                     _acceptInvitation["desayunar"] = tempList;
                 }
@@ -380,7 +385,7 @@ namespace ScheduleBuilderBackend {
                 if (checkIfFree(randomDay, randomTime, 1)) {
                     _schedule[randomTime][randomDay] = "almorzar";
                     List<int> tempList = new List<int> {
-                        randomDay, randomTime, 1
+                        randomDay, randomTime, 0
                     };
                     _acceptInvitation["almorzar"] = tempList;
                 }
@@ -398,7 +403,7 @@ namespace ScheduleBuilderBackend {
                 if (checkIfFree(randomDay, randomTime, 1)) {
                     _schedule[randomTime][randomDay] = "cenar";
                     List<int> tempList = new List<int> {
-                        randomDay, randomTime, 1
+                        randomDay, randomTime, 0
                     };
                     _acceptInvitation["cenar"] = tempList;
                 }
