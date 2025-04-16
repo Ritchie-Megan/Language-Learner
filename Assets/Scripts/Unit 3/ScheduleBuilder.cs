@@ -25,7 +25,7 @@ public class ScheduleBuilder : MonoBehaviour
     void Start()
     {
         ScheduleBuilderBackend.Schedule schedule = new ScheduleBuilderBackend.Schedule();
-        loadScheduleIntoScene(schedule._schedule, schedule._season);
+        loadScheduleIntoScene(schedule);
         
         //PRINT SCHEDULE
         /*
@@ -61,14 +61,21 @@ public class ScheduleBuilder : MonoBehaviour
         */
     }
 
-    public void loadScheduleIntoScene(List<List<string>> schedule, string season) {
-        seasonText.text = "Season: " + season;
-        foreach (List<string> list in schedule) {
+    public void loadScheduleIntoScene(ScheduleBuilderBackend.Schedule schedule) {
+        seasonText.text = "Season: " + schedule._season;
+        foreach (List<string> list in schedule._schedule) {
             foreach (string activity in list) {
                 GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
-                if(!string.IsNullOrEmpty(activity)) {
+                //if there is an acivity for that hour
+                if(!string.IsNullOrEmpty(activity) && !schedule._acceptInvitation.ContainsKey(activity)) {
+                    //assign text to show activity
                     newActivityHolder.GetComponentInChildren<TextMeshProUGUI>().text = activity;
+                    //make sure the Slot's DropBox destroyed, so no draggable panel can slot to it
+                    Transform dropBox = newActivityHolder.transform.Find("DropBox");
+                    Destroy(dropBox.gameObject);
                 }
+                //name the instance that activity
+                newActivityHolder.name = activity;
             }
         }
     }
@@ -444,7 +451,7 @@ namespace ScheduleBuilderBackend {
             }
         }
 
-        //returns if there is a free space within the given time frame
+        //returns true if there is a free space within the given time frame
         private bool checkIfFree(int day, int time, int lengthOfTime) {
             //if the length of time exceeds the day, then obviously no
             if ((time + lengthOfTime) > 12) {
