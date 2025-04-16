@@ -62,7 +62,7 @@ public class ScheduleBuilder : MonoBehaviour
     }
 
     public void loadScheduleIntoScene(ScheduleBuilderBackend.Schedule schedule) {
-        seasonText.text = "Season: " + schedule._season;
+        seasonText.text = "Estación: " + schedule._season;
         foreach (List<string> list in schedule._schedule) {
             foreach (string activity in list) {
                 GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
