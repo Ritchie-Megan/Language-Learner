@@ -263,7 +263,7 @@ public class FriendBuilder : MonoBehaviour
                 dayPhrase = "martes";
                 break;
             case 2:
-                dayPhrase = "el lunes";
+                dayPhrase = "miércoles";
                 break;
             case 3:
                 dayPhrase = "jueves";
