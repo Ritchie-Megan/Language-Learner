@@ -24,7 +24,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
         if (canvas == null) {
-            canvas = FindObjectOfType<Canvas>();
+            canvas = FindFirstObjectByType<Canvas>();
         }
         
     }

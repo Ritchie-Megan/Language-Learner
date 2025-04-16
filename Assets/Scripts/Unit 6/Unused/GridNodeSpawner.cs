@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro; 
-using FamilyTreeBackend;
+using FamilyTree;
 
 public class GridNodeSpawner : MonoBehaviour
 {
@@ -18,18 +18,18 @@ public class GridNodeSpawner : MonoBehaviour
 
     void Start()
     {
-        HashSet<Node> nodes = new HashSet<Node>();
-        generateNodes(nodes);
+        // HashSet<Node> nodes = new HashSet<Node>();
+        // generateNodes(nodes);
     }
 
-    public void generateNodes(HashSet<FamilyTreeBackend.Node> nodes) {
+    public void generateNodes(HashSet<FamilyTree.Node> nodes) {
         
         //adjust cell size depending on number of nodes
         int totalNodes = nodes.Count;
         //AdjustGridCellSize(totalNodes);
 
         //now place them in grid
-        foreach (FamilyTreeBackend.Node person in nodes) {
+        foreach (FamilyTree.Node person in nodes) {
             int generationalLevel = GetGenerationalLevel(person);
             createNodeInGrid(person, generationalLevel);
         }
