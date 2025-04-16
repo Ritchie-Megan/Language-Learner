@@ -7,14 +7,25 @@ using System.Linq;
 
 public class FriendBuilder : MonoBehaviour
 {
-    //list of sprites for their appearance
+    public GameObject draggablePrefab;
+    public Transform activityPanel;
+
+    private List<FriendBuilder.Friend> friendlist;
+    private int friendIndex = 0;
+    public TextMeshProUGUI speechBox;
+    public Image friendBody;
+    public Image friendHair;
+    public Image friendOutfit;
+    public Image friendFace;
+
+    //list of sprites for friend appearance
     public Sprite[] bodySprites;
     public Sprite[] hairSprites;
     public Sprite[] kitSprites;
 
+    //makeFriends will be called by ScheduleBuilder
     //creates a list of friends with corresponding plan messages
-    //accept and reject plans are both in this list, in a random order
-    public List<Friend> loadFriends(Dictionary<string, List<int>> _acceptList, Dictionary<string, List<int>> _denyList) {
+    public List<Friend> makeFriends(Dictionary<string, List<int>> _acceptList, Dictionary<string, List<int>> _denyList) {
         //temp versions of lists
         //so we don't remove objects from the actual lists
         Dictionary<string, List<int>> acceptList = new Dictionary<string, List<int>>(_acceptList);
@@ -71,7 +82,83 @@ public class FriendBuilder : MonoBehaviour
             //add friend to list
             friendList.Add(tempFriend);
         }
+        
+        friendlist = friendList;
+        loadFriendsIntoScene();
         return friendList;
+    }
+
+    public void loadFriendsIntoScene() {
+        friendIndex = 0;
+        setFriend(0);
+    }
+    
+    public void setFriend(int index) {
+        if(index >= 0) {
+            friendBody.sprite = friendlist[index].getBody();
+            friendOutfit.sprite = friendlist[index].getKit();
+            friendHair.sprite = friendlist[index].getHair();
+
+            speechBox.text = friendlist[index].getMessage();
+        }
+        else {
+            speechBox.text = "";
+            friendBody.color = Color.clear;
+            friendHair.color = Color.clear;
+            friendOutfit.color = Color.clear;
+            friendFace.color = Color.clear;
+        }
+    }
+
+    public void friendBack() {
+        if(friendlist.Count() > 0) {
+            if(friendIndex > 0) {
+                friendIndex--;
+            }
+            else {
+                friendIndex = friendlist.Count()-1;
+            }
+        }
+        else {
+            friendIndex = -1;
+        }
+        
+        setFriend(friendIndex);
+    }
+
+    public void friendForward() {
+        if(friendlist.Count() > 0) {
+            if(friendIndex < friendlist.Count()-1) {
+                friendIndex++;
+            }
+            else {
+                friendIndex = 0;
+            }
+        }
+        else {
+            friendIndex = -1;
+        }
+        
+        setFriend(friendIndex);
+    }
+
+    public void acceptActivity() {
+        //spawn the activity
+        GameObject newDraggable = Instantiate(draggablePrefab, activityPanel);
+        string plan = friendlist[friendIndex].getPlan();
+        //assign text to show activity
+        newDraggable.GetComponentInChildren<TextMeshProUGUI>().text = plan;
+        //name the instance that activity
+        newDraggable.name = plan;
+    }
+
+    public void rejectActivity() {
+        if(friendlist.Count() > 0) {
+            //remove the activity from list
+            friendlist.Remove(friendlist[friendIndex]);
+            //load the next activity in list
+            friendForward();
+        }
     }
 
     public class Friend
@@ -178,6 +265,9 @@ public class FriendBuilder : MonoBehaviour
         }
         public Sprite getKit() {
             return _kit;
+        }
+        public string getPlan() {
+            return _plan;
         }
         public string getMessage() {
             return message;

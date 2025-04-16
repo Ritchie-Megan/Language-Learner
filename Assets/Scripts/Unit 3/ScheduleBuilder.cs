@@ -12,14 +12,7 @@ public class ScheduleBuilder : MonoBehaviour
     public Transform schedulePanel;
     public TextMeshProUGUI seasonText;
     public FriendBuilder friendbuilder;
-
-    //friend plan stuff
     private List<FriendBuilder.Friend> friendlist;
-    private int friendIndex = 0;
-    public TextMeshProUGUI speechBox;
-    public Image friendBody;
-    public Image friendHair;
-    public Image friendOutfit;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,8 +32,7 @@ public class ScheduleBuilder : MonoBehaviour
         }
         */
 
-        friendlist = friendbuilder.loadFriends(schedule._acceptInvitation, schedule._denyInvitation);
-        loadFriendsIntoScene(friendlist);
+        friendlist = friendbuilder.makeFriends(schedule._acceptInvitation, schedule._denyInvitation);
 
         //PRINT FRIEND PLANS
         /*
@@ -79,39 +71,7 @@ public class ScheduleBuilder : MonoBehaviour
             }
         }
     }
-
-    public void loadFriendsIntoScene(List<FriendBuilder.Friend> friendlist) {
-        friendIndex = 0;
-        setFriend(0);
-    }
-
-    public void setFriend(int index) {
-        friendBody.sprite = friendlist[index].getBody();
-        friendOutfit.sprite = friendlist[index].getKit();
-        friendHair.sprite = friendlist[index].getHair();
-
-        speechBox.text = friendlist[index].getMessage();
-    }
-
-    public void friendBack() {
-        if(friendIndex > 0) {
-            friendIndex--;
-        }
-        else {
-            friendIndex = friendlist.Count()-1;
-        }
-        setFriend(friendIndex);
-    }
-
-    public void friendForward() {
-        if(friendIndex < friendlist.Count()-1) {
-            friendIndex++;
-        }
-        else {
-            friendIndex = 0;
-        }
-        setFriend(friendIndex);
-    }
+        
 }
 
 
@@ -135,14 +95,14 @@ namespace ScheduleBuilderBackend {
             "esquiar", "patinar sobre hielo"
         };
         public List<string> _listOfNeutralActivitiesWithFriends = new List<string> {
-            "cocinar comedia", "correr", "escuchar música nueva", "estudiar", "jugar al videojuego",
+            "cocinar comida", "correr", "escuchar música nueva", "estudiar", "jugar al videojuego",
             "jugar al tenis", "jugar al fútbol", "ir al gimnasio", "ir al cine",
             "ir de compras", "practicar yoga", "tomar algo", "bailar", "pintar",
             "jugar al golf", "jugar al vóleibol", "jugar al básquetbol"
         };
         public List<string> _listOfSoloActivities = new List<string> {
-            "ayudar mi mama", "hacer ejercicio", "lavar mi ropa", "limpiar mi casa", 
-            "hacer una videollamada con mi abuela", "hablar mi mama"
+            "ayudar a mi mama", "hacer ejercicio", "lavar mi ropa", "limpiar mi casa", 
+            "hacer una videollamada con mi abuela", "hablar con mi mama"
         };
 
 
