@@ -25,35 +25,35 @@ public class FamilyTreeGenerator : MonoBehaviour
             nodeSpawner.generateNodes(root);
         }
 
-        // //send data over to scrollable view
-        // List<String> tempList = new List<String>();
-        // foreach (FamilyTree.Node person in visitedNodes) {
-        //     tempList.Add(person.personName);
-        // }
+        //send data over to scrollable view
+        List<String> tempList = new List<String>();
+        foreach (FamilyTree.Node person in visitedNodes) {
+            tempList.Add(person.personName);
+        }
 
-        // //but first- scramble the names
-        // List<string> scrambleNames = new List<String>();
-        // while (tempList.Count > 0) {
-        //     int randomNumber = Random.Range(0, tempList.Count);
-        //     scrambleNames.Add(tempList[randomNumber]);
-        //     tempList.RemoveAt(randomNumber);
-        // }
+        //but first- scramble the names
+        List<string> scrambleNames = new List<String>();
+        while (tempList.Count > 0) {
+            int randomNumber = Random.Range(0, tempList.Count);
+            scrambleNames.Add(tempList[randomNumber]);
+            tempList.RemoveAt(randomNumber);
+        }
         
-        // //now send
-        // ScrollBarLoader imageLoader = FindFirstObjectByType<ScrollBarLoader>();
-        // if (imageLoader != null) {
-        //     foreach (string name in scrambleNames) {
-        //         imageLoader.AddItem(name);
-        //     }
-        // }
+        //now send
+        ScrollBarLoader imageLoader = FindFirstObjectByType<ScrollBarLoader>();
+        if (imageLoader != null) {
+            foreach (string name in scrambleNames) {
+                imageLoader.AddItem(name);
+            }
+        }
 
-        // //sending over clues list
-        // ClueLoader clueLoader = FindFirstObjectByType<ClueLoader>();
-        // if (clueLoader != null) {
-        //     foreach (string clue in cluesList) {
-        //         clueLoader.AddItem(clue);
-        //     }
-        // }
+        //sending over clues list
+        ClueLoader clueLoader = FindFirstObjectByType<ClueLoader>();
+        if (clueLoader != null) {
+            foreach (string clue in cluesList) {
+                clueLoader.AddItem(clue);
+            }
+        }
     }
 
     private FamilyTree.Node buildTree(int maxNumberOfPeople) {
@@ -83,8 +83,39 @@ namespace FamilyTree {
         public List<Node> children = new List<Node>();
         public List<Node> siblings = new List<Node>();
         
-        private static List<string> _maleNames = new List<string> {"Alex", "Leo", "Jesus", "Martin", "Jose", "Juan", "Maximo", "Julio", "Carlos"};
-        private static List<string> _femaleNames = new List<string> {"Katrina", "Jamie", "Adriana", "Daniela", "Isabel", "Maria", "Gabriela", "Arielle", "Yahira"};
+        private static List<string> _maleNames = new List<string>
+        {
+            "Santiago", "Matías", "Sebastián", "Mateo", "Nicolás", "Alejandro",
+            "Samuel", "Diego", "Daniel", "Benjamín", "Leonardo", "Tomás", "Joaquín",
+            "Gabriel", "Emiliano", "Martín", "Lucas", "Agustín", "David", "Iker",
+            "José", "Maximiliano", "Adrián", "Emmanuel", "Felipe", "Juan Pablo",
+            "Andrés", "Gerónimo", "Ángel", "Rodrigo", "Bruno", "Alexander", "Thiago",
+            "Pablo", "Ian", "Isaac", "Miguel Ángel", "Fernando", "Javier", "Emilio",
+            "Sebastián", "Alonso", "Aarón", "Rafael", "Esteban", "Juan", "Axel", 
+            "Francisco", "Bautista", "Carlos", "Dylan", "Julián", "Manuel", "Facundo",
+            "Gael", "Valentino", "Damián", "Santino", "Vicente", "Máximo",
+            "Christopher", "Jorge", "Luciano", "Dante", "Alan", "Cristóbal", "Jesús",
+            "Lorenzo", "Alex", "Patricio", "Pedro", "Manuel", "Matthew", "Antonio",
+            "Iván", "José", "Hugo", "Josué", "Lautaro", "Diego Alejandro", "Miguel",
+            "Franco", "Kevin", "Luis", "Simón", "Elías", "Caleb", "Eduardo", "Ricardo", "Juan David", "Marcos",
+            "Salvador", "Jacobo", "Ignacio", "Camilo", "Mauricio", "Gonzalo"
+        };
+        private static List<string> _femaleNames = new List<string>
+        {
+            "Sofía", "Isabella", "Valentina", "Emma", "Martina", "Lucía", "Victoria",
+            "Luciana", "Valeria", "Camila", "Julieta", "Ximena", "Sara", "Daniela",
+            "Emilia", "Xiomara", "Mía", "Catalina", "Julia", "Elena", "Olivia",
+            "Regina", "Paula", "Natalia", "Mariana", "Samantha", "María", "Antonella",
+            "Gabriela", "Emily", "Zoe", "Alma", "Alejandra", "Andrea", "Juliana",
+            "Alba", "Aaliyah", "Jahaira", "Carla", "Laura", "Ángela", "Clara",
+            "Teresa", "Laura", "Fernanda", "Camila", "Inés", "Silvia", "Regina",
+            "Carmen", "Teresa", "Valeria", "Marisol", "Guadalupe", "Adriana",
+            "Beatriz", "Patricia", "Carmen", "Isabel", "Mariana", "Teresa", "María",
+            "Susana", "Clara", "Mónica", "Viviana", "Lidia", "Dolores", "Stefanie",
+            "Violeta", "Veronica", "Jocelyn", "Gloria", "Angélica", "Rosalía",
+            "Silvia", "Aida", "Raquel", "Leticia"
+        };
+
 
         public Node() {
             // Set odds of M or F based on number of names left in each list

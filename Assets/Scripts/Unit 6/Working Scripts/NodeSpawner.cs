@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro; 
 using FamilyTree;
 
@@ -10,13 +11,31 @@ public class NodeSpawner : MonoBehaviour
 {
     //public GameObject spouseGroupPrefab;
     public GameObject nodePrefab;
-    public GameObject grandparentsGen;
-    public GameObject parentsGen;
-    public GameObject rootGen;
+    public GameObject blackoutScreen;
+    public GameObject tree;
     public int nodeSpacing;
     public int groupSpacing;
+    public UnityVector3Event onLoad;
+
+    private Transform grandparentsGen;
+    private Transform parentsGen;
+    private Transform rootGen;
+    private List<RectTransform> nodeTransforms;
+    
+    [HideInInspector]
+    public Vector3 medianTreePos;
+
 
     public void generateNodes(Node root) {
+        if (nodeTransforms != null)
+            nodeTransforms.Clear();
+        else
+            nodeTransforms = new List<RectTransform>();
+
+        grandparentsGen = tree.transform.GetChild(0);
+        parentsGen = tree.transform.GetChild(1);
+        rootGen = tree.transform.GetChild(2);
+
         if (root != null)
             createHalfFamilyNodes(root);
         if (root.spouse != null && root.spouse.needsParent) {
@@ -27,6 +46,8 @@ public class NodeSpawner : MonoBehaviour
             createHalfFamilyNodes(root.exSpouse);
             Debug.Log("Ex-Spouse Family Built");
         }
+
+        StartCoroutine(RefreshLayout(tree));
     }
     public void createHalfFamilyNodes(Node person) {
         // determining which half of the tree to create
@@ -52,13 +73,13 @@ public class NodeSpawner : MonoBehaviour
         Transform parentGen = FindChildWithTag(parentsGen, familySide);
         
         // generating parents
-        Transform parents = FindChildWithTag(parentGen.gameObject, "Center");
+        Transform parents = FindChildWithTag(parentGen, "Center");
         if (person.parentOne != null) {
             createFamilyUnit(parents, person.parentOne, false);
         }
 
         // generating aunts and uncles of left parent
-        Transform leftParentSiblings = FindChildWithTag(parentGen.gameObject, "LeftSide");
+        Transform leftParentSiblings = FindChildWithTag(parentGen, "LeftSide");
         Node leftParent = null;
         if (person.parentOne != null && person.parentOne.isLeftSpouse)
             leftParent = person.parentOne;
@@ -72,7 +93,7 @@ public class NodeSpawner : MonoBehaviour
         }
 
         // generating aunts and uncles of right parent
-        Transform rightParentSiblings = FindChildWithTag(parentGen.gameObject, "RightSide");
+        Transform rightParentSiblings = FindChildWithTag(parentGen, "RightSide");
         Node rightParent = null;
         if (person.parentOne != null && !person.parentOne.isLeftSpouse)
             rightParent = person.parentOne;
@@ -97,10 +118,10 @@ public class NodeSpawner : MonoBehaviour
         } 
     } 
 
-    public Transform FindChildWithTag(GameObject parent, string tag) {
+    public Transform FindChildWithTag(Transform parent, string tag) {
         GameObject child = null;
 
-        foreach(Transform transform in parent.transform) {
+        foreach(Transform transform in parent) {
             if(transform.CompareTag(tag)) {
                 child = transform.gameObject;
                 break;
@@ -130,32 +151,25 @@ public class NodeSpawner : MonoBehaviour
         vertLayout.spacing = groupSpacing;
 
         Transform spouseGroup = createNodeGroup(familyUnit.transform, "Spouses");
-
-            
-        GameObject personNode = Instantiate(nodePrefab, spouseGroup);
-        personNode.name = person.personName;
+        GameObject personNode = createNodeObject(spouseGroup, person);
 
         if (person.spouse != null) {
-            GameObject spouseNode = Instantiate(nodePrefab, spouseGroup);
-            spouseNode.name = person.spouse.personName;
+            GameObject spouseNode = createNodeObject(spouseGroup, person.spouse);
             
             if (!person.isLeftSpouse) {
                 spouseNode.transform.SetAsFirstSibling();
             }
-
         }
 
         if (person.exSpouse != null) {
-            GameObject exSpouseNode = Instantiate(nodePrefab, spouseGroup);
-            exSpouseNode.name = person.exSpouse.personName;
+            GameObject exSpouseNode = createNodeObject(spouseGroup, person.exSpouse);
 
             if (person.isLeftSpouse) {
                 exSpouseNode.transform.SetAsFirstSibling();
             }
             
             if (person.exSpouse.spouse != null) {
-                GameObject exSpouseSpouseNode = Instantiate(nodePrefab, spouseGroup);
-                exSpouseSpouseNode.name = person.exSpouse.spouse.personName;
+                GameObject exSpouseSpouseNode = createNodeObject(spouseGroup, person.exSpouse.spouse);
 
                 if (person.isLeftSpouse) {
                     exSpouseSpouseNode.transform.SetAsFirstSibling();
@@ -191,21 +205,18 @@ public class NodeSpawner : MonoBehaviour
                 foreach (Node child in childGroups[i]) {
                     if (child.spouse != null) {
                         Transform childSpouseGroup = createNodeGroup(childGroup, "Spouse Group");
-                        GameObject childNode = Instantiate(nodePrefab, childSpouseGroup);
-                        childNode.name = child.personName;
-                        GameObject childSpouseNode = Instantiate(nodePrefab, childSpouseGroup);
-                        childSpouseNode.name = child.spouse.personName;
+                        GameObject childNode = createNodeObject(childSpouseGroup, child);
+                        GameObject childSpouseNode = createNodeObject(childSpouseGroup, child.spouse);
 
                         if (!child.isLeftSpouse)
                             childSpouseNode.transform.SetAsFirstSibling();
-
-                        if(person.isLeftSpouse)
-                            childSpouseGroup.SetAsFirstSibling();
+                            
+                        if (person.isLeftSpouse)
+                            childNode.transform.SetAsFirstSibling();
                     }
                     else {
-                        GameObject childNode = Instantiate(nodePrefab, childGroup);
-                        childNode.name = child.personName;
-                        
+                        GameObject childNode = createNodeObject(childGroup, child);
+
                         if (person.isLeftSpouse)
                             childNode.transform.SetAsFirstSibling();
                     }
@@ -214,6 +225,13 @@ public class NodeSpawner : MonoBehaviour
         }
 
         return familyUnit.transform;
+    }
+
+    public GameObject createNodeObject(Transform parent, Node node) {
+        GameObject nodeObject = Instantiate(nodePrefab, parent);
+        nodeObject.name = node.personName;
+        nodeTransforms.Add(nodeObject.GetComponent<RectTransform>());
+        return nodeObject;
     }
 
     public Transform createNodeGroup(Transform parent, string groupName) {
@@ -237,4 +255,40 @@ public class NodeSpawner : MonoBehaviour
 
         return nodeGroup.transform;
     }
+
+    IEnumerator RefreshLayout( GameObject tree) {
+
+        blackoutScreen.SetActive(true);
+
+
+        // jank workaround for layout groups not refreshing
+        for (int i = 0; i < 3; i++) {
+            yield return new WaitForEndOfFrame();
+
+            tree.SetActive(false);
+
+            yield return new WaitForEndOfFrame();
+
+            tree.SetActive(true);
+        }
+        
+        blackoutScreen.SetActive(false);
+
+        setMedianTreePosition();
+        onLoad.Invoke(medianTreePos);
+
+    }
+
+    public void setMedianTreePosition() {
+        Vector3 sumPosition = new Vector3();
+        foreach (RectTransform rect in nodeTransforms) {
+            sumPosition += rect.position;
+        }
+
+        medianTreePos = sumPosition / nodeTransforms.Count;
+        Debug.Log(medianTreePos);
+    }
 }
+
+[System.Serializable]
+public class UnityVector3Event : UnityEvent<Vector3> {}

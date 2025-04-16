@@ -9,6 +9,7 @@ TagManager:
   - LeftSide
   - RightSide
   - Center
+  - NodeCanvas
   layers:
   - Default
   - TransparentFX
