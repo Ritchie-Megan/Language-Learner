@@ -7,14 +7,24 @@ using System.Linq;
 
 public class FriendBuilder : MonoBehaviour
 {
-    //list of sprites for their appearance
+    //friend plan stuff
+    private List<FriendBuilder.Friend> friendlist;
+    private int friendIndex = 0;
+    public TextMeshProUGUI speechBox;
+    public Image friendBody;
+    public Image friendHair;
+    public Image friendOutfit;
+    public Image friendFace;
+
+    //list of sprites for friend appearance
     public Sprite[] bodySprites;
     public Sprite[] hairSprites;
     public Sprite[] kitSprites;
 
     //creates a list of friends with corresponding plan messages
     //accept and reject plans are both in this list, in a random order
-    public List<Friend> loadFriends(Dictionary<string, List<int>> _acceptList, Dictionary<string, List<int>> _denyList) {
+    //initiates the display stuff
+    public List<Friend> makeFriends(Dictionary<string, List<int>> _acceptList, Dictionary<string, List<int>> _denyList) {
         //temp versions of lists
         //so we don't remove objects from the actual lists
         Dictionary<string, List<int>> acceptList = new Dictionary<string, List<int>>(_acceptList);
@@ -71,7 +81,78 @@ public class FriendBuilder : MonoBehaviour
             //add friend to list
             friendList.Add(tempFriend);
         }
+        
+        friendlist = friendList;
+        loadFriendsIntoScene();
         return friendList;
+    }
+
+    public void loadFriendsIntoScene() {
+        friendIndex = 0;
+        setFriend(0);
+    }
+    
+    public void setFriend(int index) {
+        if(index >= 0) {
+            friendBody.sprite = friendlist[index].getBody();
+            friendOutfit.sprite = friendlist[index].getKit();
+            friendHair.sprite = friendlist[index].getHair();
+
+            speechBox.text = friendlist[index].getMessage();
+        }
+        else {
+            speechBox.text = "";
+            friendBody.color = Color.clear;
+            friendHair.color = Color.clear;
+            friendOutfit.color = Color.clear;
+            friendFace.color = Color.clear;
+        }
+    }
+
+    public void friendBack() {
+        if(friendlist.Count() > 0) {
+            if(friendIndex > 0) {
+                friendIndex--;
+            }
+            else {
+                friendIndex = friendlist.Count()-1;
+            }
+        }
+        else {
+            friendIndex = -1;
+        }
+        
+        setFriend(friendIndex);
+    }
+
+    public void friendForward() {
+        if(friendlist.Count() > 0) {
+            if(friendIndex < friendlist.Count()-1) {
+                friendIndex++;
+            }
+            else {
+                friendIndex = 0;
+            }
+        }
+        else {
+            friendIndex = -1;
+        }
+        
+        setFriend(friendIndex);
+    }
+
+    public void acceptActivity() {
+        //spawn the activity
+
+    }
+
+    public void rejectActivity() {
+        if(friendlist.Count() > 0) {
+            //remove the activity from list
+            friendlist.Remove(friendlist[friendIndex]);
+            //load the next activity in list
+            friendForward();
+        }
     }
 
     public class Friend
