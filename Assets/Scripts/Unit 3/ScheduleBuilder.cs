@@ -26,17 +26,19 @@ public class ScheduleBuilder : MonoBehaviour
             Debug.Log(currentTimeActivity);
         }
         */
-        loadScheduleIntoScene(schedule._schedule);
+        //loadScheduleIntoScene(schedule._schedule);
 
     }
-
+    
+    /*
     public void loadScheduleIntoScene(List<List<string>> schedule) {
-    foreach (List<string> list in schedule) {
-        foreach (string activity in list) {
-            GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
+        foreach (List<string> list in schedule) {
+            foreach (string activity in list) {
+                GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
+            }
         }
     }
-}
+    */
 
 
 }
