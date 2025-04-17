@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
+/*
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
     public bool isTreeCanvas = false;
@@ -23,3 +24,4 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         }
     }
 }
+*/
