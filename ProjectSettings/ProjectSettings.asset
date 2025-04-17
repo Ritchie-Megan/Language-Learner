@@ -163,7 +163,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.Language-Learning
+    Standalone: com.ABDSS-at-the-University-of-Florida.Spanish-Language-Learning
   buildNumber:
     Standalone: 0
     VisionOS: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a63ce2d9c0a91ef4a9bbbac9c00e2516
+guid: 1178dda56c7d431459ed4d57c6e1e74c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 51906343251135905
-    second: stage_background_0
+      213: -2821135513045882955
+    second: Susan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stage_background_0
+      name: Susan_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 794
+        width: 393
+        height: 607
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1adc21f4b8868b000800000000000000
-      internalID: 51906343251135905
+      spriteID: 5b729a9a23059d8d0800000000000000
+      internalID: -2821135513045882955
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Susan_0: -2821135513045882955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

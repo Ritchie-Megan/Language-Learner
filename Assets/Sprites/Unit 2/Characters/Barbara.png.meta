@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 86fbc526f25e3a240bb48687c0836d3a
+guid: fa672b4c2765ab146ad3629bc4eb8919
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2032827832280411460
-    second: podium_0
+      213: -453574465438570400
+    second: Barbara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: podium_0
+      name: Barbara_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 14
-        width: 1287
-        height: 1857
+        x: 0
+        y: 0
+        width: 364
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb2166f5bd1f9c3e0800000000000000
-      internalID: -2032827832280411460
+      spriteID: 068a8544d6494b9f0800000000000000
+      internalID: -453574465438570400
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barbara_0: -453574465438570400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
