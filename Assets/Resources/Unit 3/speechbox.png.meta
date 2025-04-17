@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71f7ef68af2a86145b54741b6a986026
+guid: 4b24b2dcbce5e7d4b96e0355397d236e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6387913627029786780
-    second: 0672-JM_14_Stripes_04_01_0
+      213: 4823364492472451033
+    second: speechbox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0672-JM_14_Stripes_04_01_0
+      name: speechbox_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 4000
-        height: 4000
+        x: 23
+        y: 160
+        width: 455
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c90dcf2699d66a850800000000000000
-      internalID: 6387913627029786780
+      spriteID: 9df7d0c537800f240800000000000000
+      internalID: 4823364492472451033
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      0672-JM_14_Stripes_04_01_0: 6387913627029786780
+      speechbox_0: 4823364492472451033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

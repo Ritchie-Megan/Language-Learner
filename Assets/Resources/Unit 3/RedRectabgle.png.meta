@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71f7ef68af2a86145b54741b6a986026
+guid: 6889b4317c4d2b64f8965329f84feeb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6387913627029786780
-    second: 0672-JM_14_Stripes_04_01_0
+      213: 5110036001571128618
+    second: RedRectabgle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0672-JM_14_Stripes_04_01_0
+      name: RedRectabgle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 4000
-        height: 4000
+        x: 46
+        y: 65
+        width: 517
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c90dcf2699d66a850800000000000000
-      internalID: 6387913627029786780
+      spriteID: a25ca175bae7ae640800000000000000
+      internalID: 5110036001571128618
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      0672-JM_14_Stripes_04_01_0: 6387913627029786780
+      RedRectabgle_0: 5110036001571128618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

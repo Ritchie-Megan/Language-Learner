@@ -11,7 +11,7 @@ public class Navigate : MonoBehaviour
         SceneManager.LoadScene("Scenes/Unit 2");
     }
     public void GoToUnit3() {
-        SceneManager.LoadScene("Scenes/Unit 3");
+        SceneManager.LoadScene("Scenes/Unit 3 Menu");
     }
     public void GoToUnit4() {
         SceneManager.LoadScene("Scenes/Unit 4");

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71f7ef68af2a86145b54741b6a986026
+guid: 80cd5edfd3098f741b0d7ed632b26e06
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6387913627029786780
-    second: 0672-JM_14_Stripes_04_01_0
+      213: 3408560001653574350
+    second: BlueRectangleRightArrow-removebg-preview 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0672-JM_14_Stripes_04_01_0
+      name: BlueRectangleRightArrow-removebg-preview 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 4000
-        height: 4000
+        x: 16
+        y: 112
+        width: 468
+        height: 276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c90dcf2699d66a850800000000000000
-      internalID: 6387913627029786780
+      spriteID: eca8a2e1343ad4f20800000000000000
+      internalID: 3408560001653574350
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      0672-JM_14_Stripes_04_01_0: 6387913627029786780
+      BlueRectangleRightArrow-removebg-preview 1_0: 3408560001653574350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
