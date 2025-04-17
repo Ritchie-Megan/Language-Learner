@@ -424,7 +424,7 @@ namespace ScheduleBuilderBackend {
         //returns true if there is a free space within the given time frame
         private bool checkIfFree(int day, int time, int lengthOfTime) {
             //if the length of time exceeds the day, then obviously no
-            if ((time + lengthOfTime) > 12) {
+            if ((time + lengthOfTime) > 13) {
                 return false;
             }
             //_schedule[timeOfDay][DayOfTheWeek]

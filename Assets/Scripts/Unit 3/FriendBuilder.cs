@@ -23,14 +23,14 @@ public class FriendBuilder : MonoBehaviour
 
     public GameObject acceptButton;
     public GameObject rejectButton;
-
     public GameObject leftArrow;
     public GameObject rightArrow;
-
     public Button reject1;
     public Button reject2;
 
     public TextMeshProUGUI speechBox;
+    public GameObject popUp;
+
     public Image friendBody;
     public Image friendHair;
     public Image friendOutfit;
@@ -180,9 +180,10 @@ public class FriendBuilder : MonoBehaviour
     }
 
     public void acceptActivity() {
+        int code = friendlist[friendIndex]._conflictCode;
         if(friendlist.Count > 0) {
             //conflict code 0 means no confict- should be accepted
-            if(friendlist[friendIndex]._conflictCode == 0) {
+            if(code == 0) {
                 //spawn the activity
                 GameObject newDraggable = Instantiate(draggablePrefab, activityPanel);
                 string plan = friendlist[friendIndex]._plan;
@@ -199,15 +200,31 @@ public class FriendBuilder : MonoBehaviour
             //wrong answer
             else {
                 wrongCount++;
+                if(code == 1) {
+                    popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong choice.\nHint: You can't be two places at once.";
+                }
+                else if(code == 2 || code == 3) {
+                    popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong choice.\nHint: The current season is on the upper left.";
+                }
+                else {
+                    popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Error.";
+                }
+                popUp.SetActive(true);
             }
         }
     }
 
     public void rejectActivity() {
+        int code = friendlist[friendIndex]._conflictCode;
         if(friendlist.Count > 0) {
+            //wrong answer
+            if(code == 0) {
+                wrongCount++;
+                popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong choice.\nHint: If you're free, you should accept.";
+                popUp.SetActive(true);
+            }
             //correct answer- the plan has a conflict
-            int code = friendlist[friendIndex]._conflictCode;
-            if(code != 0) {
+            else {
                 rejectMode(true);
 
                 string correct = "";
@@ -223,8 +240,8 @@ public class FriendBuilder : MonoBehaviour
                         correct = schedulebuilder.getActivityString(time, day);
                         //choose random other activity from friend list
                         System.Random tempRand = new System.Random();
-                        int randIndex = -1;
-                        while(randIndex != friendIndex) {
+                        int randIndex = friendIndex;
+                        while(randIndex == friendIndex) {
                             randIndex = tempRand.Next(0, friendlist.Count);
                         }
                         incorrect = friendlist[randIndex]._plan;
@@ -261,16 +278,12 @@ public class FriendBuilder : MonoBehaviour
                 }
 
                 //wait until the correct button is pressed
-                StartCoroutine(waitForResponse(firstCorrect));
-            }
-            //wrong answer
-            else {
-                wrongCount++;
+                StartCoroutine(waitForResponse(firstCorrect, code));
             }
         }
     }
 
-    IEnumerator waitForResponse(bool firstCorrect) {
+    IEnumerator waitForResponse(bool firstCorrect, int code) {
         // Wait for user input
         bool buttonClicked = false;
         bool wasCorrect = false;
@@ -298,6 +311,13 @@ public class FriendBuilder : MonoBehaviour
         } else {
             setFriend(friendIndex);
             wrongCount++;
+            if(code == 1) {
+                popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong choice.\nHint: What are you doing at that time?";
+            }
+            else {
+                popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong choice.\nHint: What season is it?";
+            }
+            popUp.SetActive(true);
         }
 
         rejectMode(false);
@@ -440,6 +460,8 @@ public class FriendBuilder : MonoBehaviour
                     break;
                 case 12:
                     timePhrase = " a las ocho de la noche";
+                    break;
+                default:
                     break;
             }
 
