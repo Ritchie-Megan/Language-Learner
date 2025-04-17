@@ -55,6 +55,8 @@ public class ScheduleBuilder : MonoBehaviour
 
     public void loadScheduleIntoScene(ScheduleBuilderBackend.Schedule schedule) {
         seasonText.text = "Estación: " + schedule._season;
+        int day = 0;
+        int time = 0;
         foreach (List<string> list in schedule._schedule) {
             foreach (string activity in list) {
                 GameObject newActivityHolder = Instantiate(holderPrefab, schedulePanel);
@@ -65,9 +67,28 @@ public class ScheduleBuilder : MonoBehaviour
                     //make sure the Slot's DropBox destroyed, so no draggable panel can slot to it
                     Transform dropBox = newActivityHolder.transform.Find("DropBox");
                     Destroy(dropBox.gameObject);
+
+                    //name the instance that activity
+                    newActivityHolder.name = activity;
                 }
-                //name the instance that activity
-                newActivityHolder.name = activity;
+                else {
+                    //name the instance the day and time
+                    //for example, monday at 10 am is "02", 0 for monday, 2 for 10am
+                    string daytime = day.ToString() + time.ToString();
+                    newActivityHolder.name = daytime;
+                }
+                if(day < 6) {
+                    day++;
+                }
+                else {
+                    day = 0;
+                }
+            }
+            if(time < 12) {
+                time++;
+            }
+            else {
+                time = 0;
             }
         }
     }

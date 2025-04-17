@@ -189,8 +189,10 @@ public class FriendBuilder : MonoBehaviour
                 string plan = friendlist[friendIndex]._plan;
                 //assign text to show activity
                 newDraggable.GetComponentInChildren<TextMeshProUGUI>().text = plan;
-                //name the instance that activity
-                newDraggable.name = plan;
+                //name the instance the day and time
+                //for example, monday at 10 am is "02", 0 for monday, 2 for 10am
+                string daytime = friendlist[friendIndex]._date.ToString() + friendlist[friendIndex]._time.ToString();
+                newDraggable.name = daytime;
 
                 //mark as accepted
                 friendlist[friendIndex].accepted = true;
