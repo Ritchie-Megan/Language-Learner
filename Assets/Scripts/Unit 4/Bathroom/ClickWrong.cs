@@ -11,6 +11,8 @@ public class ClickWrong : MonoBehaviour
     public Transform spawnPoint; // set this to a UI canvas anchor or world location
     public int maxMisses = 3;
 
+    public MiniGameManager mgr;
+
     public GameObject canvas;
 
     private int misses = 0;
@@ -151,7 +153,11 @@ public class ClickWrong : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        canvas.SetActive(false);
+        // Notify the game manager
+        if (mgr != null)
+        {
+            mgr.CloseGame();
+        }
 
     }
 }

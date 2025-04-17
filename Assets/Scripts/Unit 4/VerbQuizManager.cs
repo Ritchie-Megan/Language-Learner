@@ -11,6 +11,8 @@ namespace Unit_4
         public Text feedbackText;
         public Button submitButton;
 
+        public MiniGameManager mgr;
+
         private List<string> subjects = new List<string> { "yo", "tú", "él", "ella", "nosotros", "ellos" };
         private List<(string verb, Dictionary<string, string> conjugations)> verbs;
         private int correctCount = 0;
@@ -91,6 +93,21 @@ namespace Unit_4
             {
                 feedbackText.text = "❌ Try again.";
             }
+            
+            if (correctCount >= requiredCorrect)
+            {
+                feedbackText.text = "🎉 Great job! You've finished the mini-game.";
+                submitButton.interactable = false;
+
+                // ✅ Wait a second, then close the mini-game
+                Invoke(nameof(EndMiniGame), 1.5f);
+            }
+        }
+        
+        void EndMiniGame()
+        {
+            feedbackText.text = "🎉 Great job! You've finished the mini-game.";
+            mgr.CloseGame();
         }
     }
 }

@@ -12,6 +12,8 @@ public class CorrectOrder : MonoBehaviour
     public GameObject slotPrefab;
     public GameObject wordPrefab;
 
+    public MiniGameManager mgr;
+
     public Text feedback;
     public Button submitButton;
 
@@ -183,7 +185,7 @@ public class CorrectOrder : MonoBehaviour
         // Optional: Notify manager or transition elsewhere
         // e.g., GameManager.Instance.OnMinigameComplete();
         
-        canvas.SetActive(false);
+        mgr.CloseGame();
     }
 
     // Update is called once per frame
