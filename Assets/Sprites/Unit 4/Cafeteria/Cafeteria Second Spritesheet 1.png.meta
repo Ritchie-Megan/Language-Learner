@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 7faa8e86715abe249b52d483f1590695
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1666300659477742844
+    second: Cafeteria Second Spritesheet 1_0
+  - first:
+      213: -4629894871808171225
+    second: Cafeteria Second Spritesheet 1_1
+  - first:
+      213: -9204993726979700718
+    second: Cafeteria Second Spritesheet 1_2
+  - first:
+      213: -9973646517973868
+    second: Cafeteria Second Spritesheet 1_3
+  - first:
+      213: -6178903104706826588
+    second: Cafeteria Second Spritesheet 1_4
+  - first:
+      213: -2644000691055758397
+    second: Cafeteria Second Spritesheet 1_5
+  - first:
+      213: -311965749060758872
+    second: Cafeteria Second Spritesheet 1_6
+  - first:
+      213: -832266248113421140
+    second: Cafeteria Second Spritesheet 1_7
+  - first:
+      213: 5028579291256411835
+    second: Cafeteria Second Spritesheet 1_8
+  - first:
+      213: -8919665718530907889
+    second: Cafeteria Second Spritesheet 1_9
+  - first:
+      213: 8862399968704628517
+    second: Cafeteria Second Spritesheet 1_10
+  - first:
+      213: 1391224134322195420
+    second: Cafeteria Second Spritesheet 1_11
+  - first:
+      213: 4190562128284177253
+    second: Cafeteria Second Spritesheet 1_12
+  - first:
+      213: 7317422423829997107
+    second: Cafeteria Second Spritesheet 1_13
+  - first:
+      213: -7708845885211830424
+    second: Cafeteria Second Spritesheet 1_14
+  - first:
+      213: -3002294975901592700
+    second: Cafeteria Second Spritesheet 1_15
+  - first:
+      213: -743881701813364764
+    second: Cafeteria Second Spritesheet 1_16
+  - first:
+      213: -1191464459476675694
+    second: Cafeteria Second Spritesheet 1_17
+  - first:
+      213: 3035426217590919366
+    second: Cafeteria Second Spritesheet 1_18
+  - first:
+      213: -2178794407102444011
+    second: Cafeteria Second Spritesheet 1_19
+  - first:
+      213: -7855885230372378832
+    second: Cafeteria Second Spritesheet 1_20
+  - first:
+      213: -3549769984510582524
+    second: Cafeteria Second Spritesheet 1_21
+  - first:
+      213: -5675412036677553488
+    second: Cafeteria Second Spritesheet 1_22
+  - first:
+      213: 8632489982340965773
+    second: Cafeteria Second Spritesheet 1_23
+  - first:
+      213: 744897335625033830
+    second: Cafeteria Second Spritesheet 1_24
+  - first:
+      213: 3964723537280362938
+    second: Cafeteria Second Spritesheet 1_25
+  - first:
+      213: 3546472400069889058
+    second: Cafeteria Second Spritesheet 1_26
+  - first:
+      213: -5997456232554097860
+    second: Cafeteria Second Spritesheet 1_27
+  - first:
+      213: -9183108581848990559
+    second: Cafeteria Second Spritesheet 1_28
+  - first:
+      213: -1533945348332285865
+    second: Cafeteria Second Spritesheet 1_29
+  - first:
+      213: 264996731182230498
+    second: Cafeteria Second Spritesheet 1_30
+  - first:
+      213: -4742435297610094482
+    second: Cafeteria Second Spritesheet 1_31
+  - first:
+      213: -4284201021334879052
+    second: Cafeteria Second Spritesheet 1_32
+  - first:
+      213: 270995481383921523
+    second: Cafeteria Second Spritesheet 1_33
+  - first:
+      213: -609598571349354776
+    second: Cafeteria Second Spritesheet 1_34
+  - first:
+      213: -3217496808929514738
+    second: Cafeteria Second Spritesheet 1_35
+  - first:
+      213: -7665787622744849688
+    second: Cafeteria Second Spritesheet 1_36
+  - first:
+      213: 8284814475820600391
+    second: Cafeteria Second Spritesheet 1_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 811
+        width: 123
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b74dee06c10e8e0800000000000000
+      internalID: -1666300659477742844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 810
+        width: 122
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723a872f42f4fbfb0800000000000000
+      internalID: -4629894871808171225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 855
+        width: 113
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2180da7b9fa414080800000000000000
+      internalID: -9204993726979700718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 837
+        width: 213
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c4e2675019cdff0800000000000000
+      internalID: -9973646517973868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 821
+        width: 214
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae246e0d50204aa0800000000000000
+      internalID: -6178903104706826588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 674
+        width: 40
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3fbb7416f9e4bd0800000000000000
+      internalID: -2644000691055758397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 671
+        width: 40
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a21529ddccababf0800000000000000
+      internalID: -311965749060758872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 674
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca407a2c1423374f0800000000000000
+      internalID: -832266248113421140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 674
+        width: 41
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6593c093a19c540800000000000000
+      internalID: 5028579291256411835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 564
+        width: 80
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f016cb3994bf63480800000000000000
+      internalID: -8919665718530907889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 424
+        width: 362
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527821801d19dfa70800000000000000
+      internalID: 8862399968704628517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 550
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb8939aafe9e4310800000000000000
+      internalID: 1391224134322195420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 340
+        width: 117
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56355999d0ed72a30800000000000000
+      internalID: 4190562128284177253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 259
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3366dd3dce4bc8560800000000000000
+      internalID: 7317422423829997107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 257
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86797b7b28da40590800000000000000
+      internalID: -7708845885211830424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 259
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483127250a4b556d0800000000000000
+      internalID: -3002294975901592700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 259
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7508098833da5f0800000000000000
+      internalID: -743881701813364764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 276
+        width: 33
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293d3620361177fe0800000000000000
+      internalID: -1191464459476675694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 274
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c01a610010002a20800000000000000
+      internalID: 3035426217590919366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 42
+        width: 117
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e0d0ec70e53c1e0800000000000000
+      internalID: -2178794407102444011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 179
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037aa67510a4af290800000000000000
+      internalID: -7855885230372378832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 177
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40127eea10facbec0800000000000000
+      internalID: -3549769984510582524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 181
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2bbdf72d2ec31b0800000000000000
+      internalID: -5675412036677553488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 200
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d852d8ce6e3ccc770800000000000000
+      internalID: 8632489982340965773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 189
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668a01c1e28665a00800000000000000
+      internalID: 744897335625033830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 186
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9e9381d07850730800000000000000
+      internalID: 3964723537280362938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 191
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c84eb9bd9973130800000000000000
+      internalID: 3546472400069889058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 197
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3319a61551c4cca0800000000000000
+      internalID: -5997456232554097860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 36
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acbc05266b0f8080800000000000000
+      internalID: -9183108581848990559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 36
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7509ac735d456bae0800000000000000
+      internalID: -1533945348332285865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 39
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eba1cc7f157da300800000000000000
+      internalID: 264996731182230498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 59
+        width: 40
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e682dab293c7f2eb0800000000000000
+      internalID: -4742435297610094482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 45
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b408f8aed57b84c0800000000000000
+      internalID: -4284201021334879052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 35
+        width: 33
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377ef9b54f4c2c300800000000000000
+      internalID: 270995481383921523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 47
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6d22344554a87f0800000000000000
+      internalID: -609598571349354776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 18
+        width: 30
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0badc503b72953d0800000000000000
+      internalID: -3217496808929514738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 52
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e205bea5c6ad9590800000000000000
+      internalID: -7665787622744849688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria Second Spritesheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 57
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c0d45fed299f270800000000000000
+      internalID: 8284814475820600391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cafeteria Second Spritesheet 1_0: -1666300659477742844
+      Cafeteria Second Spritesheet 1_1: -4629894871808171225
+      Cafeteria Second Spritesheet 1_10: 8862399968704628517
+      Cafeteria Second Spritesheet 1_11: 1391224134322195420
+      Cafeteria Second Spritesheet 1_12: 4190562128284177253
+      Cafeteria Second Spritesheet 1_13: 7317422423829997107
+      Cafeteria Second Spritesheet 1_14: -7708845885211830424
+      Cafeteria Second Spritesheet 1_15: -3002294975901592700
+      Cafeteria Second Spritesheet 1_16: -743881701813364764
+      Cafeteria Second Spritesheet 1_17: -1191464459476675694
+      Cafeteria Second Spritesheet 1_18: 3035426217590919366
+      Cafeteria Second Spritesheet 1_19: -2178794407102444011
+      Cafeteria Second Spritesheet 1_2: -9204993726979700718
+      Cafeteria Second Spritesheet 1_20: -7855885230372378832
+      Cafeteria Second Spritesheet 1_21: -3549769984510582524
+      Cafeteria Second Spritesheet 1_22: -5675412036677553488
+      Cafeteria Second Spritesheet 1_23: 8632489982340965773
+      Cafeteria Second Spritesheet 1_24: 744897335625033830
+      Cafeteria Second Spritesheet 1_25: 3964723537280362938
+      Cafeteria Second Spritesheet 1_26: 3546472400069889058
+      Cafeteria Second Spritesheet 1_27: -5997456232554097860
+      Cafeteria Second Spritesheet 1_28: -9183108581848990559
+      Cafeteria Second Spritesheet 1_29: -1533945348332285865
+      Cafeteria Second Spritesheet 1_3: -9973646517973868
+      Cafeteria Second Spritesheet 1_30: 264996731182230498
+      Cafeteria Second Spritesheet 1_31: -4742435297610094482
+      Cafeteria Second Spritesheet 1_32: -4284201021334879052
+      Cafeteria Second Spritesheet 1_33: 270995481383921523
+      Cafeteria Second Spritesheet 1_34: -609598571349354776
+      Cafeteria Second Spritesheet 1_35: -3217496808929514738
+      Cafeteria Second Spritesheet 1_36: -7665787622744849688
+      Cafeteria Second Spritesheet 1_37: 8284814475820600391
+      Cafeteria Second Spritesheet 1_4: -6178903104706826588
+      Cafeteria Second Spritesheet 1_5: -2644000691055758397
+      Cafeteria Second Spritesheet 1_6: -311965749060758872
+      Cafeteria Second Spritesheet 1_7: -832266248113421140
+      Cafeteria Second Spritesheet 1_8: 5028579291256411835
+      Cafeteria Second Spritesheet 1_9: -8919665718530907889
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
