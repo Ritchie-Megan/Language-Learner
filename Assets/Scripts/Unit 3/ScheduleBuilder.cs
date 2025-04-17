@@ -12,12 +12,12 @@ public class ScheduleBuilder : MonoBehaviour
     public Transform schedulePanel;
     public TextMeshProUGUI seasonText;
     public FriendBuilder friendbuilder;
-    private List<FriendBuilder.Friend> friendlist;
+    public ScheduleBuilderBackend.Schedule schedule;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ScheduleBuilderBackend.Schedule schedule = new ScheduleBuilderBackend.Schedule();
+        schedule = new ScheduleBuilderBackend.Schedule();
         loadScheduleIntoScene(schedule);
         
         //PRINT SCHEDULE
@@ -32,7 +32,7 @@ public class ScheduleBuilder : MonoBehaviour
         }
         */
 
-        friendlist = friendbuilder.makeFriends(schedule._acceptInvitation, schedule._denyInvitation);
+        friendbuilder.makeFriends(schedule._acceptInvitation, schedule._denyInvitation);
 
         //PRINT FRIEND PLANS
         /*
@@ -70,6 +70,11 @@ public class ScheduleBuilder : MonoBehaviour
                 newActivityHolder.name = activity;
             }
         }
+    }
+
+    public string getActivityString(int time, int day) {
+        string activity = schedule._schedule[time][day];
+        return activity;
     }
         
 }

@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+using Mono.Cecil.Cil;
+using Unity.Sentis;
+using System.Collections;
 
 public class FriendBuilder : MonoBehaviour
 {
@@ -12,11 +15,21 @@ public class FriendBuilder : MonoBehaviour
     private int friendIndex = 0;
     public int wrongCount = 0;
 
+    public ScheduleBuilder schedulebuilder;
+
     //things in the scene
     public GameObject draggablePrefab;
     public Transform activityPanel;
+
     public GameObject acceptButton;
     public GameObject rejectButton;
+
+    public GameObject leftArrow;
+    public GameObject rightArrow;
+
+    public Button reject1;
+    public Button reject2;
+
     public TextMeshProUGUI speechBox;
     public Image friendBody;
     public Image friendHair;
@@ -193,14 +206,122 @@ public class FriendBuilder : MonoBehaviour
     public void rejectActivity() {
         if(friendlist.Count > 0) {
             //correct answer- the plan has a conflict
-            if(friendlist[friendIndex]._conflictCode != 0) {
-                
-                removeFriend();
+            int code = friendlist[friendIndex]._conflictCode;
+            if(code != 0) {
+                rejectMode(true);
+
+                string correct = "";
+                string incorrect = "";
+                switch(code) {
+                    case 1:
+                        speechBox.text = "¡Qué lástima! Necesito ir a...";
+
+                        int time = friendlist[friendIndex]._time;
+                        int day = friendlist[friendIndex]._date;
+                        
+                        //what activity is conflicting?
+                        correct = schedulebuilder.getActivityString(time, day);
+                        //choose random other activity from friend list
+                        System.Random tempRand = new System.Random();
+                        int randIndex = -1;
+                        while(randIndex != friendIndex) {
+                            randIndex = tempRand.Next(0, friendlist.Count);
+                        }
+                        incorrect = friendlist[randIndex]._plan;
+                        break;
+                    case 2: //too cold
+                        speechBox.text = "¡Ay, no! Hace demasiado...";
+                        correct = "frio";
+                        incorrect = "calor";
+                        break;
+                    case 3: //too hot
+                        speechBox.text = "¡Ay, no! Hace demasiado...";
+                        correct = "calor";
+                        incorrect = "frio";
+                        break;
+                    default:
+                        speechBox.text = "Error";
+                        break; 
+                }
+
+                //randomize which button is the right answer
+                System.Random rand = new System.Random();
+                int randNum = rand.Next(0, 10);
+
+                bool firstCorrect;
+                if(randNum < 5) {
+                    firstCorrect = true;
+                    reject1.GetComponentInChildren<TextMeshProUGUI>().text = correct;
+                    reject2.GetComponentInChildren<TextMeshProUGUI>().text = incorrect;
+                }
+                else {
+                    firstCorrect = false;
+                    reject1.GetComponentInChildren<TextMeshProUGUI>().text = incorrect;
+                    reject2.GetComponentInChildren<TextMeshProUGUI>().text = correct;
+                }
+
+                //wait until the correct button is pressed
+                StartCoroutine(waitForResponse(firstCorrect));
             }
             //wrong answer
             else {
                 wrongCount++;
             }
+        }
+    }
+
+    IEnumerator waitForResponse(bool firstCorrect) {
+        // Wait for user input
+        bool buttonClicked = false;
+        bool wasCorrect = false;
+
+        // Clear any previous listeners to prevent duplicates
+        reject1.onClick.RemoveAllListeners();
+        reject2.onClick.RemoveAllListeners();
+
+        reject1.onClick.AddListener(() => {
+            buttonClicked = true;
+            wasCorrect = firstCorrect;
+        });
+
+        reject2.onClick.AddListener(() => {
+            buttonClicked = true;
+            wasCorrect = !firstCorrect;
+        });
+
+        // wait for click
+        yield return new WaitUntil(() => buttonClicked);
+
+        //check if correct button
+        if (wasCorrect) {
+            removeFriend();
+        } else {
+            setFriend(friendIndex);
+            wrongCount++;
+        }
+
+        rejectMode(false);
+    }
+
+    //toggles the rejection options, arrow buttons, and accept/reject buttons
+    public void rejectMode(bool on) {
+        if(on) {
+            acceptButton.SetActive(false);
+            rejectButton.SetActive(false);
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(false);
+
+            reject1.gameObject.SetActive(true);
+            reject2.gameObject.SetActive(true);
+        }
+        else {
+            acceptButton.SetActive(true);
+            rejectButton.SetActive(true);
+            leftArrow.SetActive(true);
+            rightArrow.SetActive(true);
+
+            reject1.gameObject.SetActive(false);
+            reject2.gameObject.SetActive(false);
         }
     }
 
