@@ -11,6 +11,6 @@ public class Slot : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData) {
         string parentName = transform.name;
-        UnityEngine.Debug.Log("Dropped in slot " + parentName);
+        //UnityEngine.Debug.Log("Dropped in slot " + parentName);
     }
 }

@@ -7,6 +7,7 @@ public class DraggableActivities : MonoBehaviour, IBeginDragHandler, IEndDragHan
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
+    FriendBuilder friendbuilder;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +36,9 @@ public class DraggableActivities : MonoBehaviour, IBeginDragHandler, IEndDragHan
     }
 
     public void OnEndDrag(PointerEventData eventData) {
+        if(friendbuilder == null) {
+            friendbuilder = FindFirstObjectByType<FriendBuilder>();
+        }
         //enables raycast again
         canvasGroup.blocksRaycasts = true;
         //no longer transparent
@@ -47,8 +51,20 @@ public class DraggableActivities : MonoBehaviour, IBeginDragHandler, IEndDragHan
                 //if slot has an item, send drag item to original palce
                 transform.SetParent(originalParent, false);
             }
+            else if (dropSlot.transform.name != transform.name){
+                //if the player drags it to the wrong slot
+                friendbuilder.wrongDrop(transform.name);
+
+                //drop into the slot
+                transform.SetParent(dropBox.transform, false);
+                dropSlot.currentItem = gameObject;
+            }
             //else we want to drop it into the new slot
             else {
+                //correct slot!
+                friendbuilder.rightDrop(transform.name);
+
+                //drop into the slot
                 transform.SetParent(dropBox.transform, false);
                 dropSlot.currentItem = gameObject;
             }

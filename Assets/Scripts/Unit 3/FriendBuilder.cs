@@ -10,12 +10,12 @@ using System.Collections;
 
 public class FriendBuilder : MonoBehaviour
 {
-    
     private List<Friend> friendlist;
     private int friendIndex = 0;
     public int wrongCount = 0;
-
+    Dictionary<string, bool> matches = new Dictionary<string, bool>();
     public ScheduleBuilder schedulebuilder;
+    int conflictCount = 0;
 
     //things in the scene
     public GameObject draggablePrefab;
@@ -29,6 +29,8 @@ public class FriendBuilder : MonoBehaviour
     public Button reject2;
 
     public TextMeshProUGUI speechBox;
+    public TextMeshProUGUI statsText;
+    public GameObject winScreen;
     public GameObject popUp;
 
     public Image friendBody;
@@ -75,8 +77,12 @@ public class FriendBuilder : MonoBehaviour
                 int date = acceptList[planKey][0];
                 int time = acceptList[planKey][1];
                 int conflict = acceptList[planKey][2];
+
                 //make a new friend with a random appearance who stores the plan
                 tempFriend = new Friend(planKey, date, time, body, hair, kit, conflict);
+                //create an entry in matches (to track win condition)
+                string daytime = date.ToString() + time.ToString();
+                matches.Add(daytime, false);
 
                 //remove plan from list
                 acceptList.Remove(planKey);
@@ -92,6 +98,8 @@ public class FriendBuilder : MonoBehaviour
                 //make a new friend with a random appearance who stores the plan
                 tempFriend = new Friend(planKey, date, time, body, hair, kit, conflict);
 
+                //increment the amount of conflicting plans (to track win condition)
+                conflictCount++;
                 //remove plan from list
                 denyList.Remove(planKey);
             }
@@ -177,6 +185,18 @@ public class FriendBuilder : MonoBehaviour
         }
         
         setFriend(friendIndex);
+    }
+
+    public void removeFriend() {
+        if(friendlist.Count() > 0) {
+            //remove the activity from list
+            friendlist.Remove(friendlist[friendIndex]);
+            //load the next activity in list
+            friendForward();
+        }
+        else {
+            friendIndex = -1;
+        }
     }
 
     public void acceptActivity() {
@@ -310,6 +330,10 @@ public class FriendBuilder : MonoBehaviour
         //check if correct button
         if (wasCorrect) {
             removeFriend();
+            //decrement amount of conflicting plans
+            conflictCount--;
+            //check for win condition
+            checkWin();
         } else {
             setFriend(friendIndex);
             wrongCount++;
@@ -337,8 +361,11 @@ public class FriendBuilder : MonoBehaviour
             reject2.gameObject.SetActive(true);
         }
         else {
-            acceptButton.SetActive(true);
-            rejectButton.SetActive(true);
+            if(!friendlist[friendIndex].accepted) {
+                acceptButton.SetActive(true);
+                rejectButton.SetActive(true);
+            }
+            
             leftArrow.SetActive(true);
             rightArrow.SetActive(true);
 
@@ -347,15 +374,41 @@ public class FriendBuilder : MonoBehaviour
         }
     }
 
-    public void removeFriend() {
-        if(friendlist.Count() > 0) {
-            //remove the activity from list
-            friendlist.Remove(friendlist[friendIndex]);
-            //load the next activity in list
-            friendForward();
+    public void wrongDrop(string daytime) {
+        if(matches.ContainsKey(daytime)) {
+            wrongCount++;
+            matches[daytime] = false;
+
+            popUp.GetComponentInChildren<TextMeshProUGUI>().text = "Wrong day or time.\nHint: Accepted invitations stay in the list at the top.";
+            popUp.SetActive(true);
         }
-        else {
-            friendIndex = -1;
+    }
+    public void rightDrop(string daytime) {
+        if(matches.ContainsKey(daytime)) {
+            //Debug.Log("Match!");
+            matches[daytime] = true;
+            //check for win condition
+            checkWin();
+        }
+    }
+
+    public void checkWin() {
+        bool youWin = false;
+        //check if there are no remaining conflicts
+        if(conflictCount == 0) {
+            youWin = true;
+            //iterate through matches to see if all are true
+            foreach (var condition in matches) {
+                if(!condition.Value) {
+                    youWin = false;
+                }
+            }
+        }
+        //win condition
+        if(youWin) {
+            //Debug.Log("You win!");
+            statsText.text = "Mistakes: " + wrongCount.ToString();
+            winScreen.SetActive(true);
         }
     }
 
