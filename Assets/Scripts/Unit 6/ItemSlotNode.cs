@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class ItemSlot : MonoBehaviour, IDropHandler
+public class ItemSlotNode : MonoBehaviour, IDropHandler
 {
     //public bool isTreeCanvas = false;
 

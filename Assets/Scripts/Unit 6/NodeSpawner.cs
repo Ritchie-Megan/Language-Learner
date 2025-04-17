@@ -286,7 +286,8 @@ public class NodeSpawner : MonoBehaviour
         }
 
         medianTreePos = sumPosition / nodeTransforms.Count;
-        Debug.Log(medianTreePos);
+        medianTreePos = new Vector3((float)(medianTreePos.x + 0.8), (float)(medianTreePos.y - 1.3), -10);
+        Debug.Log(medianTreePos.x);
     }
 }
 
