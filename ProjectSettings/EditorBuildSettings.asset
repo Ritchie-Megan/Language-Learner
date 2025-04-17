@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Unit 2.unity
     guid: d61c0f510818d43089d6c82788bdaf59
   - enabled: 1
+    path: Assets/Scenes/Unit 3 Menu.unity
+    guid: 2fa12c12143b8524a97f808b4c49aaa3
+  - enabled: 1
     path: Assets/Scenes/Unit 3.unity
     guid: 77fd9a5805de3459fb77c7fd28211dd5
   - enabled: 1
@@ -24,16 +27,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Unit 5.unity
     guid: 3be3e66a775630341b47624b4c27dc3c
   - enabled: 1
-    path: Assets/Scenes/Unit 6.unity
-    guid: 82d77b47f44b713498958fc59c8658c3
-  - enabled: 0
-    path: Assets/Scenes/Unit 5/Letter.unity
-    guid: 25e0555673c01ae4284d22b363b10551
-  - enabled: 1
     path: Assets/Scenes/Unit 5/Stage.unity
     guid: 7491f4e9d73667c4dbea32a8242cce42
   - enabled: 1
-    path: Assets/Scenes/Unit 5/Question Builder.unity
-    guid: d9fc5cb47e2651246af86e6c68a61a50
+    path: Assets/Scenes/Unit 6.unity
+    guid: 82d77b47f44b713498958fc59c8658c3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
