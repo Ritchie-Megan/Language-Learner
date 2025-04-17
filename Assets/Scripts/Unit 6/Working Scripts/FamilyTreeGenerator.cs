@@ -90,14 +90,14 @@ namespace FamilyTree {
             "Gabriel", "Emiliano", "Martín", "Lucas", "Agustín", "David", "Iker",
             "José", "Maximiliano", "Adrián", "Emmanuel", "Felipe", "Juan Pablo",
             "Andrés", "Gerónimo", "Ángel", "Rodrigo", "Bruno", "Alexander", "Thiago",
-            "Pablo", "Ian", "Isaac", "Miguel Ángel", "Fernando", "Javier", "Emilio",
-            "Sebastián", "Alonso", "Aarón", "Rafael", "Esteban", "Juan", "Axel", 
-            "Francisco", "Bautista", "Carlos", "Dylan", "Julián", "Manuel", "Facundo",
-            "Gael", "Valentino", "Damián", "Santino", "Vicente", "Máximo",
-            "Christopher", "Jorge", "Luciano", "Dante", "Alan", "Cristóbal", "Jesús",
-            "Lorenzo", "Alex", "Patricio", "Pedro", "Manuel", "Matthew", "Antonio",
-            "Iván", "José", "Hugo", "Josué", "Lautaro", "Diego Alejandro", "Miguel",
-            "Franco", "Kevin", "Luis", "Simón", "Elías", "Caleb", "Eduardo", "Ricardo", "Juan David", "Marcos",
+            "Pablo", "Ian", "Isaac", "Fernando", "Javier", "Emilio", "Sebastián", 
+            "Alonso", "Aarón", "Rafael", "Esteban", "Juan", "Axel", "Francisco", 
+            "Bautista", "Carlos", "Dylan", "Julián", "Manuel", "Facundo", "Gael",
+            "Valentino", "Damián", "Santino", "Vicente", "Máximo", "Christopher", 
+            "Jorge", "Luciano", "Dante", "Alan", "Cristóbal", "Jesús", "Lorenzo", 
+            "Alex", "Patricio", "Pedro", "Manuel", "Matthew", "Antonio", "Iván", 
+            "José", "Hugo", "Josué", "Lautaro", "Miguel", "Franco", "Kevin", "Luis",
+            "Simón", "Elías", "Caleb", "Eduardo", "Ricardo", "Juan David", "Marcos",
             "Salvador", "Jacobo", "Ignacio", "Camilo", "Mauricio", "Gonzalo"
         };
         private static List<string> _femaleNames = new List<string>

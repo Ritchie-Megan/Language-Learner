@@ -39,7 +39,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
                 if (transform.childCount == 0) {
                     droppedObject.transform.SetParent(transform, false);
                     droppedObject.transform.SetAsLastSibling();
-                    droppedObject.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; 
+                    droppedObject.GetComponent<RectTransform>().position = Vector3.zero; 
                     
 
                     //check to see if child is in correct place
