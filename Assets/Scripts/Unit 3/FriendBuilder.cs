@@ -55,7 +55,7 @@ public class FriendBuilder : MonoBehaviour
         List<Friend> friendList = new List<Friend>();
         
         //iterate through all of them
-        while(acceptList.Count > 0 || acceptList.Count > 0) {
+        while(acceptList.Count > 0 || denyList.Count > 0) {
             //choose random appearance
             System.Random rand = new System.Random();
             Sprite body = bodySprites[rand.Next(0,bodySprites.Length)];
@@ -468,7 +468,7 @@ public class FriendBuilder : MonoBehaviour
                 dayPhrase = "viernes";
                 break;
             case 5:
-                dayPhrase = "sabado";
+                dayPhrase = "sábado";
                 break;
             case 6:
                 dayPhrase = "domingo";

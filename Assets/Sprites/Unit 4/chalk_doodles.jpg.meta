@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chalk_doodles_0: -4279390770868901358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
