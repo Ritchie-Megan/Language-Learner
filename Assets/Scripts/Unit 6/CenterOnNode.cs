@@ -10,8 +10,7 @@ public class CenterOnNode : MonoBehaviour
         rect = GetComponent<RectTransform>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void centerNodes()
     {
         rect.position = new Vector3(targetNode.position.x, rect.position.y, rect.position.z);
     }

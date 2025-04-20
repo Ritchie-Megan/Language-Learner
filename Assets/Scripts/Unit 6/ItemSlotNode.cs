@@ -3,27 +3,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using FamilyTree;
 
 public class ItemSlotNode : MonoBehaviour, IDropHandler
 {
-    //public bool isTreeCanvas = false;
-
-    /*
-    public void OnDrop(PointerEventData eventData) {
-        Debug.Log("OnDrop");
-        if (eventData.pointerDrag != null) {
-            GameObject droppedObj = eventData.pointerDrag;
-            droppedObj.transform.SetParent(transform, false);
-            droppedObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-            //if back to list, reset for list
-            /*
-            if(!isTreeCanvas) {
-                droppedObj.localScale = Vector2.one;
-            }
-            
-        }
-    }
-    */
+    public Node node;
 
     public void OnDrop(PointerEventData eventData) {
         Debug.Log("Item dropped into: " + gameObject.name);
