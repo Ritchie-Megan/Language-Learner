@@ -35,6 +35,7 @@ public class Events01 : MonoBehaviour
 
     //pause menu
     public GameObject pauseMenu;
+    bool paused = false;
 
     //other variables
     private bool proceed = false; //true after clicking next button in general
@@ -153,7 +154,7 @@ public class Events01 : MonoBehaviour
         //disable question builder
         questionBuilder.SetActive(false);
         //disable pause menu
-        resume();
+        pauseMenu.SetActive(false);
         //disable heart buttons
         foreach(GameObject i in heartButtons) {
             i.SetActive(false);
@@ -494,13 +495,16 @@ public class Events01 : MonoBehaviour
         hintHider.SetActive(false);
         hintsUsed++;
     }
-    //bring up pause menu (escape key or pause button)
+    //bring up pause menu or exit pause menu
     public void pause() {
-        pauseMenu.SetActive(true);
-    }
-    //exit pause menu (resume button)
-    public void resume() {
-        pauseMenu.SetActive(false);
+        if(!paused) {
+            pauseMenu.SetActive(true);
+            paused = true;
+        }
+        else {
+            pauseMenu.SetActive(false);
+            paused = false;
+        }
     }
     //track which button clicked (question builder options or heart buttons)
     public void option1() {

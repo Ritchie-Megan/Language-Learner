@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartoon-of-guess-who_0: 5595296368344917028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
