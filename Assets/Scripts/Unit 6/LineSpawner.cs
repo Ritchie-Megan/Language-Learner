@@ -138,6 +138,8 @@ public class LineSpawner : MonoBehaviour
                     {
                         foreach (Transform spouseGroup in nodeGroup)
                         {
+                            createLine(spouseGroup, new Vector2(80, 2), Vector3.zero);
+                            
                             foreach (Transform person in spouseGroup)
                             {
                                 if (person.gameObject.tag == "HasParent")
