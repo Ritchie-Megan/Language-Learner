@@ -2,219 +2,324 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro; 
-using FamilyTreeBackend;
+using FamilyTree;
 
 
 public class NodeSpawner : MonoBehaviour
 {
-    //public GameObject prefab;
-    public TMP_Text nameText;
+    //public GameObject spouseGroupPrefab;
     public GameObject nodePrefab;
-    public Transform treeBase;
+    public GameObject blackoutScreen;
+    public GameObject tree;
+    public int nodeSpacing;
+    public int groupSpacing;
+    public UnityVector3Event onLoad;
 
-    public Dictionary<Node, GameObject> nodeTree = new Dictionary<Node, GameObject>();
-    public List<Vector2> nodePositionsBank = new List<Vector2>();
-
-
-    // Update is called once per frame
-    void Start()
-    {
-        HashSet<Node> nodes = new HashSet<Node>();
-        generateNodes(nodes);
-    }
-
-
+    private Transform grandparentsGen;
+    private Transform parentsGen;
+    private Transform rootGen;
+    private List<RectTransform> nodeTransforms;
+    private Dictionary<string, List<Node>> childDict;
     
+    [HideInInspector]
+    public Vector3 medianTreePos;
 
-    public void generateNodes(HashSet<FamilyTreeBackend.Node> nodes) {
-        foreach (FamilyTreeBackend.Node person in nodes) {
-            createNodeOnCanvas(person, 0, 0, "start");
+
+    public void generateNodes(Node root) {
+        if (nodeTransforms != null) {
+            nodeTransforms.Clear();
+            childDict.Clear();
         }
+        else {
+            nodeTransforms = new List<RectTransform>();
+            childDict = new Dictionary<string, List<Node>>();
+        }
+
+        grandparentsGen = tree.transform.GetChild(0);
+        parentsGen = tree.transform.GetChild(1);
+        rootGen = tree.transform.GetChild(2);
+
+        if (root != null)
+            createHalfFamilyNodes(root);
+        if (root.spouse != null && root.spouse.needsParent) {
+            createHalfFamilyNodes(root.spouse);
+            Debug.Log("Spouse Family Built");
+        }
+        else if (root.exSpouse != null && root.exSpouse.needsParent) {
+            createHalfFamilyNodes(root.exSpouse);
+            Debug.Log("Ex-Spouse Family Built");
+        }
+
+        StartCoroutine(RefreshLayout(tree));
     }
+    public void createHalfFamilyNodes(Node person) {
+        // determining which half of the tree to create
+        string familySide;
+        if (person.isLeftSpouse)
+            familySide = "LeftSide";
+        else
+            familySide = "RightSide";
 
-    
-    //TODO: if it goes off the screen
-    public void createNodeOnCanvas(Node person, int x, int y, string relationship) {
-        //avoiding multiples
-        if (person == null || nodeTree.ContainsKey(person)) {
-            return;
+        // GENERATE ROOT FAMILY
+        if (person.isRoot) {
+            Transform rootFamily = FindChildWithTag(rootGen, "Center");
+            createFamilyUnit(rootFamily, person, true);
         }
-        //create the instance
-        GameObject newHolderObj = Instantiate(nodePrefab, treeBase);
-        newHolderObj.GetComponentInChildren<TMP_Text>().text = person.personName;
-        //make the panel item slot
-        RectTransform rectTransform = newHolderObj.GetComponent<RectTransform>();
-        rectTransform.anchoredPosition = new Vector2(x,y);
-        if (newHolderObj.GetComponent<ItemSlot>() == null) {
-            newHolderObj.AddComponent<ItemSlot>();
+
+        // GENERATE SIBLINGS, NIECES, & NEPHEWS
+        Transform siblings = FindChildWithTag(rootGen, familySide);
+        foreach (Node sibling in person.siblings) {
+            createFamilyUnit(siblings, sibling, true);
         }
+
+        // GENERATE PARENTS, AUNTS, & UNCLES
+        Transform parentGen = FindChildWithTag(parentsGen, familySide);
         
-
-        //check to make sure there isn't overlap
-        Vector2 nodePos = new Vector2(x,y);
-        for (int i = 0; i < nodePositionsBank.Count; i++) {
-            if (nodePositionsBank[i] == nodePos) {
-                if (relationship == "spouse") {
-                    shiftRight(x, y);
-                }
-                else if (relationship == "child") {
-                    shiftRight(x, y);
-                }
-                else if (relationship == "parentOne") {
-                    shiftLeft(x, y);
-                }
-                else if (relationship == "parentTwo") {
-                    shiftRight(x, y);
-                }
-            }
-                        
+        // generating parents
+        Transform parents = FindChildWithTag(parentGen, "Center");
+        if (person.parentOne != null) {
+            createFamilyUnit(parents, person.parentOne, false);
         }
-        //make sure it doesn't go off?? did I do this with the scroll bar?
 
-        //put into location
-        newHolderObj.transform.localPosition = new Vector2(x, y);
-        //store node to be able to reference
-        nodeTree[person] = newHolderObj;
-        //store placement
-        nodePositionsBank.Add(new Vector2(x, y));
+        // generating aunts and uncles of left parent
+        Transform leftParentSiblings = FindChildWithTag(parentGen, "LeftSide");
+        Node leftParent = null;
+        if (person.parentOne != null && person.parentOne.isLeftSpouse)
+            leftParent = person.parentOne;
+        else if (person.parentTwo != null && person.parentTwo.isLeftSpouse)
+            leftParent = person.parentTwo;
 
-        //spouse determied (plus to x axis)
-        if (person.spouse != null) {
-            createNodeOnCanvas(person.spouse, x + 100, y, "spouse");
-        }
-        //children determined (minus to y axis for children)
-        if (person.children.Count > 0) {
-            int childrenNumber = person.children.Count;
-            int center = (childrenNumber * 100)/2;
-            if (center % 100 == 0) {
-                center = center + (100 - center);
+        if (leftParent != null) {
+            foreach (Node sibling in leftParent.siblings) {
+                createFamilyUnit(leftParentSiblings, sibling, false);
             }
-            //if spouse, inbetween those two
-            if (person.spouse != null) {
-                for (int i = 0; i < childrenNumber; i++) {
-                    // x + 100 = end of parent plane. "- center" places first child leftmost needed. "((i-1)*100)" will shift child 100 to the right each new child
-                    createNodeOnCanvas(person.children[i], (x + 100) - center + ((i-1)*100), y - 60, "child");
+        }
+
+        // generating aunts and uncles of right parent
+        Transform rightParentSiblings = FindChildWithTag(parentGen, "RightSide");
+        Node rightParent = null;
+        if (person.parentOne != null && !person.parentOne.isLeftSpouse)
+            rightParent = person.parentOne;
+        else if (person.parentTwo != null && !person.parentTwo.isLeftSpouse)
+            rightParent = person.parentTwo;
+
+        if (rightParent != null) {
+            foreach (Node sibling in rightParent.siblings) {
+                createFamilyUnit(rightParentSiblings, sibling, false);
+            }
+        }
+
+        // GENERATE GRANDPARENTS
+        Transform grandparentGen = FindChildWithTag(grandparentsGen, familySide);
+
+        if (leftParent != null && leftParent.parentOne != null) {
+            createFamilyUnit(grandparentGen, leftParent.parentOne, false);
+        }
+
+        if (rightParent != null && rightParent.parentOne != null) {
+            createFamilyUnit(grandparentGen, rightParent.parentOne, false);
+        } 
+    } 
+
+    public Transform FindChildWithTag(Transform parent, string tag) {
+        GameObject child = null;
+
+        foreach(Transform transform in parent) {
+            if(transform.CompareTag(tag)) {
+                child = transform.gameObject;
+                break;
+            }
+        }
+
+        return child.transform;
+    }
+
+    public Transform createFamilyUnit(Transform parent, Node person, bool includeChildren) {
+        GameObject familyUnit = new GameObject("Family Unit");
+        familyUnit.transform.parent = parent;
+        RectTransform rect = familyUnit.AddComponent<RectTransform>();
+        ContentSizeFitter sizefitter = familyUnit.AddComponent<ContentSizeFitter>();
+        VerticalLayoutGroup vertLayout = familyUnit.AddComponent<VerticalLayoutGroup>();
+        
+        rect.localScale = new Vector3(1,1,1);
+
+        sizefitter.horizontalFit = ContentSizeFitter.FitMode.MinSize;
+        sizefitter.verticalFit = ContentSizeFitter.FitMode.MinSize;
+
+        vertLayout.childControlWidth = false;
+        vertLayout.childControlHeight = false;
+        vertLayout.childForceExpandWidth = false;
+        vertLayout.childForceExpandHeight = false;
+        vertLayout.childAlignment = TextAnchor.MiddleCenter;
+        vertLayout.spacing = groupSpacing;
+
+        Transform spouseGroups = createNodeGroup(familyUnit.transform, "Spouses");
+
+        if (person.spouse == null)
+        {
+            Transform spouseGroup = createNodeGroup(spouseGroups, "Single");
+            GameObject personNode = createNodeObject(spouseGroup, person);
+        }
+        else {
+            Transform spouseGroup = createNodeGroup(spouseGroups, "Married");
+            GameObject personNode = createNodeObject(spouseGroup, person);
+            GameObject spouseNode = createNodeObject(spouseGroup, person.spouse);
+            
+            if (!person.isLeftSpouse) {
+                spouseNode.transform.SetAsFirstSibling();
+            }
+        }
+
+        if (person.exSpouse != null) {
+            Transform spouseGroup = createNodeGroup(spouseGroups, "Divorced");
+            GameObject exSpouseNode = createNodeObject(spouseGroup, person.exSpouse);
+
+            if (!person.isLeftSpouse) {
+                exSpouseNode.transform.SetAsFirstSibling();
+            }
+
+            if (person.isLeftSpouse && person.spouse != null) {
+                exSpouseNode.transform.SetAsFirstSibling();
+            }
+            
+            if (person.exSpouse.spouse != null) {
+                spouseGroup.gameObject.name = "Remarried";
+                GameObject exSpouseSpouseNode = createNodeObject(spouseGroup, person.exSpouse.spouse);
+
+                if (person.isLeftSpouse && person.spouse != null) {
+                    exSpouseSpouseNode.transform.SetAsFirstSibling();
+                }
+                else if (!person.isLeftSpouse && spouseGroup == null) {
+                    exSpouseSpouseNode.transform.SetAsFirstSibling();
                 }
             }
-            else {
-                for (int i = 0; i < childrenNumber; i++) {
-                    createNodeOnCanvas(person.children[i], (x + 100) - center + ((i-1)*100), y - 60, "child");
+        }
+
+        if (includeChildren) {
+            Dictionary<int, List<Node>> childGroups = new Dictionary<int, List<Node>> {
+                {0, new List<Node>()}, {1, new List<Node>()}, {2, new List<Node>()}
+            };
+
+            foreach(Node child in person.children) {
+                if (child.parentTwo == null || (child.parentTwo != null && child.parentTwo == person.spouse)) {
+                    childGroups[0].Add(child); // spouse children
+                }
+                if (child.parentTwo != null && child.parentTwo == person.exSpouse) {
+                    childGroups[1].Add(child); // ex spouse children
+                }
+            }
+
+            if (person.exSpouse != null) {
+                foreach (Node child in person.exSpouse.children) {
+                    if (child.parentOne != person && child.parentTwo != person) {
+                        childGroups[2].Add(child);  // step children
+                    }
                 }
             }
             
-        }
-        //parents determined (add to y axis)
-        if (person.parentOne != null && person.parentTwo != null) {
-            createNodeOnCanvas(person.parentOne, x - 100, y + 60, "parentOne");
-            createNodeOnCanvas(person.parentTwo, x + 100, y + 60, "parentTwo");
-        }
-        else if (person.parentOne != null) {
-            createNodeOnCanvas(person.parentOne, x, y + 60, "parentOne");
-        }
-        else if (person.parentTwo != null) {
-            createNodeOnCanvas(person.parentTwo, x, y + 60, "parentTwo");
-        }
-        //siblings determined?
+            Transform childGroup = createNodeGroup(familyUnit.transform, "Children");
 
+            for (int i = 0; i < 3; i++) {
+                foreach (Node child in childGroups[i]) {
+                    if (child.spouse != null) {
+                        Transform childSpouseGroup = createNodeGroup(childGroup, "Spouse Group");
+                        GameObject childNode = createNodeObject(childSpouseGroup, child);
+                        GameObject childSpouseNode = createNodeObject(childSpouseGroup, child.spouse);
 
-        //moves object to random place(testing purposes)
-        //float x = Random.Range(-500f, 500f);
-        //float y = Random.Range(-200f, 200f);
-        //newHolderObj.transform.localPosition = new Vector2(x, y);
-    }
-    
+                        if (!child.isLeftSpouse)
+                            childSpouseNode.transform.SetAsFirstSibling();
+                            
+                        if (person.isLeftSpouse && person.spouse != null)
+                            childNode.transform.SetAsFirstSibling();
 
-    /*
-    //start from the absolute top and go down for this one
-    public void createNodeOnCanvas() {
+                        if (!person.isLeftSpouse && person.spouse == null)
+                            childNode.transform.SetAsFirstSibling();
+                    }
+                    else {
+                        Transform childSpouseGroup = createNodeGroup(childGroup, "Spouse Group");
+                        GameObject childNode = createNodeObject(childSpouseGroup, child);
 
-    }
-    */
+                        if (person.isLeftSpouse && person.spouse != null)
+                            childNode.transform.SetAsFirstSibling();
 
-    public void shiftRight(int posx, int posy) {
-        foreach(FamilyTreeBackend.Node person in new List<FamilyTreeBackend.Node>(nodeTree.Keys)) {
-            //https://discussions.unity.com/t/change-position-ui-image-in-canvas/722293/4
-            GameObject nodeObj = nodeTree[person];
-            RectTransform moveNode = nodeObj.GetComponent<RectTransform>();
-            Vector2 position = moveNode.anchoredPosition;
-            float getposx = position.x;
-            float getposy = position.y;
-            if (nodePositionsBank.Contains(new Vector2(getposx, getposy))) {
-                nodePositionsBank.Remove(new Vector2(getposx, getposy));
+                        if (!person.isLeftSpouse && person.spouse == null)
+                            childNode.transform.SetAsFirstSibling();
+                    }
+                }
             }
-
-            if (getposx >= posx) {
-                moveNode.anchoredPosition = new Vector2(getposx + 100, getposy);
-                nodePositionsBank.Add(new Vector2(getposx + 100, getposy));
-            }
-
         }
+
+        return familyUnit.transform;
     }
 
-    public void shiftLeft(int posx, int posy) {
-        foreach(FamilyTreeBackend.Node person in new List<FamilyTreeBackend.Node>(nodeTree.Keys)) {
-            GameObject nodeObj = nodeTree[person];
-            RectTransform moveNode = nodeObj.GetComponent<RectTransform>();
-            Vector2 position = moveNode.anchoredPosition;
-            float getposx = position.x;
-            float getposy = position.y;
+    public GameObject createNodeObject(Transform parent, Node node) {
+        GameObject nodeObject = Instantiate(nodePrefab, parent);
+        nodeObject.name = node.personName;
+        nodeObject.GetComponent<ItemSlotNode>().node = node;
+        if (node.parentOne != null || node.parentTwo != null)
+            nodeObject.tag = "HasParent";
+        nodeTransforms.Add(nodeObject.GetComponent<RectTransform>());
+        return nodeObject;
+    }
 
-            if (nodePositionsBank.Contains(new Vector2(getposx, getposy))) {
-                nodePositionsBank.Remove(new Vector2(getposx, getposy));
-            }
+    public Transform createNodeGroup(Transform parent, string groupName) {
+        GameObject nodeGroup = new GameObject(groupName);
+        nodeGroup.transform.parent = parent;
+        RectTransform rect = nodeGroup.AddComponent<RectTransform>();
+        ContentSizeFitter sizefitter = nodeGroup.AddComponent<ContentSizeFitter>();
+        HorizontalLayoutGroup horiLayout = nodeGroup.AddComponent<HorizontalLayoutGroup>();
+        
+        rect.localScale = new Vector3(1,1,1);
 
-            if (getposx <= posx) {
-                moveNode.anchoredPosition = new Vector2(getposx - 100, getposy);
-                nodePositionsBank.Add(new Vector2(getposx - 100, getposy));
-            }
+        sizefitter.horizontalFit = ContentSizeFitter.FitMode.MinSize;
+        sizefitter.verticalFit = ContentSizeFitter.FitMode.MinSize;
 
+        horiLayout.childControlWidth = false;
+        horiLayout.childForceExpandWidth = false;
+        horiLayout.childControlHeight = false;
+        horiLayout.childForceExpandHeight = false;
+        horiLayout.childAlignment = TextAnchor.MiddleCenter;
+        horiLayout.spacing = nodeSpacing;
+
+        return nodeGroup.transform;
+    }
+
+    IEnumerator RefreshLayout( GameObject tree) {
+
+        blackoutScreen.SetActive(true);
+
+
+        // jank workaround for layout groups not refreshing
+        for (int i = 0; i < 4; i++) {
+            yield return new WaitForEndOfFrame();
+
+            tree.SetActive(false);
+
+            yield return new WaitForEndOfFrame();
+
+            tree.SetActive(true);
         }
+        
+        blackoutScreen.SetActive(false);
+
+        setMedianTreePosition();
+        onLoad.Invoke(medianTreePos);
+        //GameObject.GetComponent<LineSpanwer>().GenerateLines()
+
     }
-    
-    public void shiftUp(int posx, int posy) {
-        foreach(FamilyTreeBackend.Node person in new List<FamilyTreeBackend.Node>(nodeTree.Keys)) {
-            GameObject nodeObj = nodeTree[person];
-            RectTransform moveNode = nodeObj.GetComponent<RectTransform>();
-            Vector2 position = moveNode.anchoredPosition;
-            float getposx = position.x;
-            float getposy = position.y;
 
-            if (nodePositionsBank.Contains(new Vector2(getposx, getposy))) {
-                nodePositionsBank.Remove(new Vector2(getposx, getposy));
-            }
-
-            if (getposy >= posy) {
-                moveNode.anchoredPosition = new Vector2(getposx, getposy + 60);
-                nodePositionsBank.Add(new Vector2(getposx, getposy + 60));
-            }
-
+    public void setMedianTreePosition() {
+        Vector3 sumPosition = new Vector3();
+        foreach (RectTransform rect in nodeTransforms) {
+            sumPosition += rect.position;
         }
-    }
-    
-    public void shiftDown(int posx, int posy) {
-        foreach(FamilyTreeBackend.Node person in new List<FamilyTreeBackend.Node>(nodeTree.Keys)) {
-            GameObject nodeObj = nodeTree[person];
-            RectTransform moveNode = nodeObj.GetComponent<RectTransform>();
-            Vector2 position = moveNode.anchoredPosition;
-            float getposx = position.x;
-            float getposy = position.y;
 
-            if (nodePositionsBank.Contains(new Vector2(getposx, getposy))) {
-                nodePositionsBank.Remove(new Vector2(getposx, getposy));
-            }
-
-            if (getposy <= posy) {
-                moveNode.anchoredPosition = new Vector2(getposx, getposy - 60);
-                nodePositionsBank.Add(new Vector2(getposx, getposy - 60));
-            }
-
-        }
+        medianTreePos = sumPosition / nodeTransforms.Count;
+        medianTreePos = new Vector3((float)(medianTreePos.x + 0.75), (float)(medianTreePos.y - 1.3), -10);
     }
-    
-    public void setName(string personName) {
-        nameText.text = personName;
-    }
-    
-    
 }
+
+[System.Serializable]
+public class UnityVector3Event : UnityEvent<Vector3> {}

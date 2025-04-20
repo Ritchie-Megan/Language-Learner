@@ -6,6 +6,11 @@ TagManager:
   tags:
   - ListOption
   - ListHeader
+  - LeftSide
+  - RightSide
+  - Center
+  - NodeCanvas
+  - HasParent
   layers:
   - Default
   - TransparentFX
