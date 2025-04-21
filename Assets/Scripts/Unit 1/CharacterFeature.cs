@@ -4,6 +4,7 @@ using UnityEngine;
 public class CharacterFeature : ScriptableObject
 {
     public Sprite featureSprite;
+    public Sprite coloredSprite;
     public Sprite spriteCrop;
     public float yPos;
     public float scale;

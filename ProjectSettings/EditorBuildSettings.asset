@@ -26,13 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Unit 6.unity
     guid: 82d77b47f44b713498958fc59c8658c3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Unit 5/Letter.unity
     guid: 25e0555673c01ae4284d22b363b10551
   - enabled: 1
     path: Assets/Scenes/Unit 5/Stage.unity
     guid: 7491f4e9d73667c4dbea32a8242cce42
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Unit 5/Question Builder.unity
     guid: d9fc5cb47e2651246af86e6c68a61a50
   m_configObjects: {}

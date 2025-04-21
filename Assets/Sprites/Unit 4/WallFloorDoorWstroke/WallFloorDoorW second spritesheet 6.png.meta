@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 43c3033e3deb8774aa77c840ea42a921
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5877207790063202314
+    second: WallFloorDoorW second spritesheet 6_0
+  - first:
+      213: -775438717966372238
+    second: WallFloorDoorW second spritesheet 6_1
+  - first:
+      213: -3553407110143735280
+    second: WallFloorDoorW second spritesheet 6_2
+  - first:
+      213: 5100830971879254115
+    second: WallFloorDoorW second spritesheet 6_3
+  - first:
+      213: 4456942391556337821
+    second: WallFloorDoorW second spritesheet 6_4
+  - first:
+      213: -2180275112101609580
+    second: WallFloorDoorW second spritesheet 6_5
+  - first:
+      213: 2433606681771478919
+    second: WallFloorDoorW second spritesheet 6_6
+  - first:
+      213: -4197602174337642499
+    second: WallFloorDoorW second spritesheet 6_7
+  - first:
+      213: 3650720435509876419
+    second: WallFloorDoorW second spritesheet 6_8
+  - first:
+      213: -602791606385570037
+    second: WallFloorDoorW second spritesheet 6_9
+  - first:
+      213: -3510442780720770487
+    second: WallFloorDoorW second spritesheet 6_10
+  - first:
+      213: 5543015679761522709
+    second: WallFloorDoorW second spritesheet 6_11
+  - first:
+      213: -8635342045460590450
+    second: WallFloorDoorW second spritesheet 6_12
+  - first:
+      213: 3176424331440634593
+    second: WallFloorDoorW second spritesheet 6_13
+  - first:
+      213: -5678162480024386044
+    second: WallFloorDoorW second spritesheet 6_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 679
+        width: 189
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffcf1a57a6ff6ea0800000000000000
+      internalID: -5877207790063202314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 679
+        width: 188
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272b78e28961d35f0800000000000000
+      internalID: -775438717966372238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 679
+        width: 188
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a09816f03cfaec0800000000000000
+      internalID: -3553407110143735280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 421
+        width: 90
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3686c2a5ebac9c640800000000000000
+      internalID: 5100830971879254115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 421
+        width: 52
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d907811cd7d3add30800000000000000
+      internalID: 4456942391556337821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 421
+        width: 90
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ffe8e465b1eb1e0800000000000000
+      internalID: -2180275112101609580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 421
+        width: 52
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f810e1268e5c120800000000000000
+      internalID: 2433606681771478919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_7
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 421
+        width: 90
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff8232ff0f1fb5c0800000000000000
+      internalID: -4197602174337642499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_8
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 421
+        width: 53
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c653dcc4e6f9a230800000000000000
+      internalID: 3650720435509876419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 37
+        width: 198
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f0dcb4a3472a7f0800000000000000
+      internalID: -602791606385570037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_10
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 143
+        width: 89
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942ddcad3e6684fc0800000000000000
+      internalID: -3510442780720770487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 142
+        width: 53
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5102b90846fbcec40800000000000000
+      internalID: 5543015679761522709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_12
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 143
+        width: 89
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e809352692a192880800000000000000
+      internalID: -8635342045460590450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_13
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 141
+        width: 52
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea3d6b991de41c20800000000000000
+      internalID: 3176424331440634593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallFloorDoorW second spritesheet 6_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 20
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40602310f4d1331b0800000000000000
+      internalID: -5678162480024386044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WallFloorDoorW second spritesheet 6_0: -5877207790063202314
+      WallFloorDoorW second spritesheet 6_1: -775438717966372238
+      WallFloorDoorW second spritesheet 6_10: -3510442780720770487
+      WallFloorDoorW second spritesheet 6_11: 5543015679761522709
+      WallFloorDoorW second spritesheet 6_12: -8635342045460590450
+      WallFloorDoorW second spritesheet 6_13: 3176424331440634593
+      WallFloorDoorW second spritesheet 6_14: -5678162480024386044
+      WallFloorDoorW second spritesheet 6_2: -3553407110143735280
+      WallFloorDoorW second spritesheet 6_3: 5100830971879254115
+      WallFloorDoorW second spritesheet 6_4: 4456942391556337821
+      WallFloorDoorW second spritesheet 6_5: -2180275112101609580
+      WallFloorDoorW second spritesheet 6_6: 2433606681771478919
+      WallFloorDoorW second spritesheet 6_7: -4197602174337642499
+      WallFloorDoorW second spritesheet 6_8: 3650720435509876419
+      WallFloorDoorW second spritesheet 6_9: -602791606385570037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

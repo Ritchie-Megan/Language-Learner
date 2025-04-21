@@ -1,0 +1,3783 @@
+fileFormatVersion: 2
+guid: 6996fcb294858ce4dba6ea082688f44c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4026923765840081125
+    second: trianglessmall_0
+  - first:
+      213: 6023369616792463771
+    second: trianglessmall_1
+  - first:
+      213: 4077307238962831144
+    second: trianglessmall_2
+  - first:
+      213: 2024398584656277984
+    second: trianglessmall_3
+  - first:
+      213: 2546550758870771317
+    second: trianglessmall_4
+  - first:
+      213: 8041773830927069136
+    second: trianglessmall_5
+  - first:
+      213: -1999411094879575178
+    second: trianglessmall_6
+  - first:
+      213: 7543202053742343468
+    second: trianglessmall_7
+  - first:
+      213: -1014714103482778247
+    second: trianglessmall_8
+  - first:
+      213: 1889773296496809817
+    second: trianglessmall_9
+  - first:
+      213: 2111136416319351570
+    second: trianglessmall_10
+  - first:
+      213: 5490871451853448880
+    second: trianglessmall_11
+  - first:
+      213: -3462382809429713662
+    second: trianglessmall_12
+  - first:
+      213: 9164930611371871688
+    second: trianglessmall_13
+  - first:
+      213: -2054611710635370075
+    second: trianglessmall_14
+  - first:
+      213: -6575143496972029630
+    second: trianglessmall_15
+  - first:
+      213: -409438134098568325
+    second: trianglessmall_16
+  - first:
+      213: 868590718078037613
+    second: trianglessmall_17
+  - first:
+      213: -6779236543348206143
+    second: trianglessmall_18
+  - first:
+      213: -6164420442224514411
+    second: trianglessmall_19
+  - first:
+      213: 635677102111697097
+    second: trianglessmall_20
+  - first:
+      213: 4611791280861218072
+    second: trianglessmall_21
+  - first:
+      213: -2001061775038704745
+    second: trianglessmall_22
+  - first:
+      213: 5968350521047788259
+    second: trianglessmall_23
+  - first:
+      213: 73061642058601534
+    second: trianglessmall_24
+  - first:
+      213: -1845241129871245686
+    second: trianglessmall_25
+  - first:
+      213: 4000655769823199875
+    second: trianglessmall_26
+  - first:
+      213: 1796425340765276514
+    second: trianglessmall_27
+  - first:
+      213: 8205826298244253509
+    second: trianglessmall_28
+  - first:
+      213: 7316026677950719918
+    second: trianglessmall_29
+  - first:
+      213: 2327030216353522486
+    second: trianglessmall_30
+  - first:
+      213: 712184459343994327
+    second: trianglessmall_31
+  - first:
+      213: 5745225682781965495
+    second: trianglessmall_32
+  - first:
+      213: 2645782370805092846
+    second: trianglessmall_33
+  - first:
+      213: 4394050785520025507
+    second: trianglessmall_34
+  - first:
+      213: -2085932137257259399
+    second: trianglessmall_35
+  - first:
+      213: 1105369352762732962
+    second: trianglessmall_36
+  - first:
+      213: -6955963958694812069
+    second: trianglessmall_37
+  - first:
+      213: 4836573832159307620
+    second: trianglessmall_38
+  - first:
+      213: 1152071477445692349
+    second: trianglessmall_39
+  - first:
+      213: 9052302492802420157
+    second: trianglessmall_40
+  - first:
+      213: 572694444817152733
+    second: trianglessmall_41
+  - first:
+      213: 2447045705677257863
+    second: trianglessmall_42
+  - first:
+      213: -4653996014553704248
+    second: trianglessmall_43
+  - first:
+      213: -9223198929880588151
+    second: trianglessmall_44
+  - first:
+      213: 3242096470648850104
+    second: trianglessmall_45
+  - first:
+      213: 3553649173385789827
+    second: trianglessmall_46
+  - first:
+      213: -6041386197591505640
+    second: trianglessmall_47
+  - first:
+      213: -7229026979992365957
+    second: trianglessmall_48
+  - first:
+      213: 6550945404205194397
+    second: trianglessmall_49
+  - first:
+      213: -2618702893662323473
+    second: trianglessmall_50
+  - first:
+      213: 3283564128673814462
+    second: trianglessmall_51
+  - first:
+      213: 2281965886310840494
+    second: trianglessmall_52
+  - first:
+      213: -5529379473034010807
+    second: trianglessmall_53
+  - first:
+      213: -6774947842084391884
+    second: trianglessmall_54
+  - first:
+      213: 1817693561885312667
+    second: trianglessmall_55
+  - first:
+      213: 8021329526081844995
+    second: trianglessmall_56
+  - first:
+      213: -4909793854071106089
+    second: trianglessmall_57
+  - first:
+      213: 3291692597721443660
+    second: trianglessmall_58
+  - first:
+      213: -2713988170826214275
+    second: trianglessmall_59
+  - first:
+      213: -2820296416315735162
+    second: trianglessmall_60
+  - first:
+      213: 3339498727914541097
+    second: trianglessmall_61
+  - first:
+      213: -8357016166179871773
+    second: trianglessmall_62
+  - first:
+      213: 2660482435798056164
+    second: trianglessmall_63
+  - first:
+      213: 6105735874617038702
+    second: trianglessmall_64
+  - first:
+      213: -6671195880173069053
+    second: trianglessmall_65
+  - first:
+      213: 6010831049628907850
+    second: trianglessmall_66
+  - first:
+      213: -5729981930575786758
+    second: trianglessmall_67
+  - first:
+      213: 8911167745106075973
+    second: trianglessmall_68
+  - first:
+      213: 5750743869172079939
+    second: trianglessmall_69
+  - first:
+      213: 4316842193686404482
+    second: trianglessmall_70
+  - first:
+      213: 8637541048620748455
+    second: trianglessmall_71
+  - first:
+      213: 6696799764520170572
+    second: trianglessmall_72
+  - first:
+      213: -457149388852400828
+    second: trianglessmall_73
+  - first:
+      213: 631484552858156591
+    second: trianglessmall_74
+  - first:
+      213: -996264240961224804
+    second: trianglessmall_75
+  - first:
+      213: -5001633717841212755
+    second: trianglessmall_76
+  - first:
+      213: -7136577776001961096
+    second: trianglessmall_77
+  - first:
+      213: -6355777802980379543
+    second: trianglessmall_78
+  - first:
+      213: -3608751814826128376
+    second: trianglessmall_79
+  - first:
+      213: -6416929902597020407
+    second: trianglessmall_80
+  - first:
+      213: -4645580889242800972
+    second: trianglessmall_81
+  - first:
+      213: 576026238459514027
+    second: trianglessmall_82
+  - first:
+      213: -971605908573371167
+    second: trianglessmall_83
+  - first:
+      213: -6594413227159510558
+    second: trianglessmall_84
+  - first:
+      213: 3397824160732750181
+    second: trianglessmall_85
+  - first:
+      213: 2966524309683862542
+    second: trianglessmall_86
+  - first:
+      213: 3679249268369470469
+    second: trianglessmall_87
+  - first:
+      213: -1356708598762803483
+    second: trianglessmall_88
+  - first:
+      213: -3930541268851222235
+    second: trianglessmall_89
+  - first:
+      213: -5414957274117613866
+    second: trianglessmall_90
+  - first:
+      213: -6156195248800579295
+    second: trianglessmall_91
+  - first:
+      213: 5744581503114280576
+    second: trianglessmall_92
+  - first:
+      213: -6760963456727934316
+    second: trianglessmall_93
+  - first:
+      213: 6576021531180319841
+    second: trianglessmall_94
+  - first:
+      213: 1845447200309346128
+    second: trianglessmall_95
+  - first:
+      213: -2999902861379845505
+    second: trianglessmall_96
+  - first:
+      213: -40497725045165338
+    second: trianglessmall_97
+  - first:
+      213: 5943124434714510121
+    second: trianglessmall_98
+  - first:
+      213: -2129908590175134854
+    second: trianglessmall_99
+  - first:
+      213: 1510116508794161971
+    second: trianglessmall_100
+  - first:
+      213: 6063657587350145890
+    second: trianglessmall_101
+  - first:
+      213: -273872232862420559
+    second: trianglessmall_102
+  - first:
+      213: 3940201498077460117
+    second: trianglessmall_103
+  - first:
+      213: 5406379477878847882
+    second: trianglessmall_104
+  - first:
+      213: -3545858407433519100
+    second: trianglessmall_105
+  - first:
+      213: 8992123610134192562
+    second: trianglessmall_106
+  - first:
+      213: 1712610669610153865
+    second: trianglessmall_107
+  - first:
+      213: -5789084271539844171
+    second: trianglessmall_108
+  - first:
+      213: 1100357013468122908
+    second: trianglessmall_109
+  - first:
+      213: 59727306578069223
+    second: trianglessmall_110
+  - first:
+      213: 7615880384371066417
+    second: trianglessmall_111
+  - first:
+      213: 1874750203079518000
+    second: trianglessmall_112
+  - first:
+      213: -638745897885096775
+    second: trianglessmall_113
+  - first:
+      213: -4874912541679728688
+    second: trianglessmall_114
+  - first:
+      213: 1174043761343941899
+    second: trianglessmall_115
+  - first:
+      213: 2593963656282626534
+    second: trianglessmall_116
+  - first:
+      213: 5095760075174479190
+    second: trianglessmall_117
+  - first:
+      213: -1322520762995800334
+    second: trianglessmall_118
+  - first:
+      213: -5187758674590345133
+    second: trianglessmall_119
+  - first:
+      213: -3101451775380088791
+    second: trianglessmall_120
+  - first:
+      213: -3524000808791230924
+    second: trianglessmall_121
+  - first:
+      213: 5886524733757800872
+    second: trianglessmall_122
+  - first:
+      213: 7165811756007357375
+    second: trianglessmall_123
+  - first:
+      213: -5041853264693831195
+    second: trianglessmall_124
+  - first:
+      213: 996436641470307394
+    second: trianglessmall_125
+  - first:
+      213: -4877762821511390037
+    second: trianglessmall_126
+  - first:
+      213: 2816848891275913133
+    second: trianglessmall_127
+  - first:
+      213: 3271247343970365725
+    second: trianglessmall_128
+  - first:
+      213: -3996773844374157870
+    second: trianglessmall_129
+  - first:
+      213: 5932888021975529864
+    second: trianglessmall_130
+  - first:
+      213: 5104843141646481157
+    second: trianglessmall_131
+  - first:
+      213: 8264454210345556331
+    second: trianglessmall_132
+  - first:
+      213: -3975315914039255092
+    second: trianglessmall_133
+  - first:
+      213: -2856976055182197822
+    second: trianglessmall_134
+  - first:
+      213: 1349116983874247648
+    second: trianglessmall_135
+  - first:
+      213: 7356904694966696818
+    second: trianglessmall_136
+  - first:
+      213: 4566329624340329593
+    second: trianglessmall_137
+  - first:
+      213: -80589214947212157
+    second: trianglessmall_138
+  - first:
+      213: -2984066886241086338
+    second: trianglessmall_139
+  - first:
+      213: -6411445643999362839
+    second: trianglessmall_140
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: trianglessmall_0
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 3848
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0f97854d182e730800000000000000
+      internalID: 4026923765840081125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_1
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 3893
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99abc7d0ce479350800000000000000
+      internalID: 6023369616792463771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_2
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 3838
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f1282d451859830800000000000000
+      internalID: 4077307238962831144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_3
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3839
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1bd3a79cb181c10800000000000000
+      internalID: 2024398584656277984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3821
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5766ef84c6a275320800000000000000
+      internalID: 2546550758870771317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3832
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfa07c21be1a9f60800000000000000
+      internalID: 8041773830927069136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_6
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 3807
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6736ab9d33aa044e0800000000000000
+      internalID: -1999411094879575178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_7
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 3761
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c253f426d46dea860800000000000000
+      internalID: 7543202053742343468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_8
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 3758
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d745926e20be1f0800000000000000
+      internalID: -1014714103482778247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_9
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 3750
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95716bbfcc2d93a10800000000000000
+      internalID: 1889773296496809817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_10
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 3537
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b2b17a2634c4d10800000000000000
+      internalID: 2111136416319351570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_11
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 3592
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6ee0b5e7e733c40800000000000000
+      internalID: 5490871451853448880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_12
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 3577
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dd587ed2523ffc0800000000000000
+      internalID: -3462382809429713662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_13
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 3537
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd8ce945df503f70800000000000000
+      internalID: 9164930611371871688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_14
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 3486
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a99834f88d8c73e0800000000000000
+      internalID: -2054611710635370075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_15
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 3531
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24133cb73d560c4a0800000000000000
+      internalID: -6575143496972029630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_16
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 3500
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b5e83bf22615af0800000000000000
+      internalID: -409438134098568325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_17
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3471
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e2e36f7aadd0c00800000000000000
+      internalID: 868590718078037613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_18
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 3419
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5126128405be1a0800000000000000
+      internalID: -6779236543348206143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_19
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 3460
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a2d0fa444937aa0800000000000000
+      internalID: -6164420442224514411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_20
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 3413
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8a737d4f062d800800000000000000
+      internalID: 635677102111697097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3248
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8150af15cbf500040800000000000000
+      internalID: 4611791280861218072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_22
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 3290
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793943deaecca34e0800000000000000
+      internalID: -2001061775038704745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_23
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 3274
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea221e5d27d3d250800000000000000
+      internalID: 5968350521047788259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_24
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 3151
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e341c952d21930100800000000000000
+      internalID: 73061642058601534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_25
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 3151
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e751908f26466e0800000000000000
+      internalID: -1845241129871245686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_26
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 3172
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382cdece93f258730800000000000000
+      internalID: 4000655769823199875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_27
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 3178
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26903dd545f2ee810800000000000000
+      internalID: 1796425340765276514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_28
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 3194
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547486bba83f0e170800000000000000
+      internalID: 8205826298244253509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_29
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 3132
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7a88a608fb78560800000000000000
+      internalID: 7316026677950719918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_30
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 3100
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6332a5317a54b4020800000000000000
+      internalID: 2327030216353522486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_31
+      rect:
+        serializedVersion: 2
+        x: 3803
+        y: 3130
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd90c11eff22e900800000000000000
+      internalID: 712184459343994327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_32
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 2994
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc8ba8a1542bbf40800000000000000
+      internalID: 5745225682781965495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_33
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 2932
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee114dc5c05b7b420800000000000000
+      internalID: 2645782370805092846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_34
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 2880
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af72f3a8edcafc30800000000000000
+      internalID: 4394050785520025507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_35
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 2890
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ea53dd5c74d03e0800000000000000
+      internalID: -2085932137257259399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_36
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2843
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1b601e19f075f00800000000000000
+      internalID: 1105369352762732962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_37
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 2819
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56639342a3777f90800000000000000
+      internalID: -6955963958694812069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_38
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 2866
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4672ecb6646fe1340800000000000000
+      internalID: 4836573832159307620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_39
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 2847
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb8201a7eafcff00800000000000000
+      internalID: 1152071477445692349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_40
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 2796
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd0fd2f72d30ad70800000000000000
+      internalID: 9052302492802420157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_41
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 2724
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda7a24309e92f700800000000000000
+      internalID: 572694444817152733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_42
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 2714
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cb904ba17a5f120800000000000000
+      internalID: 2447045705677257863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_43
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 2716
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8517e584fa96fb0800000000000000
+      internalID: -4653996014553704248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_44
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 2722
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98064bb907d900080800000000000000
+      internalID: -9223198929880588151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_45
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2568
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6829c009d3efc20800000000000000
+      internalID: 3242096470648850104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_46
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 2594
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381450c5819115130800000000000000
+      internalID: 3553649173385789827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_47
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 2503
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8154c9d034fa82ca0800000000000000
+      internalID: -6041386197591505640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_48
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2479
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7417d143465dab90800000000000000
+      internalID: -7229026979992365957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_49
+      rect:
+        serializedVersion: 2
+        x: 3868
+        y: 2528
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cd0a00322a9ea50800000000000000
+      internalID: 6550945404205194397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_50
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 2466
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec38fab79f78abd0800000000000000
+      internalID: -2618702893662323473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_51
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 2434
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb751de8d20919d20800000000000000
+      internalID: 3283564128673814462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_52
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2382
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8fd1b12eb2baf10800000000000000
+      internalID: 2281965886310840494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_53
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 2387
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f98794aa2b343b0800000000000000
+      internalID: -5529379473034010807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_54
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 2360
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434b2c435dc8af1a0800000000000000
+      internalID: -6774947842084391884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_55
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 2341
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9640baf9aeb93910800000000000000
+      internalID: 1817693561885312667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_56
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 2390
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307f57484bc715f60800000000000000
+      internalID: 8021329526081844995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_57
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2329
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d512bfb088ecdbb0800000000000000
+      internalID: -4909793854071106089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_58
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 2274
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d28fc3af07ead20800000000000000
+      internalID: 3291692597721443660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_59
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 2314
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d749a41532af55ad0800000000000000
+      internalID: -2713988170826214275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_60
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 2258
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68381381a5b4cd8d0800000000000000
+      internalID: -2820296416315735162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_61
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2094
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920173d4668485e20800000000000000
+      internalID: 3339498727914541097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_62
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 2128
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3e6a0031ae50c80800000000000000
+      internalID: -8357016166179871773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_63
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 2105
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecb8e4fdaeebe420800000000000000
+      internalID: 2660482435798056164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_64
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2047
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6758eaad6eebb450800000000000000
+      internalID: 6105735874617038702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_65
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 2029
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d1c3741b62b63a0800000000000000
+      internalID: -6671195880173069053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_66
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 2062
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49f40e2ef2ca6350800000000000000
+      internalID: 6010831049628907850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_67
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 2006
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc8f9afac30b70b0800000000000000
+      internalID: -5729981930575786758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_68
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2058
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54167fcc9d3daab70800000000000000
+      internalID: 8911167745106075973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_69
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1995
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34dd14c841fbecf40800000000000000
+      internalID: 5750743869172079939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_70
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1951
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d98128a1188eb30800000000000000
+      internalID: 4316842193686404482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_71
+      rect:
+        serializedVersion: 2
+        x: 3843
+        y: 1990
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae05efe1d5bed770800000000000000
+      internalID: 8637541048620748455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_72
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1922
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44f42897efcfec50800000000000000
+      internalID: 6696799764520170572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_73
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1912
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d6a2c8d01e7a9f0800000000000000
+      internalID: -457149388852400828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_74
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 1884
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2eb146eadb73c800800000000000000
+      internalID: 631484552858156591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_75
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1796
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ff41783fe8c22f0800000000000000
+      internalID: -996264240961224804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_76
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1791
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa457722a0a69ab0800000000000000
+      internalID: -5001633717841212755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_77
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1673
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873b47de258c5fc90800000000000000
+      internalID: -7136577776001961096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_78
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1676
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964ba0633cdbbc7a0800000000000000
+      internalID: -6355777802980379543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_79
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 1665
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c0eba28532bedc0800000000000000
+      internalID: -3608751814826128376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_80
+      rect:
+        serializedVersion: 2
+        x: 3563
+        y: 1651
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9056f1f704c72f6a0800000000000000
+      internalID: -6416929902597020407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_81
+      rect:
+        serializedVersion: 2
+        x: 3867
+        y: 1628
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bce6596bc4978fb0800000000000000
+      internalID: -4645580889242800972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_82
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1594
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac0facdfc47ef700800000000000000
+      internalID: 576026238459514027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_83
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1555
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e440dde2992482f0800000000000000
+      internalID: -971605908573371167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_84
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 1606
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1250dcb10fb74a0800000000000000
+      internalID: -6594413227159510558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_85
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1520
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56127bd521f772f20800000000000000
+      internalID: 3397824160732750181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_86
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1508
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c744074263b2920800000000000000
+      internalID: 2966524309683862542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_87
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 1543
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504374157b15f0330800000000000000
+      internalID: 3679249268369470469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_88
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1454
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee6603b7b00c2de0800000000000000
+      internalID: -1356708598762803483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_89
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1392
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5291c177a89e379c0800000000000000
+      internalID: -3930541268851222235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_90
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1290
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d65d428c053ad4b0800000000000000
+      internalID: -5414957274117613866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_91
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1253
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1214b43c90dc09aa0800000000000000
+      internalID: -6156195248800579295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_92
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 1239
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ef764e07ad8bf40800000000000000
+      internalID: 5744581503114280576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_93
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 1238
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a9556ae8b3c22a0800000000000000
+      internalID: -6760963456727934316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_94
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 1272
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164c259cdb8b24b50800000000000000
+      internalID: 6576021531180319841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_95
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1192
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f7d2a73785c9910800000000000000
+      internalID: 1845447200309346128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_96
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1209
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72c6c2ed343e56d0800000000000000
+      internalID: -2999902861379845505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_97
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1217
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2b87c988f107ff0800000000000000
+      internalID: -40497725045165338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_98
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1116
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9234a137f283a7250800000000000000
+      internalID: 5943124434714510121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_99
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1122
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bde860c6b0172e0800000000000000
+      internalID: -2129908590175134854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_100
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 1138
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b012cb6f205f410800000000000000
+      internalID: 1510116508794161971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_101
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 968
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b8b95f270762450800000000000000
+      internalID: 6063657587350145890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_102
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 976
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1746eb7a2033cf0800000000000000
+      internalID: -273872232862420559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_103
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 952
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5967e5ce2686ea630800000000000000
+      internalID: 3940201498077460117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_104
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 886
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a893eebad71570b40800000000000000
+      internalID: 5406379477878847882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_105
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 919
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400c711b0949acec0800000000000000
+      internalID: -3545858407433519100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_106
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 902
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1a376f7c07acc70800000000000000
+      internalID: 8992123610134192562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_107
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 849
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98738a8845a64c710800000000000000
+      internalID: 1712610669610153865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_108
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 809
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb0114e68a09afa0800000000000000
+      internalID: -5789084271539844171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_109
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 855
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f80e1bfd0454f00800000000000000
+      internalID: 1100357013468122908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_110
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 848
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e60afb3ba134d000800000000000000
+      internalID: 59727306578069223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_111
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 796
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1368d42ebda01b960800000000000000
+      internalID: 7615880384371066417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_112
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 712
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03765297063740a10800000000000000
+      internalID: 1874750203079518000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_113
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 663
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b422d67df7b227f0800000000000000
+      internalID: -638745897885096775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_114
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 628
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7451a2fd4d85cb0800000000000000
+      internalID: -4874912541679728688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_115
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 584
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d4ba1a49a0b4010800000000000000
+      internalID: 1174043761343941899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_116
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 625
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9dff4b33c9ff320800000000000000
+      internalID: 2593963656282626534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_117
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 552
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65584653ac6c7b640800000000000000
+      internalID: 5095760075174479190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_118
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 549
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f68e818f5675ade0800000000000000
+      internalID: -1322520762995800334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_119
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 553
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358579ca8f06108b0800000000000000
+      internalID: -5187758674590345133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_120
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 538
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9281770ea0e65f4d0800000000000000
+      internalID: -3101451775380088791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_121
+      rect:
+        serializedVersion: 2
+        x: 3281
+        y: 567
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4363fc37feb381fc0800000000000000
+      internalID: -3524000808791230924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_122
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 496
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a14f25ae0321b150800000000000000
+      internalID: 5886524733757800872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_123
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 373
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbf22473d3127360800000000000000
+      internalID: 7165811756007357375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_124
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 350
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9d74c2b2db70ab0800000000000000
+      internalID: -5041853264693831195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_125
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 360
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c550898dd04dd00800000000000000
+      internalID: 996436641470307394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_126
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 335
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacd43dae84be4cb0800000000000000
+      internalID: -4877762821511390037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_127
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 368
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7247e6425771720800000000000000
+      internalID: 2816848891275913133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_128
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 143
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d113bc5a02ec56d20800000000000000
+      internalID: 3271247343970365725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_129
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 162
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d581864d5b9888c0800000000000000
+      internalID: -3996773844374157870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_130
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 193
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8897502e83ad55250800000000000000
+      internalID: 5932888021975529864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_131
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 106
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5077deb6acb08d640800000000000000
+      internalID: 5104843141646481157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_132
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 130
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69d02e315d31b270800000000000000
+      internalID: 8264454210345556331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_133
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 112
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf9bb10d37d4d8c0800000000000000
+      internalID: -3975315914039255092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_134
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 120
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb711b2a6bf958d0800000000000000
+      internalID: -2856976055182197822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_135
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 21
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb5548bfb609b210800000000000000
+      internalID: 1349116983874247648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_136
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 45
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bb4ed67d9f81660800000000000000
+      internalID: 7356904694966696818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_137
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 66
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974f522999cde5f30800000000000000
+      internalID: 4566329624340329593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_138
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 65
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38408563980b1eef0800000000000000
+      internalID: -80589214947212157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_139
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 39
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74189b2af67696d0800000000000000
+      internalID: -2984066886241086338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trianglessmall_140
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 74
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e041b4f728f507a0800000000000000
+      internalID: -6411445643999362839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      trianglessmall_0: 4026923765840081125
+      trianglessmall_1: 6023369616792463771
+      trianglessmall_10: 2111136416319351570
+      trianglessmall_100: 1510116508794161971
+      trianglessmall_101: 6063657587350145890
+      trianglessmall_102: -273872232862420559
+      trianglessmall_103: 3940201498077460117
+      trianglessmall_104: 5406379477878847882
+      trianglessmall_105: -3545858407433519100
+      trianglessmall_106: 8992123610134192562
+      trianglessmall_107: 1712610669610153865
+      trianglessmall_108: -5789084271539844171
+      trianglessmall_109: 1100357013468122908
+      trianglessmall_11: 5490871451853448880
+      trianglessmall_110: 59727306578069223
+      trianglessmall_111: 7615880384371066417
+      trianglessmall_112: 1874750203079518000
+      trianglessmall_113: -638745897885096775
+      trianglessmall_114: -4874912541679728688
+      trianglessmall_115: 1174043761343941899
+      trianglessmall_116: 2593963656282626534
+      trianglessmall_117: 5095760075174479190
+      trianglessmall_118: -1322520762995800334
+      trianglessmall_119: -5187758674590345133
+      trianglessmall_12: -3462382809429713662
+      trianglessmall_120: -3101451775380088791
+      trianglessmall_121: -3524000808791230924
+      trianglessmall_122: 5886524733757800872
+      trianglessmall_123: 7165811756007357375
+      trianglessmall_124: -5041853264693831195
+      trianglessmall_125: 996436641470307394
+      trianglessmall_126: -4877762821511390037
+      trianglessmall_127: 2816848891275913133
+      trianglessmall_128: 3271247343970365725
+      trianglessmall_129: -3996773844374157870
+      trianglessmall_13: 9164930611371871688
+      trianglessmall_130: 5932888021975529864
+      trianglessmall_131: 5104843141646481157
+      trianglessmall_132: 8264454210345556331
+      trianglessmall_133: -3975315914039255092
+      trianglessmall_134: -2856976055182197822
+      trianglessmall_135: 1349116983874247648
+      trianglessmall_136: 7356904694966696818
+      trianglessmall_137: 4566329624340329593
+      trianglessmall_138: -80589214947212157
+      trianglessmall_139: -2984066886241086338
+      trianglessmall_14: -2054611710635370075
+      trianglessmall_140: -6411445643999362839
+      trianglessmall_15: -6575143496972029630
+      trianglessmall_16: -409438134098568325
+      trianglessmall_17: 868590718078037613
+      trianglessmall_18: -6779236543348206143
+      trianglessmall_19: -6164420442224514411
+      trianglessmall_2: 4077307238962831144
+      trianglessmall_20: 635677102111697097
+      trianglessmall_21: 4611791280861218072
+      trianglessmall_22: -2001061775038704745
+      trianglessmall_23: 5968350521047788259
+      trianglessmall_24: 73061642058601534
+      trianglessmall_25: -1845241129871245686
+      trianglessmall_26: 4000655769823199875
+      trianglessmall_27: 1796425340765276514
+      trianglessmall_28: 8205826298244253509
+      trianglessmall_29: 7316026677950719918
+      trianglessmall_3: 2024398584656277984
+      trianglessmall_30: 2327030216353522486
+      trianglessmall_31: 712184459343994327
+      trianglessmall_32: 5745225682781965495
+      trianglessmall_33: 2645782370805092846
+      trianglessmall_34: 4394050785520025507
+      trianglessmall_35: -2085932137257259399
+      trianglessmall_36: 1105369352762732962
+      trianglessmall_37: -6955963958694812069
+      trianglessmall_38: 4836573832159307620
+      trianglessmall_39: 1152071477445692349
+      trianglessmall_4: 2546550758870771317
+      trianglessmall_40: 9052302492802420157
+      trianglessmall_41: 572694444817152733
+      trianglessmall_42: 2447045705677257863
+      trianglessmall_43: -4653996014553704248
+      trianglessmall_44: -9223198929880588151
+      trianglessmall_45: 3242096470648850104
+      trianglessmall_46: 3553649173385789827
+      trianglessmall_47: -6041386197591505640
+      trianglessmall_48: -7229026979992365957
+      trianglessmall_49: 6550945404205194397
+      trianglessmall_5: 8041773830927069136
+      trianglessmall_50: -2618702893662323473
+      trianglessmall_51: 3283564128673814462
+      trianglessmall_52: 2281965886310840494
+      trianglessmall_53: -5529379473034010807
+      trianglessmall_54: -6774947842084391884
+      trianglessmall_55: 1817693561885312667
+      trianglessmall_56: 8021329526081844995
+      trianglessmall_57: -4909793854071106089
+      trianglessmall_58: 3291692597721443660
+      trianglessmall_59: -2713988170826214275
+      trianglessmall_6: -1999411094879575178
+      trianglessmall_60: -2820296416315735162
+      trianglessmall_61: 3339498727914541097
+      trianglessmall_62: -8357016166179871773
+      trianglessmall_63: 2660482435798056164
+      trianglessmall_64: 6105735874617038702
+      trianglessmall_65: -6671195880173069053
+      trianglessmall_66: 6010831049628907850
+      trianglessmall_67: -5729981930575786758
+      trianglessmall_68: 8911167745106075973
+      trianglessmall_69: 5750743869172079939
+      trianglessmall_7: 7543202053742343468
+      trianglessmall_70: 4316842193686404482
+      trianglessmall_71: 8637541048620748455
+      trianglessmall_72: 6696799764520170572
+      trianglessmall_73: -457149388852400828
+      trianglessmall_74: 631484552858156591
+      trianglessmall_75: -996264240961224804
+      trianglessmall_76: -5001633717841212755
+      trianglessmall_77: -7136577776001961096
+      trianglessmall_78: -6355777802980379543
+      trianglessmall_79: -3608751814826128376
+      trianglessmall_8: -1014714103482778247
+      trianglessmall_80: -6416929902597020407
+      trianglessmall_81: -4645580889242800972
+      trianglessmall_82: 576026238459514027
+      trianglessmall_83: -971605908573371167
+      trianglessmall_84: -6594413227159510558
+      trianglessmall_85: 3397824160732750181
+      trianglessmall_86: 2966524309683862542
+      trianglessmall_87: 3679249268369470469
+      trianglessmall_88: -1356708598762803483
+      trianglessmall_89: -3930541268851222235
+      trianglessmall_9: 1889773296496809817
+      trianglessmall_90: -5414957274117613866
+      trianglessmall_91: -6156195248800579295
+      trianglessmall_92: 5744581503114280576
+      trianglessmall_93: -6760963456727934316
+      trianglessmall_94: 6576021531180319841
+      trianglessmall_95: 1845447200309346128
+      trianglessmall_96: -2999902861379845505
+      trianglessmall_97: -40497725045165338
+      trianglessmall_98: 5943124434714510121
+      trianglessmall_99: -2129908590175134854
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
