@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class FamilyTreeGenerator : MonoBehaviour
 {
-    public int maxPeople;
+    public int maxPeople = 25;
     List<GameObject> toWin = new List<GameObject>();
     public GameObject winScreen;
     public int numMistakes = 0;
