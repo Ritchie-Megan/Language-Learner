@@ -41,6 +41,7 @@ public class MiniGameManager : MonoBehaviour
 
     public void CloseGame()
     {
+        feedbackTextUI.text = "";
         var current = miniGames[currentIndex];
         current.miniGamePanel.SetActive(false);
 
