@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      aquaarrow 1_0: 2609872622906577654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
