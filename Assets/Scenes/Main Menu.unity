@@ -205,7 +205,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit4Menu
+        m_MethodName: GoToUnit4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -475,7 +475,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit2Menu
+        m_MethodName: GoToUnit2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -609,7 +609,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit3Menu
+        m_MethodName: GoToUnit3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -858,7 +858,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit5Menu
+        m_MethodName: GoToUnit5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2061,7 +2061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit1Menu
+        m_MethodName: GoToUnit1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2332,7 +2332,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 428145307}
         m_TargetAssemblyTypeName: Navigate, Assembly-CSharp
-        m_MethodName: GoToUnit6Menu
+        m_MethodName: GoToUnit6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
