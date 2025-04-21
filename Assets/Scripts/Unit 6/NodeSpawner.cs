@@ -22,12 +22,14 @@ public class NodeSpawner : MonoBehaviour
     private Transform rootGen;
     private List<RectTransform> nodeTransforms;
     private Dictionary<string, List<Node>> childDict;
+    //
+    private List<GameObject> checkForWin = new List<GameObject>();
     
     [HideInInspector]
     public Vector3 medianTreePos;
 
 
-    public void generateNodes(Node root) {
+    public List<GameObject> generateNodes(Node root) {
         if (nodeTransforms != null) {
             nodeTransforms.Clear();
             childDict.Clear();
@@ -53,6 +55,9 @@ public class NodeSpawner : MonoBehaviour
         }
 
         StartCoroutine(RefreshLayout(tree));
+
+        return checkForWin;
+    
     }
     public void createHalfFamilyNodes(Node person) {
         // determining which half of the tree to create
@@ -257,10 +262,12 @@ public class NodeSpawner : MonoBehaviour
     public GameObject createNodeObject(Transform parent, Node node) {
         GameObject nodeObject = Instantiate(nodePrefab, parent);
         nodeObject.name = node.personName;
+        //Debug.Log("Intantiated: " + nodeObject.name);
         nodeObject.GetComponent<ItemSlotNode>().node = node;
         if (node.parentOne != null || node.parentTwo != null)
             nodeObject.tag = "HasParent";
         nodeTransforms.Add(nodeObject.GetComponent<RectTransform>());
+        checkForWin.Add(nodeObject);
         return nodeObject;
     }
 

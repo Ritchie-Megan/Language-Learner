@@ -8,6 +8,9 @@ using Random = UnityEngine.Random;
 public class FamilyTreeGenerator : MonoBehaviour
 {
     public int maxPeople;
+    List<GameObject> toWin = new List<GameObject>();
+    public GameObject winScreen;
+    public int numMistakes = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,14 +18,16 @@ public class FamilyTreeGenerator : MonoBehaviour
         Debug.Log("-------Family Tree----------");
         HashSet<FamilyTree.Node> visitedNodes = new HashSet<FamilyTree.Node>();
         List<String> cluesList = new List<String>();
+        
         FamilyTree.TreePrinter.generateAndPrintTreeAndClues(root, visitedNodes, ref cluesList);
         Debug.Log("Number of nodes in hashset: " + visitedNodes.Count);
         
         
-        //send data over to the GridNodeSpawner script
+        //send data over to the NodeSpawner script
         NodeSpawner nodeSpawner = FindFirstObjectByType<NodeSpawner>();
         if (nodeSpawner != null) {
-            nodeSpawner.generateNodes(root);
+            toWin = nodeSpawner.generateNodes(root);         
+            
         }
 
         //send data over to scrollable view
@@ -62,6 +67,30 @@ public class FamilyTreeGenerator : MonoBehaviour
 
     private void generateAndPrintTreeAndClues(FamilyTree.Node root, HashSet<FamilyTree.Node> visited, ref List<string> clues, int depth = 0) {
         FamilyTree.TreePrinter.generateAndPrintTreeAndClues(root, visited, ref clues, depth);
+    }
+
+    public bool checkForTreeWin() {
+        int count = 0;
+        foreach (GameObject holder in toWin) {
+            Transform child = holder.transform.Find(holder.name);
+            if (child != null) {
+                count++;
+            }
+        }
+        Debug.Log("Total correct: " + count);
+        if (count == toWin.Count) {
+            Transform child = winScreen.transform.Find("Stats");
+            child.GetComponent<TextMeshProUGUI>().text = "Mistakes: " + numMistakes;
+            winScreen.SetActive(true);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public void addMistake() {
+        numMistakes++;
     }
 }
 

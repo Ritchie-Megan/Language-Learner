@@ -27,15 +27,22 @@ public class ItemSlotNode : MonoBehaviour, IDropHandler
                     
 
                     //check to see if child is in correct place
+                    FamilyTreeGenerator treeGenerator = FindObjectOfType<FamilyTreeGenerator>();
                     if (gameObject.name == droppedObject.name) {
                         Debug.Log("Matched pair!");
                         Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");
                         droppedObject.GetComponent<Image>().sprite = greenLeaf;
+                        //if it is in the right place it checks to see if it needs to end the game
+                        if (treeGenerator != null && treeGenerator.checkForTreeWin()) {
+                            Debug.Log("A WIN!"); 
+                        }
                     }
                     else {
                         Debug.Log("Not matched pair!");
                         Sprite orangeLeaf = Resources.Load<Sprite>("Unit6/orangeLeaf");
                         droppedObject.GetComponent<Image>().sprite = orangeLeaf;
+                        //else increase mistake count
+                        treeGenerator.addMistake();
                     }
                 }
             }
