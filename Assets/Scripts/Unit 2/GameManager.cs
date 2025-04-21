@@ -75,4 +75,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+    
+    public Character GetTargetCharacter()
+    {
+        return guessWho;
+    }
 }
