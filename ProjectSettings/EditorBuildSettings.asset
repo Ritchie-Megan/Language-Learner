@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Unit 3 Menu.unity
     guid: 2c42a88437aac754884a7f43f2ff31e8
   - enabled: 1
-    path: Assets/Scenes/Unit 4.unity
+    path: Assets/Scenes/old Unit 4.unity
     guid: 718c4d5b4d3312f4fa4621957a48b59d
   - enabled: 1
     path: Assets/Scenes/Unit 4 Menu.unity
