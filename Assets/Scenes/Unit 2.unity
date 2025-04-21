@@ -11492,7 +11492,7 @@ GameObject:
   - component: {fileID: 1447338079}
   - component: {fileID: 1447338078}
   m_Layer: 0
-  m_Name: WordsManager
+  m_Name: WordManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11514,6 +11514,30 @@ MonoBehaviour:
   sentencePanel: {fileID: 1076976715}
   wordPrefab: {fileID: 4397232327667736624, guid: f4bca7c491a4949769a6a354487bc322, type: 3}
   correctSentence: Me gusta el helado
+  questions:
+  - sentence: "\xBFTu eres un hombre?"
+    characteristic: isMale
+  - sentence: "\xBFTienes pelo corto?"
+    characteristic: shortHair
+  - sentence: "\xBFTienes gafas?"
+    characteristic: hasGlasses
+  - sentence: "\xBFTienes un sombrero?"
+    characteristic: hasHat
+  - sentence: "\xBFTienes una barba?"
+    characteristic: hasFacialHair
+  - sentence: "\xBFLlevas un vestido?"
+    characteristic: inDress
+  - sentence: "\xBFLllevas una camiseta"
+    characteristic: inTShirt
+  - sentence: "\xBFLlevas una camisa de manga larga?"
+    characteristic: inLongSleeve
+  - sentence: "\xBFLlevas una corbata?"
+    characteristic: hasTie
+  - sentence: "\xBFTienes una cola de caballo?"
+    characteristic: hasPonyTail
+  yesBox: {fileID: 504405729}
+  noBox: {fileID: 1221990150}
+  gameManager: {fileID: 1991795423}
 --- !u!4 &1447338079
 Transform:
   m_ObjectHideFlags: 0

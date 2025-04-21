@@ -8,12 +8,16 @@ public class DraggableWord : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    
+    private WordManager wordManager;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
+        
+        wordManager = FindObjectOfType<WordManager>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -36,6 +40,11 @@ public class DraggableWord : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (transform.parent == canvas.transform)
         {
             transform.SetParent(originalParent);
+        }
+        
+        if (wordManager != null)
+        {
+            wordManager.CheckAnswer();
         }
     }
 }
