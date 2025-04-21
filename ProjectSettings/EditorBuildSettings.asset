@@ -12,28 +12,37 @@ EditorBuildSettings:
     path: Assets/Scenes/Unit 1.unity
     guid: 31d980a245abe437aa9b0ed98cf562d5
   - enabled: 1
+    path: Assets/Scenes/Unit 1 Menu.unity
+    guid: 7e7820e077524f64a8345d8bea7868ba
+  - enabled: 1
     path: Assets/Scenes/Unit 2.unity
     guid: d61c0f510818d43089d6c82788bdaf59
+  - enabled: 1
+    path: Assets/Scenes/Unit 2 Menu.unity
+    guid: 71ebdc1ada7ac2144ac0c98c4b434f7e
   - enabled: 1
     path: Assets/Scenes/Unit 3.unity
     guid: 77fd9a5805de3459fb77c7fd28211dd5
   - enabled: 1
+    path: Assets/Scenes/Unit 3 Menu.unity
+    guid: 2c42a88437aac754884a7f43f2ff31e8
+  - enabled: 1
     path: Assets/Scenes/Unit 4.unity
     guid: 718c4d5b4d3312f4fa4621957a48b59d
   - enabled: 1
+    path: Assets/Scenes/Unit 4 Menu.unity
+    guid: 42b3c305c1656bf45aa9a4a19e1589b3
+  - enabled: 1
     path: Assets/Scenes/Unit 5.unity
+    guid: fc92f9d9158763c4ead53b769318229c
+  - enabled: 1
+    path: Assets/Scenes/Unit 5 Menu.unity
     guid: 3be3e66a775630341b47624b4c27dc3c
   - enabled: 1
     path: Assets/Scenes/Unit 6.unity
-    guid: 82d77b47f44b713498958fc59c8658c3
-  - enabled: 0
-    path: Assets/Scenes/Unit 5/Letter.unity
-    guid: 25e0555673c01ae4284d22b363b10551
+    guid: f37c564fb3be175488169ab598a47577
   - enabled: 1
-    path: Assets/Scenes/Unit 5/Stage.unity
-    guid: 7491f4e9d73667c4dbea32a8242cce42
-  - enabled: 0
-    path: Assets/Scenes/Unit 5/Question Builder.unity
-    guid: d9fc5cb47e2651246af86e6c68a61a50
+    path: Assets/Scenes/Unit 6 Menu.unity
+    guid: 02776d7d313219c4bafe258dd5b86326
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
