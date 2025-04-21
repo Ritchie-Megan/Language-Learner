@@ -922,7 +922,6 @@ GameObject:
   - component: {fileID: 327513752}
   - component: {fileID: 327513751}
   - component: {fileID: 327513750}
-  - component: {fileID: 327513753}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -990,19 +989,6 @@ RectTransform:
   m_AnchoredPosition: {x: 961, y: 544}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &327513753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327513749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc741629888521c4b91852056e52d734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 327513749}
 --- !u!1 &332934751
 GameObject:
   m_ObjectHideFlags: 0
