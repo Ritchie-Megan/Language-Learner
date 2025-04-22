@@ -26,8 +26,12 @@ public class CorrectOrder : MonoBehaviour
 
     private void setUpSentences()
     {
-        sentences.Add("Yo como en la cafetería");
-        sentences.Add("tengo que ducharme antes de cenar");
+        sentences.Add("Yo estudio en la biblioteca");
+        sentences.Add("Nosotros caminamos al gimnasio");
+        sentences.Add("Ella compra libros en la librería");
+        sentences.Add("Hay muchos estudiantes en el campus");
+        sentences.Add("Me gusta participar en clubes universitarios");
+        sentences.Add("Tengo que estudiar para la prueba");
     }
     
     
