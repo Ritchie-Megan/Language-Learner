@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67f0b65a35b3a042954e405bbb0145f, type: 3}
+  m_Name: ShortCurly
+  m_EditorClassIdentifier: 
+  fullSprite: {fileID: 21300000, guid: 6783bca1866ceee4ab35ee89115ea1a2, type: 3}
+  subSprites:
+  - {fileID: 21300000, guid: 9fb12afe90daa9447895efc19be40cbc, type: 3}
+  croppedSprite: {fileID: 21300000, guid: a896e9b2525ba5446847431686700fb4, type: 3}
