@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 
+
 [System.Serializable]
 public class QuestionData
 {
@@ -27,6 +28,9 @@ public class WordManager : MonoBehaviour
 
     private QuestionData currentQuestion;
 
+    private bool continueCutscene = false;
+    public GameObject continueButton;
+
     void Start()
     {
         remainingQuestions = new List<QuestionData>(questions);
@@ -39,11 +43,15 @@ public class WordManager : MonoBehaviour
         {
             Debug.Log("All questions completed!");
             // Optional: show an end screen, reset, or just return
-            return;
+            remainingQuestions = new List<QuestionData>(questions);
+            //return;
         }
 
-        currentQuestion = remainingQuestions[0];
-        remainingQuestions.RemoveAt(0); // make sure it won't repeat
+        //randomize which question comes next
+        System.Random rand = new System.Random();
+        int index = rand.Next(0, remainingQuestions.Count);
+        currentQuestion = remainingQuestions[index];
+        remainingQuestions.RemoveAt(index); // make sure it won't repeat
 
         correctSentence = currentQuestion.sentence;
 
@@ -126,13 +134,24 @@ public class WordManager : MonoBehaviour
     
     private IEnumerator NextQuestionCoroutine()
     {
-        yield return new WaitForSeconds(10f);
+        continueButton.SetActive(true);
+        yield return new WaitUntil(CheckIfContinue);
+        continueCutscene = false;
+        continueButton.SetActive(false);
 
         ClearSentenceAndWordBank();
         SetupSentence();
 
         yesBox.SetActive(false);
         noBox.SetActive(false);
+    }
+
+    private bool CheckIfContinue() {
+        return continueCutscene;
+    }
+
+    public void ContinueButton() {
+        continueCutscene = true;
     }
     
     private bool CheckCharacterTrait(Character character, string traitName)

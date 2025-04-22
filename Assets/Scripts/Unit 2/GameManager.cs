@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int numCharacters = 16;
     public List<string> eliminated;
     public List<Character> characters;
+    public TextMeshProUGUI loseText;
 
     private int activeCount;
     private bool updateOccured;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         activeCount = numCharacters;
         guessWho = characters[Random.Range(0, characters.Count)];
         Debug.Log("Target Character: " + guessWho.characterName);
+        loseText.text = "YOU LOSE...\nYour person was " + guessWho.characterName;
     }
 
     void Update()
@@ -73,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Unit 2 Menu");
     }
     
     public Character GetTargetCharacter()
