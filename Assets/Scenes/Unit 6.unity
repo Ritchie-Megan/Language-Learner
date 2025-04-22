@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 285ebcc8b9d3a324e8089f9f9f871add, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPeople: 25
+  maxPeople: 15
   winScreen: {fileID: 492246873}
   numMistakes: 0
 --- !u!4 &90706737

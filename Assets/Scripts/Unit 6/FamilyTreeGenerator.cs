@@ -52,6 +52,11 @@ public class FamilyTreeGenerator : MonoBehaviour
             }
         }
 
+        // After adding all draggable items
+        Debug.Log("Root person: " + root.personName);
+        StartCoroutine(PlaceRootPersonInCorrectSlot(root.personName));
+
+
         //sending over clues list
         ClueLoader clueLoader = FindFirstObjectByType<ClueLoader>();
         if (clueLoader != null) {
@@ -92,6 +97,77 @@ public class FamilyTreeGenerator : MonoBehaviour
     public void addMistake() {
         numMistakes++;
     }
+
+    private System.Collections.IEnumerator PlaceRootPersonInCorrectSlot(string rootName) {
+        yield return null; // or WaitForEndOfFrame if you want
+
+        ScrollBarLoader loader = FindFirstObjectByType<ScrollBarLoader>();
+        Transform contentPanel = loader.contentPanel;
+        Transform rootItem = null;
+
+        foreach (Transform child in contentPanel)
+        {
+            if (child.name == rootName)
+            {
+                rootItem = child;
+                break;
+            }
+        }
+
+        
+        if (rootItem == null)
+        {
+            Debug.LogWarning("Root draggable item not found!");
+            yield break;
+        }
+        foreach (GameObject nodeObj in toWin) {
+            //Transform child = holder.transform.Find(holder.name);
+            if(nodeObj.name == rootName) {
+                Debug.Log ("Found matching holder");
+            
+                rootItem.SetParent(nodeObj.transform, false);
+                rootItem.SetAsLastSibling();
+                rootItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                // Visual feedback
+                Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");
+                rootItem.GetComponent<Image>().sprite = greenLeaf;
+                
+                Debug.Log("Placed root person: " + rootName);
+
+                break;
+            }
+        }
+        
+        /*
+        NodeSpawner spawner = FindFirstObjectByType<NodeSpawner>();
+        if (spawner == null)
+        {
+            Debug.LogWarning("No NodeSpawner found!");
+            yield break;
+        }
+
+        foreach (GameObject nodeObj in spawner.generateNodes(null)) // you probably want to store checkForWin in a public property or return it earlier
+        {
+            if (nodeObj.name == rootName)
+            {
+                
+                rootItem.SetParent(nodeObj.transform, false);
+                rootItem.SetAsLastSibling();
+                rootItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                // Visual feedback
+                Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");
+                rootItem.GetComponent<Image>().sprite = greenLeaf;
+                
+                Debug.Log("Placed root person: " + rootName);
+
+                break;
+            }
+        }
+        */
+    }
+    
 }
 
 namespace FamilyTree {

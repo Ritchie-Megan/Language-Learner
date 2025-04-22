@@ -261,8 +261,16 @@ public class NodeSpawner : MonoBehaviour
 
     public GameObject createNodeObject(Transform parent, Node node) {
         GameObject nodeObject = Instantiate(nodePrefab, parent);
+        
+        //change female nodes to yellow so the game is easier
+        if(!node.isMale) {
+            Image image = nodeObject.GetComponentInChildren<Image>();
+            if (image != null) {
+                image.color = Color.yellow;
+            }
+        }
         nodeObject.name = node.personName;
-        //Debug.Log("Intantiated: " + nodeObject.name);
+        //Debug.Log("Instantiated: " + nodeObject.name);
         nodeObject.GetComponent<ItemSlotNode>().node = node;
         if (node.parentOne != null || node.parentTwo != null)
             nodeObject.tag = "HasParent";
