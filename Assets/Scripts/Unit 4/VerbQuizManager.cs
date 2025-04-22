@@ -46,7 +46,7 @@ namespace Unit_4
             AddVerb("caminar", "camino", "caminas", "camina", "camina", "caminamos", "caminan");
             AddVerb("compartir", "comparto", "compartes", "comparte", "comparte", "compartimos", "comparten");
             AddVerb("comprar", "compro", "compras", "compra", "compra", "compramos", "compran");
-            AddVerb("enseñar", "enseño", "enseñas", "enseña", "enseña", "enseñamos", "enseñan");
+            //AddVerb("enseñar", "enseño", "enseñas", "enseña", "enseña", "enseñamos", "enseñan");
             AddVerb("escribir", "escribo", "escribes", "escribe", "escribe", "escribimos", "escriben");
             AddVerb("hablar", "hablo", "hablas", "habla", "habla", "hablamos", "hablan");
             AddVerb("leer", "leo", "lees", "lee", "lee", "leemos", "leen");

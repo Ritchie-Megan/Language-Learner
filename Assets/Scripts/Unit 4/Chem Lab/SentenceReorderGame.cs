@@ -20,7 +20,16 @@ public class SentenceReorderGame : MonoBehaviour
     public Button submitButton;
 
     [Header("Game Config")]
-    public List<Sentence> allSentences = new List<Sentence>(); 
+    
+    public List<Sentence> allSentences = new List<Sentence>();
+    /*-----Manually Initalize here if you want-----
+    {
+        new SentenceReorderGame.Sentence {
+            fullSentence = "",
+            words = fullSentence.Split(' ').ToList();
+        },
+    };
+    */ 
     public bool autoGenerateSentences = false;
     public int numberOfAutoSentences = 5;
 
@@ -53,9 +62,8 @@ public class SentenceReorderGame : MonoBehaviour
         LoadRandomSentence();
     }
 
-    /// <summary>
-    /// Loads a random sentence from allSentences, scrambles it, and spawns word buttons.
-    /// </summary>
+    // Loads a random sentence from allSentences, scrambles it, and spawns word buttons.
+
     void LoadRandomSentence()
     {
         ClearPanels();
@@ -82,9 +90,9 @@ public class SentenceReorderGame : MonoBehaviour
         feedbackText.text = "";
     }
 
-    /// <summary>
-    /// Checks if the order of words in the dropZonePanel matches currentCorrectOrder exactly.
-    /// </summary>
+
+    // Checks if the order of words in the dropZonePanel matches currentCorrectOrder exactly.
+
     void CheckAnswer()
     {
         // Build a list of words from left to right in the drop zone
@@ -97,20 +105,18 @@ public class SentenceReorderGame : MonoBehaviour
         // Compare the player's order to the correct one
         if (playerOrder.SequenceEqual(currentCorrectOrder))
         {
-            feedbackText.text = "✅ Correct!";
+            feedbackText.text = "Correct!";
 
             // Wait 1.5 seconds, then load a new sentence
             Invoke(nameof(LoadRandomSentence), 1.5f);
         }
         else
         {
-            feedbackText.text = "❌ Try again.";
+            feedbackText.text = "Try again.";
         }
     }
 
-    /// <summary>
-    /// Removes existing word objects from both panels.
-    /// </summary>
+    // Removes existing word objects from both panels.
     void ClearPanels()
     {
         foreach (Transform child in wordBankPanel)
@@ -119,10 +125,10 @@ public class SentenceReorderGame : MonoBehaviour
             Destroy(child.gameObject);
     }
 
-    /// <summary>
-    /// Dynamically generate a set of random sentences using your vocab lists.
-    /// Example approach only — tailor it for your needs.
-    /// </summary>
+
+    // Dynamically generate a set of random sentences using your vocab lists.
+    // Example approach only — tailor it for your needs.
+
     void GenerateSentencesDynamically()
     {
         allSentences.Clear();
