@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93f160a4a525b4a4390d818364849969, type: 3}
-  m_Name: Patricia
+  m_Name: Sergio
   m_EditorClassIdentifier: 
-  characterName: patricia
-  portrait: {fileID: 0}
-  isMale: 0
-  shortHair: 3
-  hairColor: 3
-  hasGlasses: 1
+  characterName: sergio
+  portrait: {fileID: 21300000, guid: 61040c8d8fb849945b723f34ba68f707, type: 3}
+  isMale: 1
+  shortHair: 2
+  hairColor: 2
+  hasGlasses: 0
   hasHat: 0
-  hasFacialHair: 0
-  inDress: 1
+  hasFacialHair: 1
+  inDress: 0
   inTShirt: 0
-  inLongSleeve: 0
-  hasTie: 0
-  hasPonyTail: 1
+  inLongSleeve: 1
+  hasTie: 1
+  hasPonyTail: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Luna
   m_EditorClassIdentifier: 
   characterName: luna
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 630a53c870b79b5438f74d59f7faa643, type: 3}
   isMale: 0
   shortHair: 1
   hairColor: 4

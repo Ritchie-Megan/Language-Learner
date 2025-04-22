@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93f160a4a525b4a4390d818364849969, type: 3}
-  m_Name: Jessica
+  m_Name: Imelda
   m_EditorClassIdentifier: 
-  characterName: jessica
-  portrait: {fileID: 0}
+  characterName: imelda
+  portrait: {fileID: 21300000, guid: 36bc7640b0af5884cb79cc000b40295d, type: 3}
   isMale: 0
   shortHair: 3
-  hairColor: 3
-  hasGlasses: 0
+  hairColor: 4
+  hasGlasses: 1
   hasHat: 0
   hasFacialHair: 0
   inDress: 0

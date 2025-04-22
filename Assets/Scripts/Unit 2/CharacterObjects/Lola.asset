@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93f160a4a525b4a4390d818364849969, type: 3}
-  m_Name: Susan
+  m_Name: Lola
   m_EditorClassIdentifier: 
-  characterName: susan
-  portrait: {fileID: 0}
+  characterName: lola
+  portrait: {fileID: 21300000, guid: 1178dda56c7d431459ed4d57c6e1e74c, type: 3}
   isMale: 0
-  shortHair: 3
+  shortHair: 2
   hairColor: 1
   hasGlasses: 0
   hasHat: 0

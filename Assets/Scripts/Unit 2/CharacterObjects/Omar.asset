@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93f160a4a525b4a4390d818364849969, type: 3}
-  m_Name: Sarah
+  m_Name: Omar
   m_EditorClassIdentifier: 
-  characterName: sarah
-  portrait: {fileID: 0}
-  isMale: 0
+  characterName: omar
+  portrait: {fileID: 21300000, guid: 6faf191bda293fc4f905961ee933a1ef, type: 3}
+  isMale: 1
   shortHair: 4
-  hairColor: 6
+  hairColor: 0
   hasGlasses: 1
   hasHat: 1
-  hasFacialHair: 0
-  inDress: 1
-  inTShirt: 0
+  hasFacialHair: 1
+  inDress: 0
+  inTShirt: 1
   inLongSleeve: 0
   hasTie: 0
   hasPonyTail: 0
