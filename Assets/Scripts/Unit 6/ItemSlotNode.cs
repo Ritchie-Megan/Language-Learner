@@ -27,7 +27,7 @@ public class ItemSlotNode : MonoBehaviour, IDropHandler
                     
 
                     //check to see if child is in correct place
-                    FamilyTreeGenerator treeGenerator = FindObjectOfType<FamilyTreeGenerator>();
+                    FamilyTreeGenerator treeGenerator = FindFirstObjectByType<FamilyTreeGenerator>();
                     if (gameObject.name == droppedObject.name) {
                         Debug.Log("Matched pair!");
                         Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");

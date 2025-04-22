@@ -59,10 +59,10 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
 
         //set to original if no drop place
-        if(eventData.pointerDrag != null && eventData.pointerDrag.GetComponent<DragDrop>() != null) {
+        if(eventData.pointerEnter != null && eventData.pointerEnter.GetComponentInParent<ItemSlotNode>() != null) {
             //transform.SetParent(eventData.pointerEnter.transform, false);
             //rectTransform.anchoredPosition = Vector2.zero;
-            Debug.Log("Dropping Detected");
+            Debug.Log("Dropping Detected");            
         }
         else {
             Debug.Log("Dropped in Invalid Zone");
