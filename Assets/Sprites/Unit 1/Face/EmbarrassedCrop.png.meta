@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6d55997e0a3b8f94094ac4116c387a29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1353479165250123133
+    second: EmbarrassedCrop_0
+  - first:
+      213: -4729176673638333063
+    second: EmbarrassedCrop_1
+  - first:
+      213: 376803110522815550
+    second: EmbarrassedCrop_2
+  - first:
+      213: 2696617892185021834
+    second: EmbarrassedCrop_3
+  - first:
+      213: -8112668870329858700
+    second: EmbarrassedCrop_4
+  - first:
+      213: -7876951994537704277
+    second: EmbarrassedCrop_5
+  - first:
+      213: 2418633709735422971
+    second: EmbarrassedCrop_6
+  - first:
+      213: 1600037980562617923
+    second: EmbarrassedCrop_7
+  - first:
+      213: -2443632066071242576
+    second: EmbarrassedCrop_8
+  - first:
+      213: 6346103482762729746
+    second: EmbarrassedCrop_9
+  - first:
+      213: -8051052959417640756
+    second: EmbarrassedCrop_10
+  - first:
+      213: 2278694798421187401
+    second: EmbarrassedCrop_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EmbarrassedCrop_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 390
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7530a7312688c210800000000000000
+      internalID: 1353479165250123133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 359
+        width: 129
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97549bf1fd69e5eb0800000000000000
+      internalID: -4729176673638333063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 359
+        width: 129
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3489f0ce6caa3500800000000000000
+      internalID: 376803110522815550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 246
+        width: 139
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d96a68faf4c6520800000000000000
+      internalID: 2696617892185021834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 246
+        width: 140
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4758e9b25a20a6f80800000000000000
+      internalID: -8112668870329858700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 193
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba486c415e17fa290800000000000000
+      internalID: -7876951994537704277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 184
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfba0966b86b09120800000000000000
+      internalID: 2418633709735422971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 193
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3467192e01a743610800000000000000
+      internalID: 1600037980562617923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_8
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 194
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8d1143599761ed0800000000000000
+      internalID: -2443632066071242576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_9
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 182
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21911f59e73e11850800000000000000
+      internalID: 6346103482762729746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_10
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 192
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8dd0e5df9e44090800000000000000
+      internalID: -8051052959417640756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmbarrassedCrop_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 127
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bdc6b98dc8f9f10800000000000000
+      internalID: 2278694798421187401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EmbarrassedCrop_0: 1353479165250123133
+      EmbarrassedCrop_1: -4729176673638333063
+      EmbarrassedCrop_10: -8051052959417640756
+      EmbarrassedCrop_11: 2278694798421187401
+      EmbarrassedCrop_2: 376803110522815550
+      EmbarrassedCrop_3: 2696617892185021834
+      EmbarrassedCrop_4: -8112668870329858700
+      EmbarrassedCrop_5: -7876951994537704277
+      EmbarrassedCrop_6: 2418633709735422971
+      EmbarrassedCrop_7: 1600037980562617923
+      EmbarrassedCrop_8: -2443632066071242576
+      EmbarrassedCrop_9: 6346103482762729746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

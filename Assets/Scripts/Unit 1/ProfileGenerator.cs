@@ -71,8 +71,7 @@ public class ProfileGenerator : MonoBehaviour
         };
     List<string> estoyStatuses = new List<string>
         {
-            "aburrid*", "cansad*", "content*", "emocionad*", "enojad*", "nervios*",
-            "ocupad*", "relajad*"
+            "aburrid*", "cansad*", "content*", "enojad*"
         };
     List<string> tengoStatuses = new List<string>
         {
@@ -91,9 +90,19 @@ public class ProfileGenerator : MonoBehaviour
             "azules", "marrones", "verdes", "negros", "grises"
         };
 
-    List<string> hairTypes = new List<string>
+    List<string> maleHairTypes = new List<string>
         {
-            "corto", "largo"
+            "corto, liso", "corto, rizado"
+        };
+
+    List<string> femaleHairTypes = new List<string>
+        {
+            "largo, liso", "largo, rizado"
+        };
+
+    List<string> hairColors = new List<string>
+        {
+            "castaño", "negro", "rubio", "pelirroja"
         };
     
     //public GameObject name;
@@ -104,16 +113,35 @@ public class ProfileGenerator : MonoBehaviour
     //public GameObject hairType;
     //public GameObject status;
 
-    public TMP_Text name;
-    public TMP_Text age;
-    public TMP_Text nationality;
-    public TMP_Text personality;
-    public TMP_Text eyeColor;
-    public TMP_Text hairType;
-    public TMP_Text status;
+    public TMP_Text nameField;
+    public TMP_Text userNameField;
+    public TMP_Text ageField;
+    public TMP_Text nationalityField;
+    public TMP_Text personalityField;
+    public TMP_Text eyeColorField;
+    public TMP_Text hairTypeField;
+    public TMP_Text statusField;
+    private bool male;
+
+    [HideInInspector]
+    public string ageRange;
+    [HideInInspector]
+    public string personality;
+    [HideInInspector]
+    public string eyeColor;
+    [HideInInspector]
+    public string hairType;
+     [HideInInspector]
+    public string hairColor;
+    [HideInInspector]
+    public string status;
+    [HideInInspector]
+    public string gender;
 
     private List<TMP_Text> entries = new List<TMP_Text>();
-    bool male;
+
+    private Dictionary<string, string> ageRangeDict;
+    
 
 
     
@@ -127,14 +155,15 @@ public class ProfileGenerator : MonoBehaviour
         //eyeText = eyeColor.GetComponentInChildren<TMP_Text>();
         //hairText = hairType.GetComponentInChildren<TMP_Text>();
         //statusText = status.GetComponentInChildren<TMP_Text>();
-
-        entries.Add(name);
-        entries.Add(age);
-        entries.Add(nationality);
-        entries.Add(personality);
-        entries.Add(eyeColor);
-        entries.Add(hairType);
-        entries.Add(status);
+        
+        entries.Add(nameField);
+        entries.Add(userNameField);
+        entries.Add(ageField);
+        entries.Add(nationalityField);
+        entries.Add(personalityField);
+        entries.Add(eyeColorField);
+        entries.Add(hairTypeField);
+        entries.Add(statusField);
         
         UpdateProfile();
     }
@@ -142,32 +171,61 @@ public class ProfileGenerator : MonoBehaviour
     void UpdateProfile()
     {
         male = Random.value < 0.5f;
-        string firstName = male ? RandomEntry(maleNames) : RandomEntry(femaleNames);
+        
+        string age = RandomEntry(ages);
 
-        name.text = firstName + " " + RandomEntry(lastNames);
-        age.text = RandomEntry(ages);
-        nationality.text = "Soy de " + RandomEntry(countries);
-        personality.text = "Yo soy " + GenderWord(RandomEntry(personalityTraits));
-        eyeColor.text = "Mis ojos son " + RandomEntry(eyeColors);
-        hairType.text = "Mi cabello es " + RandomEntry(hairTypes);
+        //ageRange = ageRangeDict[age];
+        personality = GenderWords(RandomEntry(personalityTraits));
+        eyeColor = RandomEntry(eyeColors);
+        hairType = male ? RandomEntry(maleHairTypes) : RandomEntry(femaleHairTypes);
+        hairColor = RandomEntry(hairColors);
+        gender = male ? "male" : "female";
 
         if (Random.value < 0.66f)
-            status.text = "Ahora estoy " + GenderWord(RandomEntry(estoyStatuses));
+        {
+            status =  GenderWords(RandomEntry(estoyStatuses));
+            statusField.text = "Ahora estoy " + status;
+        }
         else
-            status.text = "Ahora tengo " + GenderWord(RandomEntry(tengoStatuses));
+        {
+            status = GenderWords(RandomEntry(tengoStatuses));
+            statusField.text = "Ahora tengo " + status;
+        }
+
         
-         StartCoroutine(RefreshLayout());
-    }
 
-    IEnumerator RefreshLayout()
-    {
-        yield return new WaitForEndOfFrame();
+        string firstName = male ? RandomEntry(maleNames) : RandomEntry(femaleNames);
+        string lastName = RandomEntry(lastNames);
 
+        nameField.text = firstName + " " + lastName;
+        ageField.text = RandomEntry(ages);
+        nationalityField.text = "Soy de " + RandomEntry(countries);
+        personalityField.text = "Yo soy " + personality;
+        eyeColorField.text = "Mis ojos son " + eyeColor;
+        hairTypeField.text = "Mi cabello es " + hairType + "\ny " + hairColor;
+
+        if (Random.value < 0.3f)
+        {
+            userNameField.text = firstName.ToLower()[0] + lastName.ToLower() + Random.Range(0,100);
+        }
+        else if (Random.value < 0.9f)
+        {
+            userNameField.text = firstName.ToLower() + lastName.ToLower()[0] + Random.Range(0,100);
+        }
+        else if (Random.value < 0.9f)
+        {
+            userNameField.text = lastName.ToLower() + firstName.ToLower()[0]+ Random.Range(0,100);
+        }
+        else
+        {
+            userNameField.text = firstName.ToLower() + lastName.ToLower() + Random.Range(0,100);
+        }
+        
         foreach (TMP_Text entry in entries)
-            entry.enabled = false;
-
-        foreach (TMP_Text entry in entries)
-            entry.enabled = true;
+        {
+            GameObject parentBox = entry.transform.parent.gameObject;
+            LayoutRebuilder.ForceRebuildLayoutImmediate(parentBox.GetComponent<RectTransform>());
+        }
     }
 
     string RandomEntry(List<string> list)
@@ -175,11 +233,19 @@ public class ProfileGenerator : MonoBehaviour
         return list[Random.Range(0, list.Count)];
     }
 
-    string GenderWord(string word)
+    string GenderWords(string phrase)
     {
-        if (word == "trabajador*")
-            return male ? "trabajador" : word.Replace('*', 'a');
-        else
-            return male ? word.Replace('*', 'o') : word.Replace('*', 'a');
+        string[] words = phrase.Split(' ');
+        string genderedPhrase = "";
+
+        foreach (string word in words)
+        {
+            if (word == "trabajador*")
+                genderedPhrase += male ? "trabajador" : word.Replace('*', 'a');
+            else
+                genderedPhrase += male ? word.Replace('*', 'o') : word.Replace('*', 'a');
+        }
+
+        return genderedPhrase;
     }
 }
