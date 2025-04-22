@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smoothMetal_0: 1365483961213758187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -76,12 +76,12 @@ namespace Unit_4
             string playerAnswer = inputField.text.Trim().ToLower();
             if (playerAnswer == correctAnswer)
             {
-                feedbackText.text = "✅ Correct!";
+                feedbackText.text = "Correct!";
                 correctCount++;
 
                 if (correctCount >= requiredCorrect)
                 {
-                    feedbackText.text = "🎉 Great job! You've finished the mini-game.";
+                    feedbackText.text = "Great job! You've finished the mini-game.";
                     submitButton.interactable = false;
                 }
                 else
@@ -91,22 +91,22 @@ namespace Unit_4
             }
             else
             {
-                feedbackText.text = "❌ Try again.";
+                feedbackText.text = "Try again.";
             }
             
             if (correctCount >= requiredCorrect)
             {
-                feedbackText.text = "🎉 Great job! You've finished the mini-game.";
+                feedbackText.text = "Time to go!";
                 submitButton.interactable = false;
 
-                // ✅ Wait a second, then close the mini-game
+                // Wait a second, then close the mini-game
                 Invoke(nameof(EndMiniGame), 1.5f);
             }
         }
         
         void EndMiniGame()
         {
-            feedbackText.text = "🎉 Great job! You've finished the mini-game.";
+            feedbackText.text = "Great job! You've finished the mini-game.";
             mgr.CloseGame();
         }
     }

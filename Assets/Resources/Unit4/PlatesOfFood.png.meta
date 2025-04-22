@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlatesOfFood_0: -1609108836231107986
+      PlatesOfFood_1: 442657703125863745
+      PlatesOfFood_2: 5937358364966341733
+      PlatesOfFood_3: 5117323013722309122
+      PlatesOfFood_4: 3448855836431498299
+      PlatesOfFood_5: -5756364749126442272
+      PlatesOfFood_6: 8897856965921515158
+      PlatesOfFood_7: 7078943817900964357
+      PlatesOfFood_8: 5597610453477961214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

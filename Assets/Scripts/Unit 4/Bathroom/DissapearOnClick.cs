@@ -12,6 +12,7 @@ public class DissapearOnClick : MonoBehaviour, IPointerClickHandler
     [Header("Word Info")]
     public TMP_Text wordText; // drag the Text object here in the prefab
     public bool isCorrect; // set this when spawning
+    public int mistakes;
     private ClickWrong gameManager;
     private List<String> fontColors = new List<String> {
         "#AB5252", // dull red
@@ -73,11 +74,14 @@ public class DissapearOnClick : MonoBehaviour, IPointerClickHandler
         {
             // Player clicked a correct word (bad!)
             gameManager.WordMissed();
+            gameManager.getLivesText().text = "Lives: " + (gameManager.GetMaxMisses() - gameManager.GetMisses());
             Destroy(gameObject);
         }
         else
         {
             // Correctly clicked an incorrect pair — remove it
+            gameManager.addCorrect();
+            gameManager.getCorrectText().text = "Correct: " + gameManager.getCorrect();
             Destroy(gameObject);
         }
     }
