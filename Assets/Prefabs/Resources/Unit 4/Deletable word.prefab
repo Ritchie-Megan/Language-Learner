@@ -115,8 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ad9d91cbb134c4e9eb8f4afaf65d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordText: {fileID: 0}
+  wordText: {fileID: 1704314432100852521}
   isCorrect: 0
+  mistakes: 0
 --- !u!114 &9215851192083500572
 MonoBehaviour:
   m_ObjectHideFlags: 0

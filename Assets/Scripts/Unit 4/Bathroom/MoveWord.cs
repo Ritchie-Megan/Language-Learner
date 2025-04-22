@@ -44,7 +44,6 @@ public class MoveWord : MonoBehaviour
     
     public void SetSpeedMultiplier(float speedMultiplier)
     {
-        // Assuming you have a speed variable in this class
         // speed = baseSpeed * speedMultiplier;
         speed = baseSpeed * speedMultiplier; // Example: base speed of 1
         
@@ -52,7 +51,6 @@ public class MoveWord : MonoBehaviour
     
     public void SetGameManager(ClickWrong gameManager)
     {
-        // Assuming you have a reference to the game manager in this class
         // this.gameManager = gameManager;
         manager = gameManager;
     }
