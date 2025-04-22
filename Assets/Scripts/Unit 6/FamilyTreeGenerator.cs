@@ -52,6 +52,10 @@ public class FamilyTreeGenerator : MonoBehaviour
             }
         }
 
+        //place the root of the tree into their correct slot
+        StartCoroutine(PlaceRootPersonInCorrectSlot(root.personName));
+
+
         //sending over clues list
         ClueLoader clueLoader = FindFirstObjectByType<ClueLoader>();
         if (clueLoader != null) {
@@ -92,6 +96,42 @@ public class FamilyTreeGenerator : MonoBehaviour
     public void addMistake() {
         numMistakes++;
     }
+
+    private System.Collections.IEnumerator PlaceRootPersonInCorrectSlot(string rootName) {
+        yield return null;
+
+        ScrollBarLoader loader = FindFirstObjectByType<ScrollBarLoader>();
+        Transform contentPanel = loader.contentPanel;
+        Transform rootItem = null;
+
+        foreach (Transform child in contentPanel) {
+            if (child.name == rootName) {
+                rootItem = child;
+                break;
+            }
+        }
+        
+        if (rootItem == null) {
+            Debug.Log("Root draggable item not found!");
+            yield break;
+        }
+        foreach (GameObject nodeObj in toWin) {
+            if(nodeObj.name == rootName) {            
+                rootItem.SetParent(nodeObj.transform, false);
+                rootItem.SetAsLastSibling();
+                rootItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+
+                //turn leaf green when it's in the slot
+                Sprite greenLeaf = Resources.Load<Sprite>("Unit6/greenLeaf");
+                rootItem.GetComponent<Image>().sprite = greenLeaf;
+                
+                Debug.Log("Placed root person: " + rootName);
+
+                break;
+            }
+        }
+    }
+    
 }
 
 namespace FamilyTree {
