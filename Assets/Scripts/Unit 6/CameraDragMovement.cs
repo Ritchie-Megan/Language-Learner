@@ -16,7 +16,7 @@ public class CameraDragMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetMouseButton(2)) {
+        if (Input.GetMouseButton(1)) {
             difference = (Camera.main.ScreenToWorldPoint(Input.mousePosition)) - Camera.main.transform.position;
             if (drag == false)
             {
@@ -34,13 +34,14 @@ public class CameraDragMovement : MonoBehaviour
             Mathf.Clamp(Camera.main.transform.position.x, clampMinPosition.x, clampMaxPosition.x),
             Mathf.Clamp(Camera.main.transform.position.y, clampMinPosition.y, clampMaxPosition.y), transform.position.z);
         }
-
-        if (Input.GetMouseButton(1))
-            Camera.main.transform.position = resetCamera;
     }
 
     public void setCameraResetPosition(Vector3 resetPosition) {
         resetCamera = new Vector3(resetPosition.x, resetPosition.y, -10);
+        Camera.main.transform.position = resetCamera;
+    }
+
+    public void resetCameraPosition() {
         Camera.main.transform.position = resetCamera;
     }
 }

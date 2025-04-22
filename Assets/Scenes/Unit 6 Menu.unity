@@ -688,8 +688,8 @@ MonoBehaviour:
     bar on the right tells you how family members are related to one another. Drag
     the leaves from the bottom bar to the slots in the family tree. If the family
     member is placed correctly, their leaf will turn green. View different parts
-    of the tree by holding down the middle mouse button and dragging it.\n\nOnce
-    each family member is placed correctly, the game will end."
+    of the tree by holding down the right mouse button and dragging it.\n\nOnce each
+    family member is placed correctly, the game will end."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
