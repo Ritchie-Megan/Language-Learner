@@ -141,6 +141,14 @@ public class CorrectOrder : MonoBehaviour
             // Instantiate the wordPrefab inside the slot
             GameObject wordObject = Instantiate(wordPrefab, slot.transform);
 
+            
+            //randomize chemical picture
+            Sprite[] sprites = Resources.LoadAll<Sprite>("Unit4/chemicalVials"); // No space in folder
+            int randChemical = Random.Range(0,6);
+            Sprite newSprite = sprites[randChemical];
+            Image chemicalImage = wordObject.GetComponent<Image>();
+            chemicalImage.sprite = newSprite;
+
             // Set the word text
             Text wordText = wordObject.GetComponentInChildren<Text>();
             if (wordText != null)

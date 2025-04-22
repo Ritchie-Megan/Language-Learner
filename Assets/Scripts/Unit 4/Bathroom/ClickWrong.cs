@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class ClickWrong : MonoBehaviour
 {
@@ -105,6 +106,7 @@ public class ClickWrong : MonoBehaviour
 
         // Instantiate and place in world space
         GameObject word = Instantiate(wordPrefab, worldPos, Quaternion.identity, transform);
+        //make it different font/colors
 
         // Make sure it’s scaled properly
         RectTransform wordRect = word.GetComponent<RectTransform>();
@@ -124,7 +126,7 @@ public class ClickWrong : MonoBehaviour
         DissapearOnClick clicker = word.GetComponent<DissapearOnClick>();
         if (clicker != null)
         {
-            Text wordText = word.GetComponentInChildren<Text>(); // or TMP_Text if you're using TMP
+            TMP_Text wordText = word.GetComponentInChildren<TMP_Text>();
             clicker.wordText = wordText;
             clicker.Initialize(pair.spanish, pair.english, pair.correct, this);
         }

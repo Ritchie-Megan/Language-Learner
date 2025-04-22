@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class MiniGame
@@ -12,13 +13,20 @@ public class MiniGame
 public class MiniGameManager : MonoBehaviour
 {
     public MiniGame[] miniGames;
+    public List<int> visitedMiniGames = new List<int>();
     public Text clueTextUI;
     public Text feedbackTextUI;
+    public GameObject endScreen;
 
     private int currentIndex = 0;
 
     void Start()
     {
+        //--choose a random room--
+        int randRoom = Random.Range(0, miniGames.Length);
+        //save it
+        visitedMiniGames.Add(randRoom);
+        currentIndex = randRoom;
         ShowClue();
     }
 
@@ -47,12 +55,29 @@ public class MiniGameManager : MonoBehaviour
 
         clueTextUI.gameObject.SetActive(true);
         feedbackTextUI.gameObject.SetActive(true);
-        currentIndex++;
+        //if visited count = miniGame count that means the player has visited all games, thus end screen
+        if (visitedMiniGames.Count != miniGames.Length) {
+            //choose a random room
+            int randRoom = Random.Range(0, miniGames.Length);
+            while (visitedMiniGames.Contains(randRoom)) {
+                randRoom = Random.Range(0, miniGames.Length);
+            }
+            visitedMiniGames.Add(randRoom);
+            currentIndex = randRoom;
+        }
+        else {
+            endGame();
+        }
+        
         ShowClue();
     }
     
     void ShowClue()
     {
         clueTextUI.text = "Clue: " + miniGames[currentIndex].clueText;
+    }
+
+    void endGame() {
+        endScreen.SetActive(true);
     }
 }
