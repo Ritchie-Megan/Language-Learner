@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 
 [System.Serializable]
@@ -105,17 +106,20 @@ public class WordManager : MonoBehaviour
             Character target = gameManager.GetTargetCharacter();
             bool hasTrait = CheckCharacterTrait(target, currentQuestion.characteristic);
 
-            // Show YES or NO box
-            yesBox.SetActive(hasTrait);
-            noBox.SetActive(!hasTrait);
+            // Color YES or NO box accordingly
+            yesBox.GetComponent<Image>().color = getResponseColor(hasTrait, true);
+            noBox.GetComponent<Image>().color = getResponseColor(!hasTrait, false);
+            
+            yesBox.GetComponentInChildren<TMP_Text>().color = getResponseColor(hasTrait, true);
+            noBox.GetComponentInChildren<TMP_Text>().color = getResponseColor(!hasTrait, false);
             
             StartCoroutine(NextQuestionCoroutine());
         }
         else
         {
-            Debug.Log("Try again!");
-            yesBox.SetActive(false);
-            noBox.SetActive(false);
+            // Debug.Log("Try again!");
+            // yesBox.SetActive(false);
+            // noBox.SetActive(false);
         }
     }
     
@@ -142,8 +146,12 @@ public class WordManager : MonoBehaviour
         ClearSentenceAndWordBank();
         SetupSentence();
 
-        yesBox.SetActive(false);
-        noBox.SetActive(false);
+        yesBox.GetComponent<Image>().color = getResponseColor(false, false);
+        noBox.GetComponent<Image>().color = getResponseColor(false, false);
+
+        yesBox.GetComponentInChildren<TMP_Text>().color = getResponseColor(false, false);
+        noBox.GetComponentInChildren<TMP_Text>().color = getResponseColor(false, false);
+
     }
 
     private bool CheckIfContinue() {
@@ -152,6 +160,21 @@ public class WordManager : MonoBehaviour
 
     public void ContinueButton() {
         continueCutscene = true;
+    }
+
+    private Color getResponseColor(bool hasTrait, bool yes)
+    {
+        if (hasTrait)
+        {
+            if (yes)
+                return new Color32(100, 200, 100, 255);
+            else
+                return new Color32(200, 100, 100, 255);
+        }
+        else
+        {
+            return new Color32(180, 180, 180, 255);
+        }
     }
     
     private bool CheckCharacterTrait(Character character, string traitName)

@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         activeCount = numCharacters;
         guessWho = characters[Random.Range(0, characters.Count)];
         Debug.Log("Target Character: " + guessWho.characterName);
-        loseText.text = "YOU LOSE...\nYour person was " + guessWho.characterName;
+        loseText.text = "TU PIERDES...\nTu persona era " + guessWho.characterName;
     }
 
     void Update()
