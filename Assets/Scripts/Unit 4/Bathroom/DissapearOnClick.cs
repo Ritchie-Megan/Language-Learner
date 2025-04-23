@@ -16,13 +16,13 @@ public class DissapearOnClick : MonoBehaviour, IPointerClickHandler
     private ClickWrong gameManager;
     private List<String> fontColors = new List<String> {
         "#AB5252", // dull red
-        "#EC8F25", //orange 
+        "#EC6400", //red orange 
         "#F0F332", // yellow
         "#0A5703", //dark green
-        "#45A6A1", //teal
+        "#117772", //dark teal
         "#315CF3", // blue
         "#AC31F3", //purple
-        "#E05EDA" //pink
+        "#D200C9" //pink
     };
     
     

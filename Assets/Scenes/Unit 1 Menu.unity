@@ -684,8 +684,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Crea un personaje que se ajuste al perfil.\r\n\r\nConsulta la descripci\xF3n
-    del usuario para obtener m\xE1s pistas."
+  m_text: 'Discover what somebody looks like based on their social media profile.
+
+
+    You
+    can click on the user description just below their profile picture to view details
+    about their appearance. Their facial expression should reflect their mood.
+
+
+    When
+    you''re sure that your person looks right, send your choices with the button
+    on the lower right.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

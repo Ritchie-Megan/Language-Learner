@@ -771,7 +771,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Instructions for unit 4.
+  m_text: 'Go through your school day and complete assignments.
+
+    The clue in
+    the top right hints at where you need to be. When you''re in the correct room,
+    press enter on your keyboard to bring up the minigame.
+
+    In the bathroom,
+    click wrong word-definition pairs. In the cafeteria, type in the correct conjugation
+    of words. In the lab, drag words into the right spots to form a sentence.
+
+    Have
+    a good day at school!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
