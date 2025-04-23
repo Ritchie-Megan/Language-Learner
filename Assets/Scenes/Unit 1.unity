@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFeature: {fileID: 79524006}
-  characterFeature: {fileID: 11400000, guid: b999e0e4dc02dc941a2517479908cfe7, type: 2}
+  characterFeature: {fileID: 11400000, guid: 07587b80d09e94047aece8dd6e646736, type: 2}
   featureDescription: "verg\xFCenza"
   useCrop: 1
   onOptionSelected:
@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFeature: {fileID: 1924534573}
-  characterFeature: {fileID: 11400000, guid: 26e6a22ba21da434b8764d3c0d531a0b, type: 2}
+  characterFeature: {fileID: 11400000, guid: 2b1a5b497a12448ce8daef6ab6256a72, type: 2}
   featureDescription: corto, liso
   useCrop: 1
   onOptionSelected:
@@ -5460,7 +5460,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 610286331}
-  - component: {fileID: 610286332}
   m_Layer: 5
   m_Name: Background Pattern
   m_TagString: Untagged
@@ -5491,24 +5490,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &610286332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610286330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a48b56b47b6d7c945bc1d152d56d4c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  patterns:
-  - {fileID: 1969102906}
-  - {fileID: 659606687}
-  - {fileID: 1732763653}
-  - {fileID: 755106286}
 --- !u!1 &610791593
 GameObject:
   m_ObjectHideFlags: 0
@@ -7570,7 +7551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -79.000145, y: -71.000046}
+  m_AnchoredPosition: {x: -79.00012, y: -71.00006}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926845918
@@ -9974,7 +9955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFeature: {fileID: 1924534573}
-  characterFeature: {fileID: 11400000, guid: f3fbc6fb36322924787d2d574e63e45a, type: 2}
+  characterFeature: {fileID: 11400000, guid: 0b80c896b243a4789abbc28f0d0386ec, type: 2}
   featureDescription: corto, rizado
   useCrop: 1
   onOptionSelected:
@@ -14462,7 +14443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc741629888521c4b91852056e52d734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 1950324130}
 --- !u!114 &1876670813
 MonoBehaviour:
   m_ObjectHideFlags: 0
